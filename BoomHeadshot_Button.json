@@ -1,0 +1,8 @@
+{
+  "UseUITint": true,
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_BoomHeadshot.UI_Icons_Abilities_BoomHeadshot'",
+  "id": "BoomHeadshot_Button",
+  "name": "pegasus_heroes|Button_name_BoomHeadshot_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_BoomHeadshot_Button"
+}

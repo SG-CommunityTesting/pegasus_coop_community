@@ -1,0 +1,7 @@
+{
+  "based_on": "SoundData_TransmissionBase",
+  "id": "SoundData_Transmission_Galt_WHTaunt02",
+  "name": "Transmission - Galt WreckHavoc Base Destroyed 01",
+  "sound_system_data": "SSD_Transmission_Galt_WH_Generic",
+  "trigger": "Galt_WHTaunt02"
+}

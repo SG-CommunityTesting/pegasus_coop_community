@@ -1,0 +1,23 @@
+{
+  "game_effect": "AmaraThronos_ThronosThrown_Weapon_02_MissileLauncher",
+  "id": "AmaraThronos_ThronosThrown_Weapon_01_SearchRadius",
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": true,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable",
+        "entity_destructible_tree",
+        "dead"
+      ],
+      "required": [
+        "entity_unit"
+      ]
+    }
+  }
+}

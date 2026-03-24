@@ -1,0 +1,21 @@
+{
+  "based_on": "BaseBuff",
+  "buff_tags": [
+    "dispel_technological"
+  ],
+  "duration": 5.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_Revitalize.UI_Icons_Abilities_Revitalize'",
+  "id": "Barclay_Revitalize_Upgrade2B_Buff",
+  "modifiers": [
+    {
+      "amount": 30.0,
+      "stat_mod": "SpeedPercentageBonus"
+    },
+    {
+      "amount": 50.0,
+      "stat_mod": "HealthRegenPercentageAdditiveMultiplier"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_Barclay_Revitalize_Upgrade1B_Buff",
+  "tooltip": "pegasus_heroes|Buff_tooltip_Barclay_Revitalize_Upgrade2B_Buff"
+}

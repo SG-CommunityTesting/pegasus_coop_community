@@ -1,0 +1,7 @@
+{
+  "based_on": "BaseButton",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_BurnList.UI_Icons_Abilities_BurnList'",
+  "id": "Amara_MoltenShot_ExtraBounce_Upgrade_Button",
+  "name": "pegasus_heroes|Button_name_Amara_MoltenShot_ExtraBounce_Upgrade_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_Amara_MoltenShot_ExtraBounce_Upgrade_Button"
+}

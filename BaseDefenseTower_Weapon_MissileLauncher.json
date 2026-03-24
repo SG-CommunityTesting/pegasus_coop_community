@@ -1,0 +1,11 @@
+{
+  "based_on": "BaseGameEffectLaunchProjectile",
+  "id": "BaseDefenseTower_Weapon_MissileLauncher",
+  "impact_effect": "BaseDefenseTower_Weapon_Damage",
+  "launch_fx": "BP_FXS_BaseDefender_Launch",
+  "movement": {
+    "acceleration_time": 0,
+    "max_speed": 15.0
+  },
+  "projectile": "BaseDefender_Weapon_Missile"
+}

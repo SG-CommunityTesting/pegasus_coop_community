@@ -1,0 +1,35 @@
+{
+  "attribute_id": "mutators",
+  "based_on": "PlayerAttributeDefinition",
+  "default_data": "mutationAttributeData_default",
+  "display_name": "Mutators",
+  "display_settings": {
+    "reset_on_leave": false,
+    "show_in_custom_lobby": true,
+    "show_in_internal_lobby": false,
+    "show_on_ais": true,
+    "show_on_occupied_humans": true
+  },
+  "id": "mutationAttributeDefinition",
+  "permission_settings": {
+    "user_edit_scope": {
+      "anyone": false,
+      "lobby_owner": true,
+      "slot_occupant": true
+    },
+    "user_editing_allowed": "Noncompetitive"
+  },
+  "value_kind": 2,
+  "values_as_typeref_enum": [
+    "MutatorUI_EnergyInfusion",
+    "MutatorUI_GottaGoFast",
+    "MutatorUI_HiringSpree",
+    "MutatorUI_InfantryAssault",
+    "MutatorUI_Infested",
+    "MutatorUI_ReadyToBlow",
+    "MutatorUI_Reconstructed",
+    "MutatorUI_SeeAndSee",
+    "MutatorUI_SpeedKills",
+    "MutatorUI_SwiftAssembly"
+  ]
+}

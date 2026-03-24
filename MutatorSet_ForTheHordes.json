@@ -1,0 +1,9 @@
+{
+  "based_on": "MutatorSet",
+  "id": "MutatorSet_ForTheHordes",
+  "mutators": [
+    "MutatorUI_Infested",
+    "MutatorUI_Reconstructed"
+  ],
+  "title": "pegasus_coop|MutatorSet_title_MutatorSet_ForTheHordes"
+}

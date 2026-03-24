@@ -1,0 +1,27 @@
+{
+  "alignment": "Helpful",
+  "based_on": "PlayerBuff",
+  "flags": {
+    "apply_to_team": false,
+    "disable_duplicates": false,
+    "hidden": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Stats/UI_Icons_Stats_MovementSpeed.UI_Icons_Stats_MovementSpeed'",
+  "id": "Mutator_SpeedKills_PlayerBuff",
+  "modifiers": [
+    {
+      "amount": 50.0,
+      "stat_mod": "SpeedPercentageBonus"
+    }
+  ],
+  "name": "pegasus_coop|PlayerBuff_name_Mutator_SpeedKills_PlayerBuff",
+  "tag_filter": {
+    "excluded": [
+      "entity_unit_structure"
+    ],
+    "required": [
+      "entity_unit"
+    ]
+  },
+  "tooltip": "pegasus_coop|PlayerBuff_tooltip_Mutator_SpeedKills_PlayerBuff"
+}

@@ -1,0 +1,33 @@
+{
+  "based_on": "GameEffectSearchRadius",
+  "black_white_list": {
+    "exclude": [],
+    "include": [
+      {
+        "effect_parent": "none",
+        "target": "Target"
+      }
+    ]
+  },
+  "game_effect": "RoyalGuard_Weapon_Damage",
+  "id": "RoyalGuard_Weapon_DmgAOE",
+  "impact_fx": "BP_FXI_RoyalGuard_Weapon_Impact",
+  "radius": 2.0,
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": true,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "dead"
+      ],
+      "required": [
+        "entity_unit"
+      ]
+    }
+  }
+}

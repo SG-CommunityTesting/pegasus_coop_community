@@ -1,0 +1,19 @@
+{
+  "alignment": "Harmful",
+  "based_on": "Buff",
+  "buff_visuals": "BP_BVA_Auralanna_Enervate",
+  "duration": 6.0,
+  "effect_periodic": "AuralannaEnervate_ConstantDamage",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_Enervate.UI_Icons_Abilities_Enervate'",
+  "id": "AuralannaEnervate_Buff",
+  "modifiers": [
+    {
+      "amount": -25.0,
+      "stat_mod": "SpeedPercentageBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_AuralannaEnervate_Buff",
+  "periodic_duration": 0.25,
+  "tooltip": "pegasus_heroes|Buff_tooltip_AuralannaEnervate_Buff",
+  "validator_remove": "Valid_RemoveAuralannaEnervateBuff"
+}

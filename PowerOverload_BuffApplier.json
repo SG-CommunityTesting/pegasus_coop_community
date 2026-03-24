@@ -1,0 +1,5 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "PowerOverload_Buff",
+  "id": "PowerOverload_BuffApplier"
+}

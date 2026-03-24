@@ -1,0 +1,34 @@
+{
+  "amount": 7.5,
+  "areas": [
+    {
+      "damage_fraction": 1.0,
+      "radius": 3.0
+    }
+  ],
+  "based_on": "GameEffectDamageRadius",
+  "friendly_fire_percentage": 50.0,
+  "id": "HammerTime_DamageRadius",
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": false,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable"
+      ],
+      "required": [
+        "heightplane_ground"
+      ]
+    }
+  },
+  "search_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Entity",
+    "target": "Caster"
+  }
+}

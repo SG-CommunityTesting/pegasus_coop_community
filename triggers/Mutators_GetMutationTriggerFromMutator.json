@@ -1,0 +1,28 @@
+﻿{
+  "based_on": "Function",
+  "grammar_text": "Get trigger for {mutator}.",
+  "hint_text": "",
+  "id": "Mutators_GetMutationTriggerFromMutator",
+  "name": "Mutators - Get Mutation Trigger From Mutator Data",
+  "options": {
+    "is_implemented": true
+  },
+  "parameters": [
+    {
+      "hint_text": "Mutation data.",
+      "id": "mutator",
+      "name": "Mutator Data",
+      "type": {
+        "directive": "TypeRef",
+        "type": "MutatorUI"
+      }
+    }
+  ],
+  "path": "Mutations",
+  "return_type": {
+    "directive": "TypeRef",
+    "type": "Trigger"
+  },
+  "script": "TArchetypeRef<SnowFacts::MutatorUI>({{ param(\"mutator\") }})->activation_trigger",
+  "type": "Function"
+}

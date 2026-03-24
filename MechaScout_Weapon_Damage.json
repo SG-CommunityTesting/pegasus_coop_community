@@ -1,0 +1,12 @@
+{
+  "amount": 8.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_melee"
+  ],
+  "id": "MechaScout_Weapon_Damage",
+  "impact_fx": "BP_FXI_MechaScout_Impact",
+  "tag_bonuses": [
+    "MechaScoutLightTagBonus"
+  ]
+}

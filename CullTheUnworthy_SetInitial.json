@@ -1,0 +1,12 @@
+{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "CullTheUnworthy_StoreSupplyCost",
+    "CullTheUnworthy_Kill",
+    "CullTheUnworthy_ModifyVitals",
+    "CullTheUnworthy_BuffApplier",
+    "CullTheUnworthy_SwitchPersistentCooldown"
+  ],
+  "id": "CullTheUnworthy_SetInitial",
+  "impact_fx": "BP_FXS_CullTheUnworthy_Sacrifice"
+}

@@ -1,0 +1,9 @@
+{
+  "amount": 100.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_melee"
+  ],
+  "id": "Kastiel_Weapon_Damage",
+  "impact_fx": "BP_FXI_Kastiel_Impact"
+}

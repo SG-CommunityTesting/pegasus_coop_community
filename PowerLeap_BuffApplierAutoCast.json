@@ -1,0 +1,5 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "PowerLeap_BuffAutoCast",
+  "id": "PowerLeap_BuffApplierAutoCast"
+}

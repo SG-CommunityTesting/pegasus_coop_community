@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Units/Human/UI_Icons_Units_Human_RoyalGuard.UI_Icons_Units_Human_RoyalGuard'",
+  "id": "RoyalGuard_Button",
+  "name": "pegasus_heroes|Button_name_RoyalGuard_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_RoyalGuard_Button"
+}

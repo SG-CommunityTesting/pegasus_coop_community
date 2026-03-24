@@ -1,0 +1,11 @@
+{
+  "based_on": "BaseBuff",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Gear/UI_Icons_Gear_HealingIncrease.UI_Icons_Gear_HealingIncrease'",
+  "id": "TempHeroProgressionHealBuff10",
+  "name": "pegasus_commanders|Buff_name_TempHeroProgressionHealBuff10",
+  "responses": [
+    "TempHeroProgressionResponseHeal10"
+  ],
+  "tooltip": "pegasus_commanders|Buff_tooltip_TempHeroProgressionHealBuff10",
+  "validator_remove": "Valid_CommanderLevel17To18"
+}

@@ -1,0 +1,182 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "BurningBlood",
+    "CinderStorm",
+    "Wildfire",
+    "ServeTheFlame"
+  ],
+  "armor": 10.0,
+  "armor_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Armor/UI_Icons_Armor_Infernals_Army_Heavy.UI_Icons_Armor_Infernals_Army_Heavy'",
+  "armor_name": "pegasus_core|ArmorName_InfernalHeroicArmor",
+  "based_on": "BaseUnit_InfernalHero",
+  "buffs": [
+    "TempHeroProgressionSpellDamageBuff10",
+    "TempHeroProgressionSpellDamageBuff20"
+  ],
+  "cargo_size": "Four",
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "BurningBlood",
+      "button": "BurningBlood_Button",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 1,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "CinderStorm",
+      "button": "CinderStorm_Button",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 1,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "Wildfire",
+      "button": "Wildfire_Button",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 1,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "ServeTheFlame",
+      "button": "ServeTheFlame_Button",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    0,
+    10
+  ],
+  "faction": "InfernalMaloch",
+  "id": "Unit_Maloch",
+  "inner_radius": 0.5,
+  "minimap_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Minimap/UI_Icons_Minimap_Hero_Default.UI_Icons_Minimap_Hero_Default'",
+  "minimap_icon_size": 40.0,
+  "minimap_icon_use_heading": true,
+  "minimap_icon_use_team_color": true,
+  "minimap_material_instance": "MaterialInterface'/Game/Pegasus/UI/Assets/Materials/MI_UI_MinimapCharacterPortraitMask_Maloc.MI_UI_MinimapCharacterPortraitMask_Maloc'",
+  "minimap_widget": "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Pegasus/UI/Minimap/WBP_Minimap_Icon_Hero.WBP_Minimap_Icon_Hero_C'",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.35,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 3,
+    "speed": 4.5,
+    "stationary_turn_period": 0.35,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "name": "UnitData_name_Unit_Maloch",
+  "outer_radius": 1.0,
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_hero",
+    "attribute_biological",
+    "attribute_ranged"
+  ],
+  "subgroup_priority": 200,
+  "unit_button": "Maloch_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Demon/UI_Portrait_Demon_Default_Dagon.UI_Portrait_Demon_Default_Dagon'",
+  "unreal_actor": "BP_UD_Hero_Maloch",
+  "veterancy_given_on_death": 1000,
+  "vision_radius": 12.0,
+  "vital_energy": {
+    "maximum": 100.0,
+    "regen": 2.0,
+    "starting": 50.0
+  },
+  "vital_health": {
+    "maximum": 700.0,
+    "regen": 3.5,
+    "starting": 700.0
+  },
+  "vital_shield": {
+    "maximum": 175.0,
+    "regen": 0.0,
+    "starting": 87.5
+  },
+  "weaponList": [
+    "Maloch_Weapon"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "UseUITint": true,
+  "based_on": "BaseButton",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Basic/UI_Icons_Basic_MediaControls_SpeedIncrease.UI_Icons_Basic_MediaControls_SpeedIncrease'",
+  "id": "LevelUp_Button",
+  "name": "pegasus_heroes|Button_name_LevelUp_Button"
+}

@@ -1,0 +1,6 @@
+{
+  "based_on": "TagBonus",
+  "bonus": 3.0,
+  "id": "OutrunnerLightTagBonus",
+  "tag": "attribute_light"
+}

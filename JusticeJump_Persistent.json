@@ -1,0 +1,14 @@
+{
+  "based_on": "GameEffectPersistent",
+  "effect_expire": "JusticeJump_SearchRadiusTeleport",
+  "effect_expire_delay": 1.0,
+  "effect_initial": "JusticeJump_PersistentTarget",
+  "expire_fx": "BP_FXS_JusticeJump_ChannelTarget",
+  "flags": {
+    "channeling": true
+  },
+  "id": "JusticeJump_Persistent",
+  "initial_fx": "BP_FXS_JusticeJump_ChannelCaster",
+  "unreal_actor": "BP_EBFX_InfernalTeleport_ChannelCaster",
+  "validator": "Valid_CanCastJusticeJump"
+}

@@ -1,0 +1,94 @@
+﻿{
+  "based_on": "Enum",
+  "id": "FactionType",
+  "values": [
+    {
+      "display_name": "pegasus_commanders|Commander_Blockade_Title",
+      "display_settings": {
+        "show_in_custom_lobby": true,
+        "show_in_internal_lobby": true,
+        "show_on_ais": true,
+        "show_on_occupied_humans": true
+      },
+      "name": "Blockade",
+      "value": 1001
+    },
+    {
+      "display_name": "pegasus_commanders|Commander_Maloc_Title",
+      "display_settings": {
+        "show_in_custom_lobby": true,
+        "show_in_internal_lobby": true,
+        "show_on_ais": true,
+        "show_on_occupied_humans": true
+      },
+      "name": "Maloc",
+      "value": 2001
+    },
+    {
+      "display_name": "lobby|FactionType_Random",
+      "display_settings": {
+        "show_in_custom_lobby": true,
+        "show_in_internal_lobby": true,
+        "show_on_ais": true,
+        "show_on_occupied_humans": true
+      },
+      "name": "Random",
+      "value": 1000
+    },
+    {
+      "display_name": "pegasus_commanders|Commander_Amara_Title",
+      "display_settings": {
+        "show_in_custom_lobby": true,
+        "show_in_internal_lobby": true,
+        "show_on_ais": true,
+        "show_on_occupied_humans": true
+      },
+      "name": "Amara",
+      "value": 1002
+    },
+    {
+      "display_name": "pegasus_commanders|Commander_Warz_Title",
+      "display_settings": {
+        "show_in_custom_lobby": true,
+        "show_in_internal_lobby": true,
+        "show_on_ais": true,
+        "show_on_occupied_humans": true
+      },
+      "name": "Warz",
+      "value": 2002
+    },
+    {
+      "display_name": "pegasus_commanders|Commander_Auralanna_Title",
+      "display_settings": {
+        "show_in_custom_lobby": true,
+        "show_in_internal_lobby": true,
+        "show_on_ais": true,
+        "show_on_occupied_humans": true
+      },
+      "name": "Auralanna",
+      "value": 3001
+    },
+    {
+      "display_name": "pegasus_commanders|Faction_name_Kastiel_Faction",
+      "display_settings": {
+        "show_in_custom_lobby": true,
+        "show_in_internal_lobby": true,
+        "show_on_ais": true,
+        "show_on_occupied_humans": true
+      },
+      "name": "Kastiel",
+      "value": 3002
+    },
+    {
+      "display_name": "pegasus_commanders|Command_Ryker_Title",
+      "display_settings": {
+        "show_in_custom_lobby": true,
+        "show_in_internal_lobby": true,
+        "show_on_ais": true,
+        "show_on_occupied_humans": true
+      },
+      "name": "Ryker",
+      "value": 1003
+    }
+  ]
+}

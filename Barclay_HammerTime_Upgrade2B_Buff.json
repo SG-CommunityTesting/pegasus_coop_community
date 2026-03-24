@@ -1,0 +1,18 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "buff_visuals": "BP_BVA_HammerTimeB",
+  "duration": 8.0,
+  "effect_periodic": "Barclay_HammerTime_Upgrade2B_DamageRadius",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_HammerTime.UI_Icons_Abilities_HammerTime'",
+  "id": "Barclay_HammerTime_Upgrade2B_Buff",
+  "modifiers": [
+    {
+      "amount": 30.0,
+      "stat_mod": "SpeedPercentageBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_HammerTime_Buff",
+  "periodic_duration": 0.25,
+  "tooltip": "pegasus_heroes|Buff_tooltip_HammerTime_Buff"
+}

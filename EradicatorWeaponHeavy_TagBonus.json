@@ -1,0 +1,6 @@
+{
+  "based_on": "TagBonus",
+  "bonus": 0.42,
+  "id": "EradicatorWeaponHeavy_TagBonus",
+  "tag": "attribute_heavy"
+}

@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_CraterCreator.UI_Icons_Abilities_CraterCreator'",
+  "id": "CraterCreator_ButtonTrait",
+  "name": "pegasus_heroes|Button_name_CraterCreator_ButtonTrait",
+  "tooltip": "pegasus_heroes|Button_tooltip_CraterCreator_ButtonTrait"
+}

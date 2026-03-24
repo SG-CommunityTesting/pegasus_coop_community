@@ -1,0 +1,13 @@
+{
+  "based_on": "GameEffectSet",
+  "effect_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Entity",
+    "target": "Caster"
+  },
+  "effects": [
+    "PowerShield_StoreValue",
+    "PowerShield_ModEnergySelf"
+  ],
+  "id": "PowerShield_SetResponseDamage"
+}

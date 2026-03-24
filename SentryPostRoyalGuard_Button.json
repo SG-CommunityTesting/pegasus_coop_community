@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Structures/Human/UI_Icons_Structures_Human_SentryRoyalGuard.UI_Icons_Structures_Human_SentryRoyalGuard'",
+  "id": "SentryPostRoyalGuard_Button",
+  "name": "pegasus_heroes|Button_name_SentryPostRoyalGuard_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_SentryPostRoyalGuard_Button"
+}

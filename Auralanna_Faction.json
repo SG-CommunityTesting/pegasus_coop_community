@@ -1,0 +1,114 @@
+﻿{
+  "available_to_coop": true,
+  "background_playlist": "MediaPlaylist'/Game/Pegasus/UI/Assets/Video/Backgrounds/Auralanna/PL_Backgrounds_Coop_Auralanna.PL_Backgrounds_Coop_Auralanna'",
+  "based_on": "Celestial",
+  "character_image": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Characters/UI_Coop_Character_Auralanna.UI_Coop_Character_Auralanna'",
+  "commander_levels": [
+    "CommanderAuralanna_PerkLevel01",
+    "CommanderAuralanna_PerkLevel02",
+    "CommanderAuralanna_PerkLevel03",
+    "CommanderAuralanna_PerkLevel04",
+    "CommanderAuralanna_PerkLevel05",
+    "CommanderAuralanna_PerkLevel06",
+    "CommanderAuralanna_PerkLevel07",
+    "CommanderAuralanna_PerkLevel08",
+    "CommanderAuralanna_PerkLevel09",
+    "CommanderAuralanna_PerkLevel10",
+    "CommanderAuralanna_PerkLevel11",
+    "CommanderAuralanna_PerkLevel12",
+    "CommanderAuralanna_PerkLevel13",
+    "CommanderAuralanna_PerkLevel14",
+    "CommanderAuralanna_PerkLevel15",
+    "CommanderAuralanna_PerkLevel16",
+    "CommanderAuralanna_PerkLevel17",
+    "CommanderAuralanna_PerkLevel18",
+    "CommanderAuralanna_PerkLevel19",
+    "CommanderAuralanna_PerkLevel20"
+  ],
+  "description": "pegasus_commanders|Faction_description_Auralanna_Faction",
+  "description_title": "pegasus_commanders|Commander_Auralanna_Subtitle",
+  "faction_group": "FG_Celestial",
+  "granted_by": "HeroAuralannaUnlockable",
+  "hero": {
+    "spawn_offset": {
+      "x": 5.0,
+      "y": 5.0
+    },
+    "unit": "Hero_Auralanna"
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Tiles/UI_Coop_Tiles_Auralanna.UI_Coop_Tiles_Auralanna'",
+  "icon_observer": "MaterialInterface'/Game/Pegasus/UI/Assets/Observer/MI_ObserverFactionLogo_Auralanna.MI_ObserverFactionLogo_Auralanna'",
+  "id": "Auralanna_Faction",
+  "loadout": "Auralanna3vELoadout",
+  "lobby_index": 3001,
+  "name": "pegasus_commanders|Faction_Name_CelestialAuralanna",
+  "rewards": [
+    {
+      "level": 6,
+      "reward": [
+        "AuralannaLvl11CoopReward"
+      ]
+    },
+    {
+      "level": 7,
+      "reward": [
+        "AuralannaLvl12CoopReward"
+      ]
+    },
+    {
+      "level": 11,
+      "reward": [
+        "AuralannaLvl13CoopReward"
+      ]
+    },
+    {
+      "level": 12,
+      "reward": [
+        "AuralannaLvl14CoopReward"
+      ]
+    },
+    {
+      "level": 14,
+      "reward": [
+        "AuralannaLvl15CoopReward"
+      ]
+    },
+    {
+      "level": 15,
+      "reward": [
+        "AuralannaLvl18CoopReward"
+      ]
+    },
+    {
+      "level": 20,
+      "reward": [
+        "AuralannaLvl16CoopReward"
+      ]
+    }
+  ],
+  "starting_units": [
+    {
+      "offset": {
+        "x": 0.0,
+        "y": -4.0
+      },
+      "unit": "ArcshipTier1Flying"
+    },
+    {
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "unit": "MorphCore"
+    },
+    {
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "unit": "MorphCore"
+    }
+  ],
+  "store_item": "HeroAuralannaStoreItem",
+  "topbar_unit": "AuralannaTopBarCaster"
+}

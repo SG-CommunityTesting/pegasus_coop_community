@@ -1,0 +1,28 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "duration": 15.0,
+  "flags": {
+    "change_owner_on_polymorph": false,
+    "disable_on_attacking": false,
+    "disable_on_damage_taken": false,
+    "hidden": false,
+    "hide_timer": false,
+    "override_source": false,
+    "pause_while_disabled": false,
+    "persist_on_dead": false,
+    "remove_on_attacking": false,
+    "remove_on_damage_taken": false,
+    "show_progress": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_SummonWarhounds.UI_Icons_Abilities_SummonWarhounds'",
+  "id": "SummonGhostAndShadow_Upgrade1B_Buff",
+  "modifiers": [
+    {
+      "amount": 10.0,
+      "stat_mod": "DamageUnscaledBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_Ryker_OnSummonMovementSpeed_Buff",
+  "tooltip": "pegasus_heroes|Buff_tooltip_SummonGhostAndShadow_Upgrade1B_Buff"
+}

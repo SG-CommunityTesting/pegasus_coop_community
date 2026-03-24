@@ -1,0 +1,9 @@
+﻿{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "Darkspeed_BuffEnhanced",
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "id": "Darkspeed_BuffApplierEnhanced"
+}

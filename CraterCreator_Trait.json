@@ -1,0 +1,5 @@
+{
+  "based_on": "BaseTraitData",
+  "button": "CraterCreator_ButtonTrait",
+  "id": "CraterCreator_Trait"
+}

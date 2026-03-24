@@ -1,0 +1,39 @@
+{
+  "based_on": "GameEffectPersistent",
+  "effect_initial": "Mortardon_Weapon_MissileLauncher",
+  "effect_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "id": "Mortardon_Weapon_Persistent",
+  "offsets": {
+    "expire": {
+      "angle": 0.0,
+      "radius": 0.0
+    },
+    "final": {
+      "angle": 0.0,
+      "radius": 0.0
+    },
+    "initial": {
+      "angle": 0.0,
+      "radius": 0.0
+    },
+    "periodic": [],
+    "variance": {
+      "angle": 180.0,
+      "radius": 5.0
+    },
+    "vector_facing_end": {
+      "effect_parent": "none",
+      "entity_or_point": "EntityOrPoint",
+      "target": "Target"
+    },
+    "vector_facing_start": {
+      "effect_parent": "none",
+      "entity_or_point": "EntityOrPoint",
+      "target": "Target"
+    }
+  }
+}

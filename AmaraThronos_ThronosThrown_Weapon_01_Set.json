@@ -1,0 +1,9 @@
+{
+  "effects": [
+    "AmaraThronos_ThronosThrown_Weapon_01_SearchRadius",
+    "AmaraThronos_ThronosThrown_Weapon_Damage",
+    "ThronosKill_BuffApplier"
+  ],
+  "id": "AmaraThronos_ThronosThrown_Weapon_01_Set",
+  "validator": "emptyRef"
+}

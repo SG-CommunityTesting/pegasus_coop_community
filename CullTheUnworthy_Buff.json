@@ -1,0 +1,35 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "duration": -1.0,
+  "flags": {
+    "change_owner_on_polymorph": false,
+    "disable_on_attacking": false,
+    "disable_on_damage_taken": false,
+    "hidden": false,
+    "hide_timer": true,
+    "override_source": false,
+    "pause_while_disabled": false,
+    "persist_on_dead": true,
+    "remove_on_attacking": false,
+    "remove_on_damage_taken": false,
+    "show_progress": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_CullTheUnworthy.UI_Icons_Abilities_CullTheUnworthy'",
+  "id": "CullTheUnworthy_Buff",
+  "modifiers": [
+    {
+      "amount": 1.0,
+      "stat_mod": "AttackDamageScaledBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_CullTheUnworthy_Buff",
+  "stacks": {
+    "aggregation": "Target",
+    "buff_scope_effect_parent": "none",
+    "decay": 0,
+    "initial": 1,
+    "maximum": 100
+  },
+  "tooltip": "pegasus_heroes|Buff_tooltip_CullTheUnworthy_Buff"
+}

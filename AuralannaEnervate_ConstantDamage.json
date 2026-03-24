@@ -1,0 +1,17 @@
+{
+  "amount": 10.0,
+  "based_on": "GameEffectDamage",
+  "id": "AuralannaEnervate_ConstantDamage",
+  "vitals_leech": {
+    "energy": {
+      "max": 0.0,
+      "min": 0.0,
+      "percent": 0.0
+    },
+    "health": {
+      "max": 100.0,
+      "min": 0.0,
+      "percent": 100.0
+    }
+  }
+}

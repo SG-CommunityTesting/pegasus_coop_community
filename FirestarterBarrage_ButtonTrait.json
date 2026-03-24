@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Ability/UI_Icons_Abilities_LightMechAOE.UI_Icons_Abilities_LightMechAOE'",
+  "id": "FirestarterBarrage_ButtonTrait",
+  "name": "pegasus_heroes|Button_Name_FirestarterBarrage_ButtonTrait",
+  "tooltip": "pegasus_heroes|Button_Tooltip_FirestarterBarrage_ButtonTrait"
+}

@@ -1,0 +1,15 @@
+{
+  "based_on": "GameEffectRemoveBuff",
+  "effect_target": {
+    "effect_parent": "origin",
+    "target": "Target"
+  },
+  "id": "Revitalize_BuffRemover",
+  "tag_filter": {
+    "alignment": "Harmful",
+    "ignored": [],
+    "required": [
+      "dispel_technological"
+    ]
+  }
+}

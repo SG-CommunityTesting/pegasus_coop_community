@@ -1,0 +1,21 @@
+{
+  "based_on": "Buff",
+  "buff_visuals": "BP_FX_SlowDebuff",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Ability/UI_Icons_Abilities_ScoutSlow.UI_Icons_Abilities_ScoutSlow'",
+  "id": "Reconstructed_Buff",
+  "modifiers": [
+    {
+      "amount": -50.0,
+      "stat_mod": "SpeedPercentageBonus"
+    },
+    {
+      "amount": -50.0,
+      "stat_mod": "AttackSpeedPercentageAdditiveMultiplier"
+    },
+    {
+      "amount": -50.0,
+      "stat_mod": "HealthMaxPercentageAdditiveMultiplier"
+    }
+  ],
+  "tooltip": "Reconstructed units have decreased attack speed, movement speed, and health."
+}

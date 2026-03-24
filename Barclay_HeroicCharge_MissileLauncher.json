@@ -1,0 +1,34 @@
+{
+  "anim_montage_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AnimMontageComponents/AMC_LUWU_HeroicCharge.AMC_LUWU_HeroicCharge_C'",
+  "based_on": "GameEffectLaunchProjectile",
+  "fallback_unit": {
+    "effect_parent": "none",
+    "target": "Source"
+  },
+  "flags": {
+    "channeling": false,
+    "ignore_destructible_tree": false,
+    "landing_spot_find": false,
+    "landing_spot_reserve": false,
+    "mark_exclusive_target": false,
+    "stop_at_unpathable": false
+  },
+  "id": "Barclay_HeroicCharge_MissileLauncher",
+  "impact_effect": "Barclay_HeroicCharge_ImpactSet",
+  "impact_fx": "BP_FXS_HeroicCharge_Impact",
+  "launch_fx": "BP_FXS_HeroicCharge_Launch",
+  "launch_location": {
+    "effect_parent": "none",
+    "entity_or_point": "EntityOrPoint",
+    "target": "Source"
+  },
+  "movement": {
+    "acceleration_time": 0,
+    "lob": true,
+    "lob_gravity": 25.0,
+    "lock_facing": true,
+    "max_speed": 12.0
+  },
+  "projectile_movement_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/ProjectileMovementComponents/PMC_LUWE_HeroicCharge.PMC_LUWE_HeroicCharge_C'",
+  "range_max": 15.0
+}

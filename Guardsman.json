@@ -1,0 +1,184 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "MorphToGuardsmanDeployed"
+  ],
+  "alias_tech": [
+    "_Gunner"
+  ],
+  "armor_name": "pegasus_commanders|UnitData_armor_name_Guardsman",
+  "based_on": "BaseUnit_VanguardU",
+  "build_cost": {
+    "resource_a": 50.0,
+    "resource_b": 0.0,
+    "resource_c": 0.0,
+    "resource_d": 0.0
+  },
+  "build_time": 25.0,
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "MorphToGuardsmanDeployed",
+      "button": "MorphToGuardsmanDeployed_Button",
+      "commandIndex": 0,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    10
+  ],
+  "id": "Guardsman",
+  "inner_radius": 0.4,
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "moving_turn_period": 0.13,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "speed": 4.5,
+    "stationary_turn_period": 0.13,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false
+  },
+  "name": "pegasus_commanders|UnitData_name_Guardsman",
+  "outer_radius": 0.5,
+  "sb_id": "",
+  "selection_alias": "guardsman",
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_light",
+    "attribute_biological",
+    "attribute_ranged"
+  ],
+  "subgroup_priority": 109,
+  "supply_cost": 1.0,
+  "traits": [],
+  "unit_button": "Guardsman_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Humans/UI_Portrait_Human_Default_Guardsman.UI_Portrait_Human_Default_Guardsman'",
+  "unreal_actor": "BP_UH_Guardsman_00",
+  "veterancy_given_on_death": 100,
+  "veterancy_tiers": [
+    {
+      "stat_modifiers": [
+        {
+          "amount": 18.0,
+          "stat": "HealthMaxAdditiveBonus"
+        },
+        {
+          "amount": 10.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 0.5,
+          "stat": "WeaponRangeAdditiveBonus"
+        }
+      ],
+      "threshold": 300,
+      "visual_fx": "BP_FX_VanguardLevelUp_Tier1"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 18.0,
+          "stat": "HealthMaxAdditiveBonus"
+        },
+        {
+          "amount": 10.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 0.5,
+          "stat": "WeaponRangeAdditiveBonus"
+        }
+      ],
+      "threshold": 700,
+      "visual_fx": "BP_FX_VanguardLevelUp_Tier2"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 18.0,
+          "stat": "HealthMaxAdditiveBonus"
+        },
+        {
+          "amount": 10.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 0.5,
+          "stat": "WeaponRangeAdditiveBonus"
+        }
+      ],
+      "threshold": 1200,
+      "visual_fx": "BP_FX_VanguardLevelUp_Tier3"
+    }
+  ],
+  "veterancy_vxp_weight": 1,
+  "vital_health": {
+    "maximum": 70.0,
+    "regen": 0.0,
+    "starting": 70.0
+  },
+  "weaponList": [
+    "Guardsman_Weapon"
+  ]
+}

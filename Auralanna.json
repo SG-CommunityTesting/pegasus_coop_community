@@ -1,0 +1,173 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "AuralannaHealBurst",
+    "AuralannaEnervate",
+    "MeteorShower",
+    "Hush"
+  ],
+  "armor_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Armor/UI_Icons_Armor_Celestial_HeroicArmor.UI_Icons_Armor_Celestial_HeroicArmor'",
+  "based_on": "BaseUnit_CelestialHero",
+  "buffs": [
+    "AuralannaSpiritAura_BuffSelf"
+  ],
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "AuralannaHealBurst",
+      "button": "AuralannaHealBurst_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "AuralannaEnervate",
+      "button": "AuralannaEnervate_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "MeteorShower",
+      "button": "MeteorShower_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "Hush",
+      "button": "Hush_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    0,
+    10
+  ],
+  "id": "Auralanna",
+  "minimap_material_instance": "MaterialInterface'/Game/Pegasus/UI/Assets/Materials/MI_UI_MinimapCharacterPortraitMask_Auralanna.MI_UI_MinimapCharacterPortraitMask_Auralanna'",
+  "minimap_widget": "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Pegasus/UI/Minimap/WBP_Minimap_Icon_Hero.WBP_Minimap_Icon_Hero_C'",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.13,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 3,
+    "speed": 5.0,
+    "stationary_turn_period": 0.13,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "name": "pegasus_heroes|UnitData_name_Auralanna",
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_hero",
+    "attribute_light",
+    "attribute_biological",
+    "attribute_ranged"
+  ],
+  "traits": [
+    "AuralannaThreadsOfFate_Trait",
+    "SpiritAura_Trait"
+  ],
+  "unit_button": "Auralanna_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Angel/UI_Portrait_Angel_Default_Auralanna.UI_Portrait_Angel_Default_Auralanna'",
+  "unreal_actor": "BP_UA_Hero_Auralanna",
+  "vision_radius": 12.0,
+  "vital_health": {
+    "maximum": 600.0,
+    "regen": 3.0,
+    "starting": 600.0
+  },
+  "weaponList": [
+    "Auralanna_Weapon"
+  ]
+}

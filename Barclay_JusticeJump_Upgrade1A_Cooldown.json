@@ -1,0 +1,12 @@
+{
+  "ability_archetype": "JusticeJump",
+  "based_on": "BaseGameEffectCooldown",
+  "cooldown_name": "JusticeJumpCooldown",
+  "duration": 90.0,
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "id": "Barclay_JusticeJump_Upgrade1A_Cooldown",
+  "validator": "Valid_Barclay_RedemptionRift_Upgrade1A_Upgrade"
+}

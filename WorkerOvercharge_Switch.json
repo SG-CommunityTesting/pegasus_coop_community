@@ -1,0 +1,4 @@
+{
+  "id": "WorkerOvercharge_Switch",
+  "validator": "Valid_WorkerOverchargeTargetFilter"
+}

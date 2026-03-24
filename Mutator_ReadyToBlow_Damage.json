@@ -1,0 +1,18 @@
+{
+  "amount": 50.0,
+  "areas": [
+    {
+      "damage_fraction": 1.0,
+      "radius": 2.5
+    }
+  ],
+  "based_on": "GameEffectDamageRadius",
+  "friendly_fire_percentage": 0.0,
+  "id": "Mutator_ReadyToBlow_Damage",
+  "location_impact_fx": "BP_FXS_ReadyToBlow",
+  "search_location": {
+    "effect_parent": "none",
+    "entity_or_point": "EntityOrPoint",
+    "target": "Source"
+  }
+}

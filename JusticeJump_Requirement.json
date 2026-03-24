@@ -1,0 +1,39 @@
+{
+  "based_on": "Requirement",
+  "can_use": [
+    {
+      "check": {
+        "root": {
+          "left": {
+            "name": "ExpressionApi::count_player_commander_level",
+            "node": "FunctionCall",
+            "parameters": [
+              {
+                "argument": {
+                  "name": "ExpressionApi::Player::self",
+                  "node": "FunctionCall",
+                  "parameters": [],
+                  "type": "Player"
+                },
+                "name": "player",
+                "type": "Player"
+              }
+            ],
+            "type": "Count"
+          },
+          "node": "Logical",
+          "operator": ">=",
+          "right": {
+            "node": "Literal",
+            "type": "Count",
+            "value": 5
+          },
+          "type": "Bool"
+        },
+        "type": "Bool"
+      },
+      "reason": "pegasus_commanders|CommanderLevelName_Level5"
+    }
+  ],
+  "id": "JusticeJump_Requirement"
+}

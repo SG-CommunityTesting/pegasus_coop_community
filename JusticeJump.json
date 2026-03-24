@@ -1,0 +1,61 @@
+{
+  "arc": 180.0,
+  "based_on": "BaseStagedAbility",
+  "cast_game_effect": "JusticeJump_Persistent",
+  "commands": [
+    {
+      "cooldown": {
+        "duration": 180.0,
+        "name": "JusticeJumpCooldown",
+        "scope": "Ability"
+      },
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 50.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "JusticeJump_Requirement"
+    }
+  ],
+  "flags": {
+    "best_unit": true,
+    "channeled": true,
+    "preempt": false,
+    "progress_countdown": false,
+    "reapproach": false,
+    "show_progress": false,
+    "uninterruptible_stages": {
+      "approach": false,
+      "cast": false,
+      "channel": true,
+      "finish": false,
+      "prepare": false
+    }
+  },
+  "id": "JusticeJump",
+  "range_maximum": 1000.0,
+  "target_filter": {
+    "alliance": {
+      "ally": true,
+      "enemy": false,
+      "neutral": false,
+      "player": true,
+      "self": false
+    },
+    "tags": {
+      "excluded": [],
+      "required": []
+    }
+  },
+  "targeting_type": "Unit",
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AbilityComponents/AC_Ability_Staged_SpellD.AC_Ability_Staged_SpellD_C'"
+}

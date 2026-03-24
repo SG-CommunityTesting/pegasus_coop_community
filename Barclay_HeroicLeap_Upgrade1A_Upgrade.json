@@ -1,0 +1,12 @@
+{
+  "based_on": "BaseUpgradeData",
+  "button": "Barclay_HeroicLeap_Upgrade1A_Upgrade_Button",
+  "id": "Barclay_HeroicLeap_Upgrade1A_Upgrade",
+  "set_values": [
+    {
+      "target_archetype": "Barclay_HeroicCharge_StunEnemy_Buff",
+      "target_property": "duration",
+      "target_value": 3.0
+    }
+  ]
+}

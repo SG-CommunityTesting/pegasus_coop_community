@@ -1,0 +1,23 @@
+{
+  "based_on": "BaseGameEffectPersistent",
+  "effect_expire": "Eradicator_WeaponPhase2_Persistent",
+  "effect_initial": "Eradicator_Weapon_Set1",
+  "flags": {
+    "channel_execute_event": false,
+    "channeling": true,
+    "mark_exclusive_target": false,
+    "use_attack_speed": true
+  },
+  "id": "Eradicator_WeaponPhase1_Persistent",
+  "periodic": {
+    "count": 10,
+    "durations": [
+      0.14
+    ],
+    "effects": [
+      "Eradicator_Weapon_Damage1"
+    ],
+    "validator": "NoValidator"
+  },
+  "unreal_actor": "BP_EBFX_Eradicator_Beam1"
+}

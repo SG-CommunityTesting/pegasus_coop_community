@@ -1,0 +1,8 @@
+{
+  "amount": 7.0,
+  "based_on": "Firestarter_Weapon_Damage1",
+  "id": "Firestarter_Weapon_Damage2",
+  "tag_bonuses": [
+    "Firestarter_Weapon_Damage2_TagBonusLight"
+  ]
+}

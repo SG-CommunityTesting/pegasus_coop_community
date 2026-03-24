@@ -1,0 +1,16 @@
+{
+  "based_on": "BaseBuff",
+  "duration": 5.0,
+  "id": "Ryker_SummonWarhounds_Upgrade2A_Buff",
+  "modifiers": [
+    {
+      "amount": 20.0,
+      "stat_mod": "DamagePercentageBonus"
+    }
+  ],
+  "name": "pegasus_heroes|",
+  "responses": [
+    "Ryker_SummonWarhounds_Upgrade1A_ResponseDamage"
+  ],
+  "tooltip": "pegasus_heroes|"
+}

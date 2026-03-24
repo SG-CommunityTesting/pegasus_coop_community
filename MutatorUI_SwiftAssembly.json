@@ -1,0 +1,8 @@
+{
+  "activation_trigger": "Mutator_SwiftAssembly_Activate",
+  "based_on": "MutatorUI",
+  "description": "pegasus_coop|MutatorUI_description_MutatorUI_SwiftAssembly",
+  "id": "MutatorUI_SwiftAssembly",
+  "image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Mutators/UI_Icons_Mutators_SwiftAssembly.UI_Icons_Mutators_SwiftAssembly'",
+  "title": "pegasus_coop|MutatorUI_title_MutatorUI_SwiftAssembly"
+}

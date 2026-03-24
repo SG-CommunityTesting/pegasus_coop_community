@@ -1,0 +1,16 @@
+{
+  "based_on": "GameEffectStoreValue",
+  "flags": {
+    "add_to_existing": true
+  },
+  "id": "Outrunner_Weapon_AddToPeriodicCount",
+  "store_name": "PeriodicCount",
+  "store_value": {
+    "root": {
+      "node": "Literal",
+      "type": "Value",
+      "value": 1.0
+    },
+    "type": "Value"
+  }
+}

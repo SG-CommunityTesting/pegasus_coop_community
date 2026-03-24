@@ -1,0 +1,18 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "duration": -1.0,
+  "flags": {
+    "change_owner_on_polymorph": false,
+    "disable_on_attacking": false,
+    "disable_on_damage_taken": false,
+    "hidden": true,
+    "hide_timer": false,
+    "override_source": false,
+    "pause_while_disabled": false,
+    "remove_on_attacking": true,
+    "remove_on_damage_taken": true,
+    "show_progress": false
+  },
+  "id": "PowerLeap_BuffAutoCast"
+}

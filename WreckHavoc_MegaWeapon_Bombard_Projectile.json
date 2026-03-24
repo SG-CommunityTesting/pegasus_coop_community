@@ -1,0 +1,7 @@
+{
+  "based_on": "ProjectileData",
+  "id": "WreckHavoc_MegaWeapon_Bombard_Projectile",
+  "minimap_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Minimap/UI_Icons_Minimap_RedDot.UI_Icons_Minimap_RedDot'",
+  "minimap_icon_size": 8.0,
+  "unreal_actor": "BP_ArtilleryMechDeployed_Missile"
+}

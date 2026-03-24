@@ -1,0 +1,12 @@
+{
+  "amount": 16.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_ranged",
+    "damage_splash"
+  ],
+  "id": "RoyalGuard_Weapon_Damage",
+  "tag_bonuses": [
+    "RoyalGuard_Weapon_TagBonusHeavy"
+  ]
+}

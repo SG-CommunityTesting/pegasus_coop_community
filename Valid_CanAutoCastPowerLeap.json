@@ -1,0 +1,43 @@
+{
+  "based_on": "Validator",
+  "check": {
+    "root": {
+      "name": "ExpressionApi::Buff::has_buff",
+      "node": "FunctionCall",
+      "parameters": [
+        {
+          "argument": {
+            "name": "ExpressionApi::effect_caster",
+            "node": "FunctionCall",
+            "parameters": [],
+            "type": "Entity"
+          },
+          "name": "entity",
+          "type": "Entity"
+        },
+        {
+          "argument": {
+            "node": "Literal",
+            "type": "Buff",
+            "value": "PowerLeap_BuffAutoCast"
+          },
+          "name": "buff",
+          "type": "Buff"
+        },
+        {
+          "argument": {
+            "name": "ExpressionApi::Entity::any",
+            "node": "FunctionCall",
+            "parameters": [],
+            "type": "Entity"
+          },
+          "name": "source",
+          "type": "Entity"
+        }
+      ],
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "id": "Valid_CanAutoCastPowerLeap"
+}

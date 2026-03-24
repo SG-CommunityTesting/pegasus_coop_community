@@ -1,0 +1,59 @@
+{
+  "based_on": "BaseStagedAbility",
+  "cast_game_effect": "Darkfire_MissileLauncher",
+  "commands": [
+    {
+      "charges": {
+        "max_count": 2,
+        "name": "Darkfire",
+        "recharge_duration": 8.0,
+        "starting_count": 2
+      },
+      "cooldown": {
+        "duration": 0.0,
+        "name": "",
+        "scope": "Ability"
+      },
+      "cost_power": 0.0,
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 15.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "NoRequirement"
+    }
+  ],
+  "finish_duration": 0.5,
+  "id": "Darkfire",
+  "range_maximum": 10.0,
+  "target_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": true,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable",
+        "dead",
+        "entity_destructible_tree"
+      ],
+      "required": [
+        "heightplane_ground"
+      ]
+    }
+  },
+  "targeting_type": "Unit",
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AbilityComponents/AC_Ability_Staged_SpellA.AC_Ability_Staged_SpellA_C'"
+}

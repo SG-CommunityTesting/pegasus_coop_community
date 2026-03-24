@@ -1,0 +1,10 @@
+{
+  "based_on": "BaseGameEffectModifyVitals",
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "energy_mod_flat_amount": 8.0,
+  "id": "Barclay_Revitalize_Upgrade2A_ModifyEnergySelf",
+  "validator": "Valid_Barclay_Revitalize_Upgrade2A_Upgrade"
+}

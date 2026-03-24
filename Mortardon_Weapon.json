@@ -1,0 +1,60 @@
+{
+  "arc": 0.0,
+  "arc_slop": 0.0,
+  "backswing": 1.0,
+  "backswing_locked": 0.4,
+  "based_on": "BaseWeapon",
+  "display_effect_damage": "Mortardon_Weapon_DamageRadius",
+  "flags": {
+    "always_visualize_range": true,
+    "can_attack_location": true,
+    "channeled": false,
+    "fires_passively": false,
+    "hide_weapon": false,
+    "melee": false,
+    "scan_for_new_targets": true
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Units/Demon/UI_Icons_Units_Demon_EnflamedImp.UI_Icons_Units_Demon_EnflamedImp'",
+  "id": "Mortardon_Weapon",
+  "name": "pegasus_commanders|WeaponData_name_Mortardon_Weapon",
+  "period": 4.5,
+  "range_acquire": 21.0,
+  "range_maximum": 21.0,
+  "range_minimum": 2.0,
+  "swing": 0.5,
+  "swing_reacquire_range": 3.0,
+  "turret": "emptyRef",
+  "weapon_acquire_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": false,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_sleeping"
+      ],
+      "required": []
+    }
+  },
+  "weapon_fire": "Mortardon_Weapon_Persistent",
+  "weapon_target_filter": {
+    "alliance": {
+      "ally": true,
+      "enemy": true,
+      "neutral": true,
+      "player": true,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable"
+      ],
+      "required": [
+        "heightplane_ground"
+      ]
+    }
+  }
+}

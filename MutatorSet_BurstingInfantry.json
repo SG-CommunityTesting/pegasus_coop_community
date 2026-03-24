@@ -1,0 +1,9 @@
+{
+  "based_on": "MutatorSet",
+  "id": "MutatorSet_BurstingInfantry",
+  "mutators": [
+    "MutatorUI_InfantryAssault",
+    "MutatorUI_ReadyToBlow"
+  ],
+  "title": "pegasus_coop|MutatorSet_title_MutatorSet_BurstingInfantry"
+}

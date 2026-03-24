@@ -1,0 +1,7 @@
+{
+  "based_on": "BaseButton",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_RevitalizeB.UI_Icons_Abilities_RevitalizeB'",
+  "id": "Barclay_Revitalize_Upgrade1B_Upgrade_Button",
+  "name": "pegasus_heroes|Button_name_Barclay_Revitalize_Upgrade1B_Upgrade_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_Barclay_Revitalize_Upgrade1B_Upgrade_Button"
+}

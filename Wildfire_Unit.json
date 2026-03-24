@@ -1,0 +1,20 @@
+{
+  "based_on": "BaseUnit_InfernalU",
+  "buffs": [
+    "Wildfire_Unit_BuffDamageAura",
+    "WildFireUnit_BuffKillSelf",
+    "WildFireUnit_BuffKillSelf30"
+  ],
+  "commandList": [
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "row": 3,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "id": "Wildfire_Unit"
+}

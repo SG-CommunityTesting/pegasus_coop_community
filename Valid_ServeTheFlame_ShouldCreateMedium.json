@@ -1,0 +1,82 @@
+{
+  "based_on": "Validator",
+  "check": {
+    "root": {
+      "left": {
+        "left": {
+          "name": "ExpressionApi::get_effect_stored_value",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "node": "Literal",
+                "type": "Name",
+                "value": "origin"
+              },
+              "name": "effect_parent",
+              "type": "Name"
+            },
+            {
+              "argument": {
+                "node": "Literal",
+                "type": "Name",
+                "value": "corpse_num"
+              },
+              "name": "key",
+              "type": "Name"
+            }
+          ],
+          "type": "Value"
+        },
+        "node": "Logical",
+        "operator": ">=",
+        "right": {
+          "node": "Literal",
+          "type": "Value",
+          "value": 4.0
+        },
+        "type": "Bool"
+      },
+      "node": "Logical",
+      "operator": "&&",
+      "right": {
+        "left": {
+          "name": "ExpressionApi::get_effect_stored_value",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "node": "Literal",
+                "type": "Name",
+                "value": "origin"
+              },
+              "name": "effect_parent",
+              "type": "Name"
+            },
+            {
+              "argument": {
+                "node": "Literal",
+                "type": "Name",
+                "value": "corpse_num"
+              },
+              "name": "key",
+              "type": "Name"
+            }
+          ],
+          "type": "Value"
+        },
+        "node": "Logical",
+        "operator": "<=",
+        "right": {
+          "node": "Literal",
+          "type": "Value",
+          "value": 11.0
+        },
+        "type": "Bool"
+      },
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "id": "Valid_ServeTheFlame_ShouldCreateMedium"
+}

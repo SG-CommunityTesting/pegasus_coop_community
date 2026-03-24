@@ -1,0 +1,8 @@
+{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "Outrunner_Weapon_SecondaryDamage_4",
+    "Outrunner_Weapon_AddToPeriodicCount"
+  ],
+  "id": "Outrunner_Weapon_SecondarySet_4"
+}

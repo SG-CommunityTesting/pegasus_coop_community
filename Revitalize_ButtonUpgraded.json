@@ -1,0 +1,7 @@
+﻿{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_Revitalize.UI_Icons_Abilities_Revitalize'",
+  "id": "Revitalize_ButtonUpgraded",
+  "name": "pegasus_commanders|Button_Name_Revitalize_ButtonUpgraded",
+  "tooltip": "pegasus_commanders|Button_Tooltip_Revitalize_ButtonUpgraded"
+}

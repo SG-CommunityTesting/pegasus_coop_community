@@ -1,0 +1,6 @@
+﻿{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "Darkspeed_BuffEnhancedHelper",
+  "id": "Darkspeed_BuffApplierEnhancedHelper",
+  "validator": "Valid_TargetIsWarz"
+}

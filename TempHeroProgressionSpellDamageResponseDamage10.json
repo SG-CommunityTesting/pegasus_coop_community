@@ -1,0 +1,33 @@
+{
+  "based_on": "BaseResponseDamage",
+  "id": "TempHeroProgressionSpellDamageResponseDamage10",
+  "modify_fraction": 1.1,
+  "shared": {
+    "chance": 1.0,
+    "charges": -1,
+    "cooldown": {
+      "duration": 0.0,
+      "name": "",
+      "scope": "Ability"
+    },
+    "location": "attacker",
+    "priority": 100,
+    "required_effect": "emptyRef",
+    "response_effect": "emptyRef",
+    "response_fx": "None",
+    "target_filter": {
+      "alliance": {
+        "ally": true,
+        "enemy": true,
+        "neutral": true,
+        "player": true,
+        "self": true
+      },
+      "tags": {
+        "excluded": [],
+        "required": []
+      }
+    },
+    "validator": "Valid_DamageIsSpell"
+  }
+}

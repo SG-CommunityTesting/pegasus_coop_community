@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Units/Human/UI_Icons_Units_Human_MechaScout.UI_Icons_Units_Human_MechaScout'",
+  "id": "MechaScout_Button",
+  "name": "pegasus_heroes|Button_name_MechaScout_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_MechaScout_Button"
+}

@@ -1,0 +1,102 @@
+{
+  "actions": [
+    {
+      "function_id": "Variable_ModifyVariable",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "variable_id": "Mutator_InfantryAssault_ActiveSpawnerCount"
+              }
+            }
+          ],
+          "id": "variable"
+        },
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Math_ArithmeticOperator",
+                "value_id": "minus"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "op"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Integer"
+                },
+                "value": "1"
+              }
+            }
+          ],
+          "id": "value"
+        }
+      ]
+    }
+  ],
+  "based_on": "Trigger",
+  "conditions": [
+    {
+      "function_id": "UnitGroup_ContainsUnit",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "variable_id": "Mutator_InfantryAssault_ActiveSpawnerGroup"
+              }
+            }
+          ],
+          "id": "group"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_GetTriggeringUnit"
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "unit"
+        }
+      ]
+    }
+  ],
+  "enabled": false,
+  "events": [
+    {
+      "function_id": "Unit_OnKilled",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Unit_AnyUnit",
+                "value_id": "any"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "unit"
+        }
+      ]
+    }
+  ],
+  "id": "Mutator_InfantryAssault_SpawnerDestroyed"
+}

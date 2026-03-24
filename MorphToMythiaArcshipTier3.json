@@ -1,0 +1,16 @@
+{
+  "commands": [
+    {
+      "cooldown": {
+        "duration": 70.0,
+        "name": "MorphToArchipsTier2",
+        "scope": "Ability"
+      },
+      "requirement": "CompletedBastionORCompletedGuardianNexus_Requirement",
+      "unit": "MythiaArcshipTier3"
+    }
+  ],
+  "id": "MorphToMythiaArcshipTier3",
+  "morph_duration": 70.0,
+  "progress_description": "pegasus_core|MorphAbilityData_progress_description_Progress"
+}

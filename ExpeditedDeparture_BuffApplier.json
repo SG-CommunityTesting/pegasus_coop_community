@@ -1,0 +1,5 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "ExpeditedDeparture_Buff",
+  "id": "ExpeditedDeparture_BuffApplier"
+}

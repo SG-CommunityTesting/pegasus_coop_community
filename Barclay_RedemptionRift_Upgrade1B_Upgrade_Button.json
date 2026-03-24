@@ -1,0 +1,7 @@
+{
+  "based_on": "BaseButton",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_JusticeJumpB.UI_Icons_Abilities_JusticeJumpB'",
+  "id": "Barclay_RedemptionRift_Upgrade1B_Upgrade_Button",
+  "name": "pegasus_heroes|Button_name_Barclay_RedemptionRift_Upgrade1B_Upgrade_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_Barclay_RedemptionRift_Upgrade1B_Upgrade_Button"
+}

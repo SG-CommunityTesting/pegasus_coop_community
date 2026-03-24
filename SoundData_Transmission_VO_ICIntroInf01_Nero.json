@@ -1,0 +1,6 @@
+{
+  "based_on": "SoundData_TransmissionBase",
+  "id": "SoundData_Transmission_VO_ICIntroInf01_Nero",
+  "sound_system_data": "SSD_Transmissions_InfestedCrater",
+  "trigger": "VO_ICIntroInf01_Nero"
+}

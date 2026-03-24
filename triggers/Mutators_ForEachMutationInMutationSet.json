@@ -1,0 +1,42 @@
+﻿{
+  "based_on": "Function",
+  "grammar_text": "For each mutation in {mutator_set}",
+  "hint_text": "",
+  "id": "Mutators_ForEachMutationInMutationSet",
+  "name": "Mutators - For Each Mutation In Mutation Set",
+  "options": {
+    "is_implemented": true
+  },
+  "parameters": [
+    {
+      "default_values": [
+        {
+          "preset": {
+            "preset_id": "TypeRef_NoTypeRef",
+            "value_id": "none"
+          },
+          "type": "Preset"
+        }
+      ],
+      "id": "mutator_set",
+      "name": "Mutator Set",
+      "type": {
+        "directive": "TypeRef",
+        "type": "MutatorSet"
+      }
+    }
+  ],
+  "path": "Mutators",
+  "return_type": {
+    "directive": "None"
+  },
+  "script": "{{ initnvar(\"mutator_set_data\", \"TArchetypeRef<SnowFacts::MutatorSet>\") }} = {{ param(\"mutator_set\") }};\n{{ initnvar(\"mutation_set_mutator_itr\", \"TArchetypeRef<SnowFacts::MutatorUI>\") }} = ArchetypeRef::invalid;\n\nif ({{ var(\"mutator_set_data\") }})\n{\n  for (auto const& m : {{ var(\"mutator_set_data\") }}->mutators)\n  {\n    {{ var(\"mutation_set_mutator_itr\") }} = m;\n    {{ subfuncs(\"actions\") }}\n  }\n}\n\n",
+  "sub_functions": [
+    {
+      "id": "actions",
+      "name": "Actions",
+      "type": "Action"
+    }
+  ],
+  "type": "Action"
+}

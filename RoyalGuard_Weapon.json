@@ -1,0 +1,17 @@
+{
+  "ammo": "NoAmmo",
+  "backswing": 0.77,
+  "based_on": "BaseWeapon",
+  "can_use": "Valid_SelfHasNoneWeaponsThatAlternate",
+  "display_effect_damage": "RoyalGuard_Weapon_Damage",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Weapons/UI_Icons_Weapons_Railgun.UI_Icons_Weapons_Railgun'",
+  "id": "RoyalGuard_Weapon",
+  "name": "pegasus_heroes|WeaponData_name_RoyalGuard_Weapon",
+  "period": 1.75,
+  "range_acquire": 10.0,
+  "range_maximum": 8.0,
+  "range_slop": 2.0,
+  "swing": 0.0,
+  "unreal_component": "BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/WeaponComponents/AC_Weapon_Generic.AC_Weapon_Generic_C'",
+  "weapon_fire": "RoyalGuard_Weapon_MissileLauncher"
+}

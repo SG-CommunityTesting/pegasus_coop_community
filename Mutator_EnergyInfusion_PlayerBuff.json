@@ -1,0 +1,25 @@
+{
+  "alignment": "Helpful",
+  "based_on": "PlayerBuff",
+  "flags": {
+    "apply_to_team": false,
+    "disable_duplicates": false,
+    "hidden": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Camps/UI_Icons_Camp_Energy_BG.UI_Icons_Camp_Energy_BG'",
+  "id": "Mutator_EnergyInfusion_PlayerBuff",
+  "modifiers": [
+    {
+      "amount": 100.0,
+      "stat_mod": "EnergyRegenPercentageBonus"
+    }
+  ],
+  "name": "pegasus_coop|PlayerBuff_name_Mutator_EnergyInfusion_PlayerBuff",
+  "tag_filter": {
+    "excluded": [],
+    "required": [
+      "entity_unit"
+    ]
+  },
+  "tooltip": "pegasus_coop|PlayerBuff_tooltip_Mutator_EnergyInfusion_PlayerBuff"
+}

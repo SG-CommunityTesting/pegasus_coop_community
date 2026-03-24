@@ -1,0 +1,35 @@
+{
+  "based_on": "GameEffectStoreValue",
+  "id": "Barclay_HeroicCharge_TargetHelpfulBuffNum_StoreValue",
+  "store_name": "helpful_buff_num",
+  "store_value": {
+    "root": {
+      "name": "ExpressionApi::Buff::get_helpful_buff_number",
+      "node": "FunctionCall",
+      "parameters": [
+        {
+          "argument": {
+            "name": "ExpressionApi::effect_target",
+            "node": "FunctionCall",
+            "parameters": [
+              {
+                "argument": {
+                  "node": "Literal",
+                  "type": "Name",
+                  "value": ""
+                },
+                "name": "effect_parent",
+                "type": "Name"
+              }
+            ],
+            "type": "Entity"
+          },
+          "name": "entity",
+          "type": "Entity"
+        }
+      ],
+      "type": "Value"
+    },
+    "type": "Value"
+  }
+}

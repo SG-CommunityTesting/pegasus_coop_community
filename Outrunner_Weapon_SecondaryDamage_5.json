@@ -1,0 +1,12 @@
+{
+  "amount": 5.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_ranged"
+  ],
+  "id": "Outrunner_Weapon_SecondaryDamage_5",
+  "impact_fx": "BP_FXI_Outrunner_R_BCK_Impact",
+  "tag_bonuses": [
+    "OutrunnerLightTagBonus"
+  ]
+}

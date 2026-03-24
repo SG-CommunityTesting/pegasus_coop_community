@@ -1,0 +1,7 @@
+{
+  "based_on": "SoundData_TransmissionBase",
+  "id": "SoundData_Transmission_Galt_WHGenConvoy05",
+  "name": "Transmission - Galt WreckHavoc Convoy 05",
+  "sound_system_data": "SSD_Transmission_Galt_WH_Generic",
+  "trigger": "Galt_WHGenConvoy05"
+}

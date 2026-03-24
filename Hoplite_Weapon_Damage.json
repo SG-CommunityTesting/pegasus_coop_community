@@ -1,0 +1,9 @@
+{
+  "amount": 20.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_melee"
+  ],
+  "friendly_fire_percentage": 100.0,
+  "id": "Hoplite_Weapon_Damage"
+}

@@ -1,0 +1,6 @@
+{
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Gear/UI_Icons_Gear_MassProduction.UI_Icons_Gear_MassProduction'",
+  "id": "GearMassProductionEquippable",
+  "main_image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Gear/UI_Icons_Gear_MassProduction.UI_Icons_Gear_MassProduction'",
+  "perk": "MassProductionPerk"
+}

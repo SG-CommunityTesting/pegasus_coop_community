@@ -1,0 +1,10 @@
+{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "Revitalize_HealPrimary",
+    "Revitalize_BuffRemover",
+    "Revitalize_SearchRadius",
+    "Revitalize_HealSelf"
+  ],
+  "id": "Revitalize_SetInitial"
+}

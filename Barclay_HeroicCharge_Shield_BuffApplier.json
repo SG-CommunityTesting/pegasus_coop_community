@@ -1,0 +1,6 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "Barclay_HeroicCharge_Shield_Buff",
+  "id": "Barclay_HeroicCharge_Shield_BuffApplier",
+  "validator": "Valid_TargetIsFriendly"
+}

@@ -1,0 +1,7 @@
+{
+  "based_on": "BaseButton",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_HeroicCharge.UI_Icons_Abilities_HeroicCharge'",
+  "id": "Barclay_HeroicLeap_BaseAbility_Upgrade_Button",
+  "name": "pegasus_heroes|Button_name_Barclay_HeroicLeap_BaseAbility_Upgrade_Button",
+  "tooltip": "pegasus_heroes|Button_Tooltip_Barclay_HeroicCharge_Button"
+}

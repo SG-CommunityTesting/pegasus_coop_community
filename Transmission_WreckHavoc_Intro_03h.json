@@ -1,0 +1,8 @@
+{
+  "based_on": "Transmission",
+  "character": "Character_MajorChapel",
+  "communication_style": "CommStyle_Alliance_Enemy_Normal",
+  "id": "Transmission_WreckHavoc_Intro_03h",
+  "sound": "SoundData_Transmission_WHVarTwo08_Galt",
+  "text_field": "pegasus_coop|Transmission_text_field_Transmission_WreckHavoc_Intro_03h"
+}

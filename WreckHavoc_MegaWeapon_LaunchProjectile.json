@@ -1,0 +1,25 @@
+{
+  "based_on": "BaseGameEffectLaunchProjectile",
+  "id": "WreckHavoc_MegaWeapon_LaunchProjectile",
+  "impact_effect": "WreckHavoc_MegaWeapon_DamageRadius",
+  "impact_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "launch_fx": "BP_FXS_SuperWeapon_Launch",
+  "launch_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Entity",
+    "target": "Caster"
+  },
+  "movement": {
+    "acceleration_time": 0.5,
+    "height_offset_seeking": false,
+    "height_offset_target": 0,
+    "lob": true,
+    "max_speed": 40.0
+  },
+  "projectile": "WreckHavoc_MegaWeapon_Bombard_Projectile",
+  "projectile_movement_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/ProjectileMovementComponents/PMC_ArtilleryMechProjectile_Deployed.PMC_ArtilleryMechProjectile_Deployed_C'"
+}

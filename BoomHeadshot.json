@@ -1,0 +1,90 @@
+{
+  "based_on": "BaseStagedAbility",
+  "cast_duration": 2.0,
+  "cast_ebfx": "BP_EBFX_Ryker_BoomHeadshot",
+  "cast_game_effect": "BoomHeadshot_Switch",
+  "commands": [
+    {
+      "charges": {
+        "max_count": 0,
+        "name": "default",
+        "recharge_duration": 0,
+        "starting_count": 0
+      },
+      "cooldown": {
+        "duration": 45.0,
+        "name": "BoomHeadshotCooldown",
+        "scope": "Ability"
+      },
+      "cost_power": 0.0,
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 30.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "Requirement_CommanderLevel5"
+    }
+  ],
+  "finish_duration": 0.75,
+  "flags": {
+    "best_unit": false,
+    "cast_on_spawner": false,
+    "cast_while_concealed": false,
+    "channeled": true,
+    "channeling_breaks_on_facing": false,
+    "channeling_breaks_on_range": false,
+    "channeling_breaks_on_vision": false,
+    "channeling_resists_push": true,
+    "count_as_attack": true,
+    "harvest_on_game_start": false,
+    "homogenous_interruption": true,
+    "preempt": false,
+    "prevent_activation": false,
+    "progress_countdown": false,
+    "reactive": false,
+    "reapproach": false,
+    "requires_vision": false,
+    "show_progress": true,
+    "silenceable": true,
+    "uninterruptible_stages": {
+      "approach": false,
+      "cast": false,
+      "channel": false,
+      "finish": false,
+      "prepare": false
+    }
+  },
+  "id": "BoomHeadshot",
+  "range_maximum": 22.5,
+  "range_slop": 99999.0,
+  "target_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": true,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable",
+        "dead",
+        "entity_unit_structure"
+      ],
+      "required": [
+        "entity_unit"
+      ]
+    }
+  },
+  "targeting_type": "Unit",
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AbilityComponents/AC_Ability_BoomHeadshot.AC_Ability_BoomHeadshot_C'"
+}

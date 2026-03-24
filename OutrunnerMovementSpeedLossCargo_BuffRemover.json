@@ -1,0 +1,9 @@
+{
+  "based_on": "BaseGameEffectRemoveBuff",
+  "buff": "OutrunnerMovementSpeedLossCargo_Buff",
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "id": "OutrunnerMovementSpeedLossCargo_BuffRemover"
+}

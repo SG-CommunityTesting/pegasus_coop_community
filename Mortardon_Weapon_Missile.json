@@ -1,0 +1,5 @@
+{
+  "based_on": "ProjectileData",
+  "id": "Mortardon_Weapon_Missile",
+  "unreal_actor": "BP_Projectile_Mortardon_Missile"
+}

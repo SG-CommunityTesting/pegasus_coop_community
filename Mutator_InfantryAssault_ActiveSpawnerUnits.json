@@ -1,0 +1,15 @@
+{
+  "array_size": 10,
+  "based_on": "GlobalVariable",
+  "id": "Mutator_InfantryAssault_ActiveSpawnerUnits",
+  "is_array": true,
+  "type": {
+    "directive": "FunctionType",
+    "implements": "",
+    "inner_type": "",
+    "param_id": "",
+    "sub_directive": "None",
+    "tags": [],
+    "type": "Unit"
+  }
+}

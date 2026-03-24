@@ -1,0 +1,9 @@
+{
+  "based_on": "BaseBuff",
+  "id": "Ryker_SummonWarhounds_Upgrade1A_Buff",
+  "name": "pegasus_heroes|",
+  "responses": [
+    "Ryker_SummonWarhounds_Upgrade1A_ResponseDamage"
+  ],
+  "tooltip": "pegasus_heroes|"
+}

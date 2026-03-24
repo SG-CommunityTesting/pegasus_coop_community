@@ -1,0 +1,105 @@
+{
+  "abilityList": [
+    "UnderConstruction_Vanguard",
+    "attackData",
+    "stopData",
+    "Salvage",
+    "SentryPostCargo"
+  ],
+  "based_on": "SentryPost",
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "ImmobileAttack_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "Salvage",
+      "button": "Salvage_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "SentryPostCargo",
+      "button": "SentryPostLoad_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "SentryPostCargo",
+      "button": "UnloadAll_Button",
+      "commandIndex": 3,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "attackData",
+      "button": "AttackLocationButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "id": "SentryPostRoyalGuard",
+  "name": "pegasus_heroes|UnitData_name_SentryPostRoyalGuard",
+  "starting_snowtags": [
+    "entity_unit_structure",
+    "preventdefeat_elimination",
+    "heightplane_ground",
+    "attribute_mechanical",
+    "attribute_heavy",
+    "defensive",
+    "attribute_ranged"
+  ],
+  "subgroup_priority": 50,
+  "traits": [
+    "CraterCreator_Trait"
+  ],
+  "unit_button": "SentryPostRoyalGuard_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Humans/UI_Portrait_Human_Default_SentryGunRoyalGuard.UI_Portrait_Human_Default_SentryGunRoyalGuard'",
+  "unreal_actor": "BP_SH_SentryGunRoyalGuard_00",
+  "vision_radius": 13.0,
+  "vital_health": {
+    "maximum": 450.0,
+    "regen": 0.0,
+    "starting": 450.0
+  },
+  "weaponList": [
+    "SentryPostRoyalGuard_WeaponGround"
+  ]
+}

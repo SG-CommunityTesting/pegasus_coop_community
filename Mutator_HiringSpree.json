@@ -1,0 +1,889 @@
+{
+  "actions": [
+    {
+      "function_id": "General_Wait",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Time"
+                },
+                "value": "0.5"
+              }
+            }
+          ],
+          "id": "duration"
+        }
+      ]
+    },
+    {
+      "function_id": "General_IfThenElse",
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "Logic_Comparison",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Entity_HasBuff",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Unit_GetTriggeringUnit"
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "entity"
+                          },
+                          {
+                            "expressions": [
+                              {
+                                "type": "Value",
+                                "value": {
+                                  "type": {
+                                    "directive": "TypeRef",
+                                    "implements": "",
+                                    "inner_type": "",
+                                    "is_localized_string": false,
+                                    "param_id": "",
+                                    "sub_directive": "None",
+                                    "type": "Buff"
+                                  },
+                                  "value": "HiringSpree_Buff"
+                                }
+                              }
+                            ],
+                            "id": "buff"
+                          },
+                          {
+                            "expressions": [
+                              {
+                                "preset": {
+                                  "preset_id": "Buff_AnySource",
+                                  "value_id": "none"
+                                },
+                                "type": "Preset"
+                              }
+                            ],
+                            "id": "source"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value1"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Logic_ComparisonOperator",
+                        "value_id": "eq"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "op"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Boolean"
+                        },
+                        "value": "false"
+                      }
+                    }
+                  ],
+                  "id": "value2"
+                }
+              ]
+            }
+          ],
+          "id": "if"
+        },
+        {
+          "functions": [
+            {
+              "function_id": "Unit_CreateUnit",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "1"
+                      }
+                    }
+                  ],
+                  "id": "count"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetType",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Unit_GetTriggeringUnit"
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "unit"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "unit_data"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetOwningPlayer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Unit_GetTriggeringUnit"
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "unit"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "player"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Vector_GetVectorWithOffsetXy",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Actor_GetPosition",
+                                  "parameters": [
+                                    {
+                                      "expressions": [
+                                        {
+                                          "function": {
+                                            "function_id": "Unit_GetTriggeringUnit"
+                                          },
+                                          "type": "Function"
+                                        }
+                                      ],
+                                      "id": "actor"
+                                    }
+                                  ]
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "position"
+                          },
+                          {
+                            "expressions": [
+                              {
+                                "type": "Value",
+                                "value": {
+                                  "type": {
+                                    "directive": "FunctionType",
+                                    "implements": "",
+                                    "inner_type": "",
+                                    "is_localized_string": false,
+                                    "param_id": "",
+                                    "sub_directive": "None",
+                                    "type": "Distance"
+                                  },
+                                  "value": "0.0"
+                                }
+                              }
+                            ],
+                            "id": "x"
+                          },
+                          {
+                            "expressions": [
+                              {
+                                "type": "Value",
+                                "value": {
+                                  "type": {
+                                    "directive": "FunctionType",
+                                    "implements": "",
+                                    "inner_type": "",
+                                    "is_localized_string": false,
+                                    "param_id": "",
+                                    "sub_directive": "None",
+                                    "type": "Distance"
+                                  },
+                                  "value": "-2.0"
+                                }
+                              }
+                            ],
+                            "id": "y"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "position"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Degrees"
+                        },
+                        "value": "0"
+                      }
+                    }
+                  ],
+                  "id": "facing"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Boolean"
+                        },
+                        "value": "true"
+                      }
+                    }
+                  ],
+                  "id": "birth"
+                }
+              ]
+            },
+            {
+              "function_id": "Actor_ApplyBuff",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "TypeRef",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Buff"
+                        },
+                        "value": "HiringSpree_Buff"
+                      }
+                    }
+                  ],
+                  "id": "buff"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "1"
+                      }
+                    }
+                  ],
+                  "id": "stacks"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetLastCreatedUnit"
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "target"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetLastCreatedUnit"
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "source"
+                }
+              ]
+            }
+          ],
+          "id": "then"
+        },
+        {
+          "id": "else"
+        }
+      ]
+    }
+  ],
+  "based_on": "Trigger",
+  "conditions": [
+    {
+      "function_id": "Logic_Comparison",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_IsType",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "function": {
+                          "function_id": "Unit_GetTriggeringUnit"
+                        },
+                        "type": "Function"
+                      }
+                    ],
+                    "id": "unit"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "type": "Value",
+                        "value": {
+                          "type": {
+                            "directive": "TypeRef",
+                            "implements": "",
+                            "inner_type": "",
+                            "is_localized_string": false,
+                            "param_id": "",
+                            "sub_directive": "None",
+                            "type": "UnitData"
+                          },
+                          "value": "Felhog"
+                        }
+                      }
+                    ],
+                    "id": "type"
+                  }
+                ]
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "value1"
+        },
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Logic_ComparisonOperator",
+                "value_id": "eq"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "op"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Boolean"
+                },
+                "value": "false"
+              }
+            }
+          ],
+          "id": "value2"
+        }
+      ]
+    },
+    {
+      "function_id": "Entity_HasNoneTags",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_GetTriggeringUnit"
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "who"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "SnowTag"
+                },
+                "value": "attribute_object"
+              }
+            }
+          ],
+          "id": "tags"
+        }
+      ]
+    },
+    {
+      "function_id": "Entity_HasNoneTags",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_GetTriggeringUnit"
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "who"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "SnowTag"
+                },
+                "value": "entity_unit_structure"
+              }
+            }
+          ],
+          "id": "tags"
+        }
+      ]
+    },
+    {
+      "function_id": "Entity_HasNoneTags",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_GetTriggeringUnit"
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "who"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "SnowTag"
+                },
+                "value": "status_timedlife"
+              }
+            }
+          ],
+          "id": "tags"
+        }
+      ]
+    },
+    {
+      "function_id": "Entity_HasNoneTags",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_GetTriggeringUnit"
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "who"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "SnowTag"
+                },
+                "value": "mapobjective"
+              }
+            }
+          ],
+          "id": "tags"
+        }
+      ]
+    },
+    {
+      "function_id": "Entity_HasNoneTags",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_GetTriggeringUnit"
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "who"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "SnowTag"
+                },
+                "value": "attribute_hero"
+              }
+            }
+          ],
+          "id": "tags"
+        }
+      ]
+    },
+    {
+      "function_id": "Logic_AndOrConditions",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Logic_AndOrOperator",
+                "value_id": "or"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "op"
+        }
+      ],
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "Logic_Comparison",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetOwningPlayer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Unit_GetTriggeringUnit"
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "unit"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value1"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Logic_ComparisonOperator",
+                        "value_id": "eq"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "op"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Player"
+                        },
+                        "value": "1"
+                      }
+                    }
+                  ],
+                  "id": "value2"
+                }
+              ]
+            },
+            {
+              "function_id": "Logic_Comparison",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetOwningPlayer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Unit_GetTriggeringUnit"
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "unit"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value1"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Logic_ComparisonOperator",
+                        "value_id": "eq"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "op"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Player"
+                        },
+                        "value": "2"
+                      }
+                    }
+                  ],
+                  "id": "value2"
+                }
+              ]
+            },
+            {
+              "function_id": "Logic_Comparison",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetOwningPlayer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Unit_GetTriggeringUnit"
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "unit"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value1"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Logic_ComparisonOperator",
+                        "value_id": "eq"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "op"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Player"
+                        },
+                        "value": "3"
+                      }
+                    }
+                  ],
+                  "id": "value2"
+                }
+              ]
+            }
+          ],
+          "id": "conditions"
+        }
+      ]
+    }
+  ],
+  "enabled": false,
+  "events": [
+    {
+      "function_id": "Unit_OnBirthed",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Unit_AnyUnit",
+                "value_id": "any"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "unit"
+        }
+      ]
+    }
+  ],
+  "id": "Mutator_HiringSpree"
+}

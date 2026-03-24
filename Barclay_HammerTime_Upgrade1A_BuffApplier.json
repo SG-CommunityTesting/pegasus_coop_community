@@ -1,0 +1,11 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "Barclay_HammerTime_Upgrade1A_Buff",
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "id": "Barclay_HammerTime_Upgrade1A_BuffApplier",
+  "impact_fx": "BP_FXS_HammerTime",
+  "validator": "Valid_Barclay_HammerTime_Upgrade1A_Upgrade"
+}

@@ -1,0 +1,10 @@
+{
+  "based_on": "ServeTheFlame_SearchRadiusBurnedOneNum",
+  "game_effect": "ServeTheFlame_KillBurnedOne",
+  "id": "ServeTheFlame_SearchRadiusBurnedOneKill",
+  "max_targets": 1,
+  "target_sorts": [
+    "TS_HealthValueLowest"
+  ],
+  "validator": "Valid_ServeTheFlameHas5BurnedOne"
+}

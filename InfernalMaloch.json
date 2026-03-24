@@ -1,0 +1,212 @@
+﻿{
+  "available_to_coop": true,
+  "background_playlist": "MediaPlaylist'/Game/Pegasus/UI/Assets/Video/Backgrounds/Maloc/PL_Backgrounds_Coop_Maloc.PL_Backgrounds_Coop_Maloc'",
+  "based_on": "Infernal",
+  "character_image": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Characters/UI_Coop_Character_Maloc.UI_Coop_Character_Maloc'",
+  "commander_levels": [
+    "CommanderMaloc_PerkLevel01",
+    "CommanderMaloc_PerkLevel02",
+    "CommanderMaloc_PerkLevel03",
+    "CommanderMaloc_PerkLevel04",
+    "CommanderMaloc_PerkLevel05",
+    "CommanderMaloc_PerkLevel06",
+    "CommanderMaloc_PerkLevel07",
+    "CommanderMaloc_PerkLevel08",
+    "CommanderMaloc_PerkLevel09",
+    "CommanderMaloc_PerkLevel10",
+    "CommanderMaloc_PerkLevel11",
+    "CommanderMaloc_PerkLevel12",
+    "CommanderMaloc_PerkLevel13",
+    "CommanderMaloc_PerkLevel14",
+    "CommanderMaloc_PerkLevel15",
+    "CommanderMaloc_PerkLevel16",
+    "CommanderMaloc_PerkLevel17",
+    "CommanderMaloc_PerkLevel18",
+    "CommanderMaloc_PerkLevel19",
+    "CommanderMaloc_PerkLevel20"
+  ],
+  "default_scout": "FireGiant",
+  "default_town_hall": "LesserShrineMaloc",
+  "description": "Faction_description_InfernalMaloch",
+  "description_title": "pegasus_commanders|Commander_Maloc_Subtitle",
+  "granted_by": "HeroMalocUnlockable",
+  "hero": {
+    "spawn_offset": {
+      "x": 5.0,
+      "y": 5.0
+    },
+    "unit": "Hero_Maloch"
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Tiles/UI_Coop_Tiles_Maloc.UI_Coop_Tiles_Maloc'",
+  "icon_observer": "MaterialInterface'/Game/Pegasus/UI/Assets/Observer/MI_ObserverFactionLogo_Maloc.MI_ObserverFactionLogo_Maloc'",
+  "id": "InfernalMaloch",
+  "loadout": "Maloc3vELoadout",
+  "lobby_index": 2001,
+  "name": "Faction_Name_InfernalMaloch",
+  "quick_macro_train": [
+    {
+      "ability": "Shrine_Spawn",
+      "button": "Imp_Button",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "IronVaultMaloch_Spawn",
+      "button": "FireGiant_Button",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "IronVaultMaloch_Spawn",
+      "button": "Magmadon_Button",
+      "commandIndex": 1,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "Conclave_Spawn",
+      "button": "Gaunt_Button",
+      "commandIndex": 0,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "Conclave_Spawn",
+      "button": "Weaver_Button",
+      "commandIndex": 2,
+      "row": 1,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "IronVaultMaloch_Spawn",
+      "button": "FiendMaloch_Button",
+      "commandIndex": 2,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "IronVaultMaloch_Spawn",
+      "button": "FiendMaloch_Button",
+      "commandIndex": 3,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "quick_macro_train_advanced": [
+    {
+      "ability": "TwilightSpireMaloc_Spawn",
+      "button": "Shadowflyer_Button",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "TwilightSpireMaloc_Spawn",
+      "button": "Harbinger_Button",
+      "commandIndex": 1,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "TwilightSpireMaloc_Spawn",
+      "button": "Spriggan_Button",
+      "commandIndex": 2,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "TwilightSpireMaloc_Spawn",
+      "button": "Chimera_Button",
+      "commandIndex": 3,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "rewards": [
+    {
+      "level": 6,
+      "reward": [
+        "MalocLvl11CoopReward"
+      ]
+    },
+    {
+      "level": 7,
+      "reward": [
+        "MalocLvl12CoopReward"
+      ]
+    },
+    {
+      "level": 11,
+      "reward": [
+        "MalocLvl13CoopReward"
+      ]
+    },
+    {
+      "level": 12,
+      "reward": [
+        "MalocLvl14CoopReward"
+      ]
+    },
+    {
+      "level": 14,
+      "reward": [
+        "MalocLvl15CoopReward"
+      ]
+    },
+    {
+      "level": 15,
+      "reward": [
+        "MalocLvl18CoopReward"
+      ]
+    },
+    {
+      "level": 20,
+      "reward": [
+        "MalocLvl16CoopReward"
+      ]
+    }
+  ],
+  "starting_units": [
+    {
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "unit": "LesserShrine"
+    },
+    {
+      "offset": {
+        "x": 5.0,
+        "y": 0.0
+      },
+      "unit": "FireGiant"
+    }
+  ],
+  "store_item": "HeroMalocStoreItem",
+  "supply_starting": 5.0,
+  "topbar_unit": "InfernalMalocTopBarCaster"
+}

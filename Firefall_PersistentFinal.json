@@ -1,0 +1,12 @@
+{
+  "based_on": "GameEffectPersistent",
+  "effect_expire": "Firefall_PersistentFireDOT",
+  "effect_initial": "Firefall_SetImpact",
+  "effect_initial_delay": 0.22,
+  "effect_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "id": "Firefall_PersistentFinal"
+}

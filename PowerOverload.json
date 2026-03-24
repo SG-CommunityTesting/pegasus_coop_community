@@ -1,0 +1,56 @@
+{
+  "autocast": {
+    "autocast_filter": {
+      "alliance": {
+        "ally": false,
+        "enemy": true,
+        "neutral": false,
+        "player": false,
+        "self": false
+      },
+      "tags": {
+        "excluded": [
+          "dead"
+        ],
+        "required": []
+      }
+    },
+    "autocasts": true,
+    "exclusive_targeting": false,
+    "initially_on": true,
+    "range": 5.0,
+    "required_scan_level": "Offensive",
+    "target_sorts": [],
+    "validator": "NoValidator"
+  },
+  "based_on": "StagedAbilityData",
+  "cast_game_effect": "PowerOverload_Set",
+  "commands": [
+    {
+      "cooldown": {
+        "duration": 0.0,
+        "name": "Power Surge",
+        "scope": "Ability"
+      },
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 75.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "NoRequirement"
+    }
+  ],
+  "id": "PowerOverload",
+  "range_to_visualize": "None",
+  "target_actor": "BP_InstantTargetActor",
+  "transient": true
+}

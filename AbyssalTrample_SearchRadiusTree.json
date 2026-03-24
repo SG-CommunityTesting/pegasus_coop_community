@@ -1,0 +1,26 @@
+{
+  "based_on": "GameEffectSearchRadius",
+  "game_effect": "Kill",
+  "id": "AbyssalTrample_SearchRadiusTree",
+  "radius": 3.0,
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": false,
+      "neutral": true,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [],
+      "required": [
+        "entity_destructible_tree"
+      ]
+    }
+  },
+  "search_location": {
+    "effect_parent": "none",
+    "entity_or_point": "EntityOrPoint",
+    "target": "Caster"
+  }
+}

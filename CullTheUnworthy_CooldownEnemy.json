@@ -1,0 +1,95 @@
+{
+  "ability_archetype": "CullTheUnworthy",
+  "based_on": "BaseGameEffectCooldown",
+  "cooldown_name": "CullTheUnworthy",
+  "duration_expression": {
+    "root": {
+      "left": {
+        "left": {
+          "name": "ExpressionApi::get_health",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "name": "ExpressionApi::effect_target",
+                "node": "FunctionCall",
+                "parameters": [
+                  {
+                    "argument": {
+                      "node": "Literal",
+                      "type": "Name",
+                      "value": ""
+                    },
+                    "name": "effect_parent",
+                    "type": "Name"
+                  }
+                ],
+                "type": "Entity"
+              },
+              "name": "entity",
+              "type": "Entity"
+            }
+          ],
+          "type": "Value"
+        },
+        "node": "Math",
+        "operator": "/",
+        "right": {
+          "node": "Literal",
+          "type": "Value",
+          "value": 20.0
+        },
+        "type": "Value"
+      },
+      "node": "Math",
+      "operator": "+",
+      "right": {
+        "left": {
+          "name": "ExpressionApi::get_shield",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "name": "ExpressionApi::effect_target",
+                "node": "FunctionCall",
+                "parameters": [
+                  {
+                    "argument": {
+                      "node": "Literal",
+                      "type": "Name",
+                      "value": ""
+                    },
+                    "name": "effect_parent",
+                    "type": "Name"
+                  }
+                ],
+                "type": "Entity"
+              },
+              "name": "entity",
+              "type": "Entity"
+            }
+          ],
+          "type": "Value"
+        },
+        "node": "Math",
+        "operator": "/",
+        "right": {
+          "node": "Literal",
+          "type": "Value",
+          "value": 20.0
+        },
+        "type": "Value"
+      },
+      "type": "Value"
+    },
+    "type": "Time"
+  },
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "flags": {
+    "set_cooldown": true
+  },
+  "id": "CullTheUnworthy_CooldownEnemy"
+}

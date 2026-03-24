@@ -1,0 +1,8 @@
+{
+  "activation_trigger": "Mutator_SpeedKills_Activate",
+  "based_on": "MutatorUI",
+  "description": "pegasus_coop|MutatorUI_description_MutatorUI_SpeedKills",
+  "id": "MutatorUI_SpeedKills",
+  "image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Mutators/UI_Icons_Mutators_SpeedKills.UI_Icons_Mutators_SpeedKills'",
+  "title": "pegasus_coop|Enum_values_5_display_name_Mutators"
+}

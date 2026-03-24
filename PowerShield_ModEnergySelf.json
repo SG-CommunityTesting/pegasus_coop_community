@@ -1,0 +1,32 @@
+{
+  "based_on": "GameEffectModifyVitals",
+  "energy_mod_expression": {
+    "root": {
+      "name": "ExpressionApi::get_effect_stored_value",
+      "node": "FunctionCall",
+      "parameters": [
+        {
+          "argument": {
+            "node": "Literal",
+            "type": "Name",
+            "value": "origin"
+          },
+          "name": "effect_parent",
+          "type": "Name"
+        },
+        {
+          "argument": {
+            "node": "Literal",
+            "type": "Name",
+            "value": "power_shield_store"
+          },
+          "name": "key",
+          "type": "Name"
+        }
+      ],
+      "type": "Value"
+    },
+    "type": "Value"
+  },
+  "id": "PowerShield_ModEnergySelf"
+}

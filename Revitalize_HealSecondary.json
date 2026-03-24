@@ -1,0 +1,5 @@
+{
+  "amount": 50.0,
+  "based_on": "GameEffectHeal",
+  "id": "Revitalize_HealSecondary"
+}

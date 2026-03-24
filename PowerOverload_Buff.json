@@ -1,0 +1,20 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "buff_visuals": "BP_BVA_PowerOverload",
+  "duration": 5.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Angel/UI_Portrait_Angel_Default_PowerBank.UI_Portrait_Angel_Default_PowerBank'",
+  "id": "PowerOverload_Buff",
+  "modifiers": [
+    {
+      "amount": 50.0,
+      "stat_mod": "AttackSpeedPercentageAdditiveMultiplier"
+    },
+    {
+      "amount": 50.0,
+      "stat_mod": "DamagePercentageBonus"
+    }
+  ],
+  "name": "pegasus_core|Buff_name_PowerOverload_Buff",
+  "tooltip": "pegasus_core|Buff_tooltip_PowerOverload_Buff"
+}

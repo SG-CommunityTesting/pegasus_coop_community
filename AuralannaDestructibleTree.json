@@ -1,0 +1,24 @@
+{
+  "based_on": "Tree",
+  "build_time": 10.0,
+  "footprint": {
+    "angled": false,
+    "clumpable": true,
+    "snap": false,
+    "vision_block_height": 2,
+    "x": 2,
+    "y": 2
+  },
+  "id": "AuralannaDestructibleTree",
+  "name": "pegasus_core|Destructible_name_Tree",
+  "radius": 1.42,
+  "sb_id": "tree_2x2",
+  "selectable": false,
+  "smart_command_targetable": false,
+  "starting_snowtags": [
+    "entity_destructible_tree",
+    "heightplane_ground",
+    "attribute_light"
+  ],
+  "unreal_actor": "BP_Destructible_AuralannaTree"
+}

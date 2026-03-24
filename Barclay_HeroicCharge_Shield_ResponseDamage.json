@@ -1,0 +1,108 @@
+{
+  "based_on": "ResponseDamage",
+  "damage_shield_settings": {
+    "display_as_shields": true,
+    "remove_holding_buff_when_exhausted": true,
+    "shields_max": 100.0,
+    "shields_max_expression": {
+      "root": {
+        "left": {
+          "node": "Literal",
+          "type": "Value",
+          "value": 50.0
+        },
+        "node": "Math",
+        "operator": "*",
+        "right": {
+          "left": {
+            "name": "ExpressionApi::get_effect_stored_value",
+            "node": "FunctionCall",
+            "parameters": [
+              {
+                "argument": {
+                  "node": "Literal",
+                  "type": "Name",
+                  "value": "origin"
+                },
+                "name": "effect_parent",
+                "type": "Name"
+              },
+              {
+                "argument": {
+                  "node": "Literal",
+                  "type": "Name",
+                  "value": "harmful_buff_num"
+                },
+                "name": "key",
+                "type": "Name"
+              }
+            ],
+            "type": "Value"
+          },
+          "node": "Math",
+          "operator": "-",
+          "right": {
+            "name": "ExpressionApi::Buff::get_harmful_buff_number",
+            "node": "FunctionCall",
+            "parameters": [
+              {
+                "argument": {
+                  "name": "ExpressionApi::effect_target",
+                  "node": "FunctionCall",
+                  "parameters": [
+                    {
+                      "argument": {
+                        "node": "Literal",
+                        "type": "Name",
+                        "value": ""
+                      },
+                      "name": "effect_parent",
+                      "type": "Name"
+                    }
+                  ],
+                  "type": "Entity"
+                },
+                "name": "entity",
+                "type": "Entity"
+              }
+            ],
+            "type": "Value"
+          },
+          "type": "Value"
+        },
+        "type": "Value"
+      },
+      "type": "Value"
+    }
+  },
+  "id": "Barclay_HeroicCharge_Shield_ResponseDamage",
+  "modify_fraction": 0.0,
+  "shared": {
+    "chance": 1.0,
+    "charges": -1,
+    "cooldown": {
+      "duration": 0.0,
+      "name": "Barclay_HeroicCharge_Shield",
+      "scope": "Ability"
+    },
+    "location": "defender",
+    "priority": 100,
+    "required_effect": "emptyRef",
+    "response_effect": "emptyRef",
+    "response_fx": "None",
+    "target_filter": {
+      "alliance": {
+        "ally": true,
+        "enemy": true,
+        "neutral": true,
+        "player": true,
+        "self": true
+      },
+      "tags": {
+        "excluded": [],
+        "required": []
+      }
+    },
+    "validator": "emptyRef"
+  }
+}

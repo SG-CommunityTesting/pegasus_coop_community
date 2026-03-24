@@ -1,0 +1,58 @@
+{
+  "amount_expression": {
+    "root": {
+      "left": {
+        "left": {
+          "name": "ExpressionApi::get_max_health",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "name": "ExpressionApi::effect_target",
+                "node": "FunctionCall",
+                "parameters": [
+                  {
+                    "argument": {
+                      "node": "Literal",
+                      "type": "Name",
+                      "value": ""
+                    },
+                    "name": "effect_parent",
+                    "type": "Name"
+                  }
+                ],
+                "type": "Entity"
+              },
+              "name": "entity",
+              "type": "Entity"
+            }
+          ],
+          "type": "Value"
+        },
+        "node": "Math",
+        "operator": "*",
+        "right": {
+          "node": "Literal",
+          "type": "Value",
+          "value": 3.75
+        },
+        "type": "Value"
+      },
+      "node": "Math",
+      "operator": "/",
+      "right": {
+        "node": "Literal",
+        "type": "Value",
+        "value": 100.0
+      },
+      "type": "Value"
+    },
+    "type": "Value"
+  },
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_spell"
+  ],
+  "death_type": "Burning_DeathType",
+  "id": "BurningBlood_Buff_Damage"
+}

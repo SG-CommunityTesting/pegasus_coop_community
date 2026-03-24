@@ -1,0 +1,46 @@
+{
+  "amount": 100.0,
+  "areas": [
+    {
+      "damage_fraction": 1.0,
+      "radius": 1.0
+    },
+    {
+      "damage_fraction": 0.5,
+      "radius": 2.0
+    },
+    {
+      "damage_fraction": 0.2,
+      "radius": 2.5
+    }
+  ],
+  "based_on": "GameEffectDamageRadius",
+  "damage_impact_fx": "BP_FXI_SentryGunRoyalGuard_Weapon_Impact",
+  "damage_tags": [
+    "damage_ranged",
+    "damage_splash"
+  ],
+  "friendly_fire_percentage": 0.0,
+  "id": "SentryPostRoyalGuard_DamageRadius",
+  "location_impact_fx": "BP_FXI_SentryGunRoyalGuard_LocationImpact",
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": false,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable"
+      ],
+      "required": []
+    }
+  },
+  "search_location": {
+    "effect_parent": "none",
+    "entity_or_point": "EntityOrPoint",
+    "target": "Target"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "ThroatRip",
+    "DeathHowl",
+    "Unleash_Scout"
+  ],
+  "based_on": "Scout",
+  "buffs": [
+    "HoundRadar_Buff",
+    "LickYourWounds_Buff",
+    "DeathHowl_Search_Buff",
+    "GhostAndShadowExtraHealth_Buff",
+    "PackMentality_GhostBuff",
+    "PackMentality_RykerBuff",
+    "PackMentality_ShadowBuff"
+  ],
+  "build_cost": {
+    "resource_a": 0.0,
+    "resource_b": 0.0,
+    "resource_c": 0.0,
+    "resource_d": 0.0
+  },
+  "build_time": 0.0,
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "hotkey_link_alias": "emptyRef",
+      "hotkey_should_hide": false,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "hotkey_link_alias": "emptyRef",
+      "hotkey_should_hide": false,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "hotkey_link_alias": "emptyRef",
+      "hotkey_should_hide": false,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "hotkey_link_alias": "emptyRef",
+      "hotkey_should_hide": false,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "hotkey_link_alias": "emptyRef",
+      "hotkey_should_hide": false,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "ThroatRip",
+      "button": "ThroatRip_Button",
+      "commandIndex": 0,
+      "hotkey_link_alias": "emptyRef",
+      "hotkey_should_hide": false,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "DeathHowl",
+      "button": "DeathHowl_Button",
+      "commandIndex": 0,
+      "hotkey_link_alias": "emptyRef",
+      "hotkey_should_hide": false,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "faction": "Vanguard",
+  "id": "Ryker_Ghost",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "item": false
+    },
+    "deceleration_time": 0.0,
+    "moving_turn_period": 0.13,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "speed": 7.0,
+    "stationary_turn_period": 0.13,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false
+  },
+  "name": "pegasus_heroes|UnitData_name_Ryker_Ghost",
+  "num_corpses": 0,
+  "outer_radius": 1.0,
+  "selection_alias": "ryker_dog",
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_biological",
+    "attribute_summoned"
+  ],
+  "subgroup_priority": 190,
+  "supply_cost": 0.0,
+  "traits": [
+    "HoundRadar_Trait",
+    "PackMentality_Trait",
+    "LickYourWounds_Trait"
+  ],
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Humans/UI_Portrait_Human_Default_Scout_Shadow.UI_Portrait_Human_Default_Scout_Shadow'",
+  "unreal_actor": "BP_UH_Ghost",
+  "unreal_corpse_actor": "None",
+  "veterancy_tiers": [
+    {
+      "stat_modifiers": [
+        {
+          "amount": 20.0,
+          "stat": "ArmorScaledAdditiveBonus"
+        }
+      ],
+      "threshold": 300,
+      "visual_fx": "BP_FX_VanguardLevelUp_Tier1"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 40.0,
+          "stat": "ArmorScaledAdditiveBonus"
+        }
+      ],
+      "threshold": 700,
+      "visual_fx": "BP_FX_VanguardLevelUp_Tier2"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 60.0,
+          "stat": "ArmorScaledAdditiveBonus"
+        }
+      ],
+      "threshold": 1200,
+      "visual_fx": "BP_FX_VanguardLevelUp_Tier3"
+    }
+  ],
+  "veterancy_vxp_weight": 1,
+  "vision_height": 0.0,
+  "vision_radius": 10.0,
+  "vital_health": {
+    "maximum": 600.0,
+    "regen": 1.0,
+    "starting": 600.0
+  },
+  "weaponList": [
+    "Ryker_Ghost_Weapon"
+  ]
+}

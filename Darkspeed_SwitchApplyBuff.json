@@ -1,0 +1,11 @@
+﻿{
+  "based_on": "GameEffectSwitch",
+  "cases": [
+    {
+      "action": "Darkspeed_BuffApplierEnhanced",
+      "case_condition": "Valid_CasterHasDarkspeedBuffEnhancedHelper"
+    }
+  ],
+  "default_action": "Darkspeed_BuffApplierBase",
+  "id": "Darkspeed_SwitchApplyBuff"
+}

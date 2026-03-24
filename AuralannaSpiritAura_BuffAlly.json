@@ -1,0 +1,29 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "duration": 0.11,
+  "flags": {
+    "disable_on_attacking": false,
+    "disable_on_damage_taken": false,
+    "hidden": false,
+    "hide_timer": true,
+    "override_source": false,
+    "remove_on_attacking": false,
+    "remove_on_damage_taken": false,
+    "show_progress": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_SpiritAura.UI_Icons_Abilities_SpiritAura'",
+  "id": "AuralannaSpiritAura_BuffAlly",
+  "modifiers": [
+    {
+      "amount": 10.0,
+      "stat_mod": "SpeedPercentageBonus"
+    },
+    {
+      "amount": 30.0,
+      "stat_mod": "EnergyRegenPercentageBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_AuralannaSpiritAura_BuffAlly",
+  "tooltip": "pegasus_heroes|Buff_tooltip_AuralannaSpiritAura_BuffAlly"
+}

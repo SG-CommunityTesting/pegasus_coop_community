@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Weapons/UI_Icons_Weapons_Chainsword.UI_Icons_Weapons_Chainsword'",
+  "id": "Hoplite_Weapon_ButtonTrait",
+  "name": "pegasus_heroes|Button_name_Hoplite_Weapon_ButtonTrait",
+  "tooltip": "pegasus_heroes|Button_tooltip_Hoplite_Weapon_ButtonTrait"
+}

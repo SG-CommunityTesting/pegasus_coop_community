@@ -1,0 +1,71 @@
+{
+  "based_on": "BaseStagedAbility",
+  "cast_duration": 0.5,
+  "cast_game_effect": "Firefall_PersistentInitial",
+  "commands": [
+    {
+      "charges": {
+        "max_count": 0,
+        "name": "default",
+        "recharge_duration": 0,
+        "starting_count": 0
+      },
+      "cooldown": {
+        "duration": 300.0,
+        "name": "Firefall",
+        "scope": "Ability"
+      },
+      "cost_power": 0.0,
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 50.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "Requirement_CommanderLevel5"
+    }
+  ],
+  "display_effect_area": "Firefall_Initial_DamageRadius",
+  "finish_duration": 0.2,
+  "flags": {
+    "best_unit": true,
+    "cast_on_spawner": false,
+    "cast_while_concealed": false,
+    "channeled": true,
+    "channeling_breaks_on_facing": false,
+    "channeling_breaks_on_range": false,
+    "channeling_breaks_on_vision": false,
+    "channeling_resists_push": true,
+    "count_as_attack": true,
+    "harvest_on_game_start": false,
+    "homogenous_interruption": false,
+    "preempt": false,
+    "prevent_activation": false,
+    "progress_countdown": false,
+    "reactive": false,
+    "reapproach": false,
+    "requires_vision": true,
+    "show_progress": false,
+    "silenceable": true,
+    "uninterruptible_stages": {
+      "approach": false,
+      "cast": true,
+      "channel": true,
+      "finish": true,
+      "prepare": false
+    }
+  },
+  "id": "Firefall",
+  "range_maximum": 9999.0,
+  "range_minimum": 0.0,
+  "targeting_type": "Location",
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AbilityComponents/AC_Ability_Cast_Firefall.AC_Ability_Cast_Firefall_C'"
+}

@@ -1,0 +1,15 @@
+﻿{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "duration": 4.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_Darkspeed.UI_Icons_Abilities_Darkspeed'",
+  "id": "Darkspeed_BuffEnhanced",
+  "modifiers": [
+    {
+      "amount": 350.0,
+      "stat_mod": "ArmorScaledAdditiveBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_Darkspeed_BuffEnhanced",
+  "tooltip": "pegasus_heroes|Buff_tooltip_Darkspeed_BuffEnhanced"
+}

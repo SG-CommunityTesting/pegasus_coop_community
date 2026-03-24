@@ -1,0 +1,43 @@
+{
+  "based_on": "BaseRequirement",
+  "can_show": {
+    "root": {
+      "left": {
+        "name": "ExpressionApi::count_in_queue_or_better_upgrade_of_type",
+        "node": "FunctionCall",
+        "parameters": [
+          {
+            "argument": {
+              "name": "ExpressionApi::Player::self",
+              "node": "FunctionCall",
+              "parameters": [],
+              "type": "Player"
+            },
+            "name": "player",
+            "type": "Player"
+          },
+          {
+            "argument": {
+              "node": "Literal",
+              "type": "UpgradeData",
+              "value": "Ryker_SummonWarhounds_BaseAbility_Upgrade"
+            },
+            "name": "upgrade",
+            "type": "UpgradeData"
+          }
+        ],
+        "type": "Count"
+      },
+      "node": "Logical",
+      "operator": "==",
+      "right": {
+        "node": "Literal",
+        "type": "Count",
+        "value": 0
+      },
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "id": "Ryker_SummonWarhounds_BaseAbility_RequirementLearn"
+}

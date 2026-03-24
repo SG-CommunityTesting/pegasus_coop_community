@@ -1,0 +1,6 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "Barclay_HeroicCharge_StunEnemy_Buff",
+  "id": "Barclay_HeroicCharge_StunEnemy_BuffApplier",
+  "validator": "Valid_TargetIsEnemy"
+}

@@ -1,0 +1,17 @@
+{
+  "alignment": "Harmful",
+  "applied_tags": [
+    "status_stunned"
+  ],
+  "based_on": "Buff",
+  "buff_tags": [
+    "dispel_technological"
+  ],
+  "buff_visuals": "BP_FX_StunDebuff",
+  "duration": 2.0,
+  "icon": "Texture2D'/Game/Pegasus/Art/ZZZ_OLD/FX_Prototype/Commander02/T_Proto_VFX_Commander02_ThunderClap_Stun.T_Proto_VFX_Commander02_ThunderClap_Stun'",
+  "id": "Barclay_HeroicCharge_StunEnemy_Buff",
+  "name": "pegasus_heroes|Stunned",
+  "tooltip": "pegasus_heroes|This unit cannot execute orders.",
+  "visual_fx": "BP_FX_StunDebuff"
+}

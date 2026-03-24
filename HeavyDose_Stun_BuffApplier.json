@@ -1,0 +1,5 @@
+{
+  "based_on": "BaseGameEffectApplyBuff",
+  "buff": "HeavyDose_Stun_Buff",
+  "id": "HeavyDose_Stun_BuffApplier"
+}

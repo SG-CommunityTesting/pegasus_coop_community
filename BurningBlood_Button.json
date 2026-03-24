@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_BurningBlood.UI_Icons_Abilities_BurningBlood'",
+  "id": "BurningBlood_Button",
+  "name": "pegasus_heroes|Button_Name_BurningBlood_Button",
+  "tooltip": "pegasus_heroes|Button_Tooltip_BurningBlood_Button"
+}

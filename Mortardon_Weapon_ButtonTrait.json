@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_LaunchEnflamedImp.UI_Icons_Abilities_LaunchEnflamedImp'",
+  "id": "Mortardon_Weapon_ButtonTrait",
+  "name": "pegasus_commanders|Button_Name_Mortardon_Weapon_ButtonTrait",
+  "tooltip": "pegasus_commanders|Button_Tooltip_Mortardon_Weapon_ButtonTrait"
+}

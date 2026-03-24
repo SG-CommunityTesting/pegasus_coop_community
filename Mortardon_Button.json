@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Units/Demon/UI_Icons_Units_Demon_Mortardon.UI_Icons_Units_Demon_Mortardon'",
+  "id": "Mortardon_Button",
+  "name": "pegasus_commanders|Button_Name_Mortardon_Button",
+  "tooltip": "pegasus_commanders|Button_Tooltip_Mortardon_Button"
+}

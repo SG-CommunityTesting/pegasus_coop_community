@@ -1,0 +1,22 @@
+{
+  "alignment": "Harmful",
+  "applied_tags": [
+    "status_stunned"
+  ],
+  "based_on": "BaseBuff",
+  "duration": 1.3,
+  "flags": {
+    "change_owner_on_polymorph": false,
+    "disable_on_attacking": false,
+    "disable_on_damage_taken": false,
+    "hidden": true,
+    "hide_timer": false,
+    "override_source": false,
+    "pause_while_disabled": false,
+    "persist_on_dead": false,
+    "remove_on_attacking": false,
+    "remove_on_damage_taken": false,
+    "show_progress": false
+  },
+  "id": "Firefall_BuffStunSelf"
+}

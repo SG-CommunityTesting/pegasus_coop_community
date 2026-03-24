@@ -1,0 +1,15 @@
+{
+  "based_on": "AmaraThronos_ThronosThrown_Weapon_01_MissileLauncher",
+  "id": "AmaraThronos_ThronosThrown_Weapon_02_MissileLauncher",
+  "impact_effect": "AmaraThronos_ThronosThrown_Weapon_02_Set",
+  "launch_location": {
+    "effect_parent": "AmaraThronos_ThronosThrown_Weapon_01_MissileLauncher",
+    "entity_or_point": "Entity",
+    "target": "Target"
+  },
+  "movement": {
+    "acceleration_time": 0.0,
+    "max_speed": 10.0
+  },
+  "projectile": "AmaraThronos_ThronosThrown_Weapon_Missile"
+}

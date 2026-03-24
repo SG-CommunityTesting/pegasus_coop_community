@@ -1,0 +1,50 @@
+{
+  "amount": 200.0,
+  "areas": [
+    {
+      "damage_fraction": 1.0,
+      "radius": 2.0
+    },
+    {
+      "damage_fraction": 0.75,
+      "radius": 4.0
+    },
+    {
+      "damage_fraction": 0.5,
+      "radius": 6.0
+    },
+    {
+      "damage_fraction": 0.25,
+      "radius": 8.0
+    }
+  ],
+  "based_on": "GameEffectDamageRadius",
+  "damage_tags": [
+    "damage_spell"
+  ],
+  "id": "Firefall_Initial_DamageRadius",
+  "location_impact_fx": "BP_FXI_Firefall_InitialImpact",
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": false,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable"
+      ],
+      "required": [
+        "entity_unit",
+        "heightplane_ground"
+      ]
+    }
+  },
+  "search_location": {
+    "effect_parent": "origin",
+    "entity_or_point": "Point",
+    "target": "Target"
+  }
+}

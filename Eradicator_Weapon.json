@@ -1,0 +1,22 @@
+{
+  "based_on": "BaseWeapon",
+  "can_use": "Valid_EradicatorWeaponNormal",
+  "display_effect_damage": "Eradicator_Weapon_Damage1",
+  "flags": {
+    "can_attack_location": false,
+    "channeled": true,
+    "fires_passively": false,
+    "hide_weapon": false,
+    "melee": false,
+    "scan_for_new_targets": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Weapons/UI_Icons_Weapons_EradicatorWeapon.UI_Icons_Weapons_EradicatorWeapon'",
+  "id": "Eradicator_Weapon",
+  "name": "pegasus_heroes|WeaponData_name_Eradicator_Weapon",
+  "period": 1.4,
+  "range_acquire": 10.0,
+  "range_maximum": 8.0,
+  "swing": 0.1,
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/WeaponComponents/BaseWeaponComponents/AC_BaseWeapon_ChanneledAttack.AC_BaseWeapon_ChanneledAttack_C'",
+  "weapon_fire": "Eradicator_WeaponPhase1_Persistent"
+}

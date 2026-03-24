@@ -1,0 +1,19 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "buff_tags": [
+    "dispel_technological"
+  ],
+  "buff_visuals": "BP_BVA_Haste",
+  "duration": 5.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_ExpeditedDeparture.UI_Icons_Abilities_ExpeditedDeparture'",
+  "id": "ExpeditedDeparture_Buff",
+  "modifiers": [
+    {
+      "amount": 25.0,
+      "stat_mod": "SpeedPercentageBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_ExpeditedDeparture_Buff",
+  "tooltip": "pegasus_heroes|Buff_tooltip_ExpeditedDeparture_Buff"
+}

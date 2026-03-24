@@ -1,0 +1,11 @@
+{
+  "based_on": "Mortardon_Weapon_MissileLauncher",
+  "id": "MortardonStrike_MissileLauncher",
+  "impact_effect": "MortardonStrike_PersistentImpact",
+  "launch_fx": "BP_FXS_MortardonStrike_Launch",
+  "movement": {
+    "acceleration_time": 3.0,
+    "max_speed": 30.0
+  },
+  "warning_fx": "BP_EBFX_MortardonStrike_MissileWarningLocation"
+}

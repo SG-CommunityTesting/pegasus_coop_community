@@ -1,0 +1,9 @@
+{
+  "based_on": "BaseGameEffectSet",
+  "effects": [
+    "ActiveCamouflage_BuffApplier",
+    "ActiveCamouflage_CompleteUpgrade",
+    "ActiveCamouflage_Damage_BuffApplier"
+  ],
+  "id": "ActiveCamouflage_Set"
+}

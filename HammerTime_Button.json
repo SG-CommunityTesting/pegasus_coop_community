@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_HammerTime.UI_Icons_Abilities_HammerTime'",
+  "id": "HammerTime_Button",
+  "name": "pegasus_commanders|Button_Name_HammerTime_Button",
+  "tooltip": "pegasus_commanders|Button_Tooltip_HammerTime_Button"
+}

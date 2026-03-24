@@ -1,0 +1,5 @@
+{
+  "based_on": "GameEffectModifyVitals",
+  "health_mod_flat_amount": 75.0,
+  "id": "PowerOverload_ModHealthSelf"
+}

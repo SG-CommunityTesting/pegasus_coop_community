@@ -1,0 +1,19 @@
+{
+  "based_on": "GameEffectPersistent",
+  "effect_expire_delay": 1.0,
+  "effect_initial": "Mortardon_Weapon_DamageRadius",
+  "effect_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "id": "Mortardon_Weapon_Impact_Persistent",
+  "reveal": {
+    "vision_height": 20.0,
+    "vision_holder": {
+      "effect_parent": "none",
+      "target": "Caster"
+    },
+    "vision_radius": 3.0
+  }
+}

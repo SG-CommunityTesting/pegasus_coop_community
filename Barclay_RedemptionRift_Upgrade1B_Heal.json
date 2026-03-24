@@ -1,0 +1,7 @@
+{
+  "based_on": "BaseGameEffectHeal",
+  "id": "Barclay_RedemptionRift_Upgrade1B_Heal",
+  "impact_fx": "BP_FXS_Revitalize_Target",
+  "percentage": 100.0,
+  "validator": "Valid_Barclay_RedemptionRift_Upgrade1B_Upgrade"
+}

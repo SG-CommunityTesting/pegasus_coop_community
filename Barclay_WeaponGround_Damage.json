@@ -1,0 +1,12 @@
+{
+  "amount": 40.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_melee"
+  ],
+  "id": "Barclay_WeaponGround_Damage",
+  "impact_fx": "BP_FXI_BarclayGround_Impact",
+  "tag_bonuses": [
+    "Barlcay_WeaponGround_TagBonusStructure"
+  ]
+}

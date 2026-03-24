@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_PulseShield.UI_Icons_Abilities_PulseShield'",
+  "id": "PowerShield_ButtonTrait",
+  "name": "pegasus_heroes|Button_Name_PowerShield_ButtonTrait",
+  "tooltip": "pegasus_heroes|Button_Tooltip_PowerShield_ButtonTrait"
+}

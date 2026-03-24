@@ -1,0 +1,185 @@
+{
+  "actions": [
+    {
+      "function_id": "Player_ApplyPlayerBuff",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "PlayerBuff"
+                },
+                "value": "Mutator_SpeedKills_PlayerBuff"
+              }
+            }
+          ],
+          "id": "buff"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Player"
+                },
+                "value": "4"
+              }
+            }
+          ],
+          "id": "player"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Integer"
+                },
+                "value": "1"
+              }
+            }
+          ],
+          "id": "stacks"
+        }
+      ]
+    },
+    {
+      "function_id": "Player_ApplyPlayerBuff",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "PlayerBuff"
+                },
+                "value": "Mutator_SpeedKills_PlayerBuff"
+              }
+            }
+          ],
+          "id": "buff"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Player"
+                },
+                "value": "5"
+              }
+            }
+          ],
+          "id": "player"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Integer"
+                },
+                "value": "1"
+              }
+            }
+          ],
+          "id": "stacks"
+        }
+      ]
+    },
+    {
+      "function_id": "Debug_DebugMessage",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Debug_DebugMessageTag",
+                "value_id": "notag"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "tag"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "String"
+                },
+                "value": "SPEED KILLS MUTATOR ACTIVE"
+              }
+            }
+          ],
+          "id": "message"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Time"
+                },
+                "value": "10.0"
+              }
+            }
+          ],
+          "id": "duration"
+        }
+      ]
+    }
+  ],
+  "based_on": "Trigger",
+  "id": "Mutator_SpeedKills_Activate"
+}

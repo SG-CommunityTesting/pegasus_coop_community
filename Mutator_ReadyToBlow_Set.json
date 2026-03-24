@@ -1,0 +1,8 @@
+{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "Mutator_ReadyToBlow_Damage",
+    "Suicide"
+  ],
+  "id": "Mutator_ReadyToBlow_Set"
+}

@@ -1,0 +1,37 @@
+{
+  "anim_montage_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AnimMontageComponents/AMC_Warz_Darkspeed.AMC_Warz_Darkspeed_C'",
+  "based_on": "GameEffectLaunchProjectile",
+  "fallback_unit": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "flags": {
+    "channeling": false,
+    "landing_spot_find": true,
+    "landing_spot_reserve": false,
+    "mark_exclusive_target": false
+  },
+  "id": "Darkspeed_MissileLauncher",
+  "impact_effect": "Darkspeed_SwitchApplyBuff",
+  "impact_fx": "BP_FXS_Darkspeed_Impact",
+  "impact_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "launch_fx": "BP_FXS_Darkspeed_Launch",
+  "launch_location": {
+    "effect_parent": "none",
+    "entity_or_point": "EntityOrPoint",
+    "target": "Caster"
+  },
+  "movement": {
+    "acceleration_time": 0,
+    "lob": false,
+    "lob_gravity": 30.0,
+    "lock_facing": true,
+    "max_speed": 10.0
+  },
+  "projectile_movement_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/ProjectileMovementComponents/PMC_Warz_Darkspeed.PMC_Warz_Darkspeed_C'",
+  "range_max": 12.0
+}

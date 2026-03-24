@@ -1,0 +1,7 @@
+{
+  "based_on": "Hero",
+  "id": "Hero_Warz",
+  "respawn_time": 90.0,
+  "spawn_time": 0.0,
+  "unit": "Unit_Warz"
+}

@@ -1,0 +1,9 @@
+﻿{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "HideAndSeek_Teleport",
+    "HideAndSeek_ModifyVitals",
+    "HideAndSeekUpgraded_BuffApplier"
+  ],
+  "id": "HideAndSeekSetUpgraded"
+}

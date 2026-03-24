@@ -1,0 +1,8 @@
+{
+  "based_on": "BaseGameEffectSet",
+  "effects": [
+    "ExpeditedDeparture_BuffApplier",
+    "OutrunnerMovementSpeedLossCargo_BuffRemover"
+  ],
+  "id": "OutrunnerCargo_Set"
+}

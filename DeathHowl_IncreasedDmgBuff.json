@@ -1,0 +1,16 @@
+{
+  "alignment": "Harmful",
+  "based_on": "Buff",
+  "buff_tags": [
+    "dispel_technological"
+  ],
+  "buff_visuals": "BP_BVA_DeathHowl_Dmg",
+  "duration": 19.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_DeathHowl.UI_Icons_Abilities_DeathHowl'",
+  "id": "DeathHowl_IncreasedDmgBuff",
+  "name": "pegasus_heroes|Buff_name_DeathHowl_IncreasedDmgBuff",
+  "responses": [
+    "DeathHowl_DamageResponse"
+  ],
+  "tooltip": "pegasus_heroes|Buff_tooltip_DeathHowl_IncreasedDmgBuff"
+}

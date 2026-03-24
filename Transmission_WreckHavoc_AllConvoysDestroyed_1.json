@@ -1,0 +1,8 @@
+{
+  "audio_file": "MetaSoundSource'/Game/Pegasus/Audio/MetaSounds/VO/Announcer/Announcer_Infernal/AdditionalSet/VO_AnnouncerInfernal_AdditionalObjective.VO_AnnouncerInfernal_AdditionalObjective'",
+  "based_on": "Transmission",
+  "character": "Character_MajorChapel",
+  "communication_style": "CommStyle_Alliance_Enemy_Normal",
+  "id": "Transmission_WreckHavoc_AllConvoysDestroyed_1",
+  "text_field": "Transmission_text_field_Transmission_WreckHavoc_AllConvoysDestroyed_1"
+}

@@ -1,0 +1,12 @@
+{
+  "based_on": "BaseUpgradeData",
+  "button": "Barclay_HeroicLeap_Upgrade2A_Upgrade_Button",
+  "id": "Barclay_HeroicLeap_Upgrade2A_Upgrade",
+  "set_values": [
+    {
+      "target_archetype": "HeroicCharge_DamageRadius",
+      "target_property": "amount",
+      "target_value": 20.0
+    }
+  ]
+}

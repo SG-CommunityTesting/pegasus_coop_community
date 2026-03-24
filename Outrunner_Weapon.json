@@ -1,0 +1,44 @@
+{
+  "arc": 180.0,
+  "arc_slop": 0.0,
+  "backswing": 0.2,
+  "backswing_locked": 0.2,
+  "based_on": "BaseWeapon",
+  "can_use": "Valid_CasterNotStunned",
+  "display_effect_damage": "Outrunner_Weapon_MainDamage",
+  "flags": {
+    "always_visualize_range": false,
+    "can_attack_location": false,
+    "channeled": false,
+    "fires_passively": true,
+    "hide_weapon": false,
+    "melee": false,
+    "scan_for_new_targets": true
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Weapons/UI_Icons_Weapons_MountedTurret.UI_Icons_Weapons_MountedTurret'",
+  "id": "Outrunner_Weapon",
+  "name": "pegasus_heroes|WeaponData_name_Outrunner_MainWeapon",
+  "period": 0.6,
+  "range_acquire": 6.0,
+  "range_maximum": 4.5,
+  "swing": 0.1,
+  "turret": "Turret_Outrunner",
+  "unreal_component": "BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/WeaponComponents/AC_Weapon_Generic.AC_Weapon_Generic_C'",
+  "weapon_fire": "Outrunner_Weapon_InitialSet",
+  "weapon_target_filter": {
+    "alliance": {
+      "ally": true,
+      "enemy": true,
+      "neutral": true,
+      "player": true,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable",
+        "entity_destructible_tree"
+      ],
+      "required": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+﻿{
+  "data": {
+    "based_on": "SoundData_TransmissionBase",
+    "id": "SoundData_Transmission_VO_ICBonusObjectiveSpawn01_Nero",
+    "sound_system_data": "SSD_Transmissions_InfestedCrater",
+    "trigger": "VO_ICBonusObjectiveSpawn01_Nero"
+  },
+  "meta": {}
+}

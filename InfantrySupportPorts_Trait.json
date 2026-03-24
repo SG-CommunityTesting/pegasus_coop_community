@@ -1,0 +1,5 @@
+{
+  "based_on": "BaseTraitData",
+  "button": "InfantrySupportPorts_ButtonTrait",
+  "id": "InfantrySupportPorts_Trait"
+}

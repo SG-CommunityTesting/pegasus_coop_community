@@ -1,0 +1,221 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "OnTheHunt",
+    "Pounce_Agument"
+  ],
+  "alias_tech": [
+    "_Scout"
+  ],
+  "armor_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Armor/UI_Icons_Armor_Creeps_Army_0.UI_Icons_Armor_Creeps_Army_0'",
+  "armor_name": "pegasus_core|ArmorName_VanguardInfantryArmor",
+  "based_on": "BaseUnit_VanguardU",
+  "build_cost": {
+    "resource_a": 50.0,
+    "resource_b": 0.0,
+    "resource_c": 0.0,
+    "resource_d": 0.0
+  },
+  "build_time": 18.0,
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "OnTheHunt",
+      "button": "OnTheHunt_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "Pounce_Agument",
+      "button": "Pounce_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    1,
+    2
+  ],
+  "expiration_time": 60.0,
+  "flags": {
+    "detector": true,
+    "display_ui_description": false,
+    "has_prime_structure": false,
+    "seek_and_destroy": false,
+    "stealth": false,
+    "uncommandable": false
+  },
+  "id": "Mongrel",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "moving_turn_period": 0.13,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "speed": 7.0,
+    "stationary_turn_period": 0.18,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false
+  },
+  "name": "pegasus_heroes|UnitData_name_Mongrel",
+  "outer_radius": 0.6,
+  "radius": 0.475,
+  "sb_id": "scout",
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_light",
+    "attribute_mechanical",
+    "attribute_biological",
+    "attribute_melee"
+  ],
+  "subgroup_priority": 118,
+  "supply_cost": 1.0,
+  "traits": [],
+  "unit_button": "Scout_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Creeps/UI_Portrait_Creeps_Default_Mongrel.UI_Portrait_Creeps_Default_Mongrel'",
+  "unreal_actor": "BP_UH_Mongrel",
+  "unreal_corpse_actor": "Proxy_BP_PersistentCorpse_Default",
+  "veterancy_given_on_death": 100,
+  "veterancy_tiers": [
+    {
+      "stat_modifiers": [
+        {
+          "amount": 24.0,
+          "stat": "HealthMaxAdditiveBonus"
+        },
+        {
+          "amount": 10.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 2.0,
+          "stat": "VisionRadiusScaledAdditiveBonus"
+        }
+      ],
+      "threshold": 200,
+      "visual_fx": "BP_FX_VanguardLevelUp_Tier1"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 24.0,
+          "stat": "HealthMaxAdditiveBonus"
+        },
+        {
+          "amount": 10.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 2.0,
+          "stat": "VisionRadiusScaledAdditiveBonus"
+        }
+      ],
+      "threshold": 500,
+      "visual_fx": "BP_FX_VanguardLevelUp_Tier2"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 24.0,
+          "stat": "HealthMaxAdditiveBonus"
+        },
+        {
+          "amount": 10.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 2.0,
+          "stat": "VisionRadiusScaledAdditiveBonus"
+        }
+      ],
+      "threshold": 900,
+      "visual_fx": "BP_FX_VanguardLevelUp_Tier3"
+    }
+  ],
+  "veterancy_vxp_weight": 1,
+  "vision_radius": 8.0,
+  "vital_health": {
+    "maximum": 120.0,
+    "regen": 0.0,
+    "starting": 120.0
+  },
+  "weaponList": [
+    "Mongrel_Weapon"
+  ]
+}

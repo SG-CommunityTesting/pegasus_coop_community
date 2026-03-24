@@ -1,0 +1,168 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "MortardonStrike"
+  ],
+  "armor_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Armor/UI_Icons_Armor_Infernals_Army_Heavy.UI_Icons_Armor_Infernals_Army_Heavy'",
+  "based_on": "BaseUnit_InfernalU",
+  "build_cost": {
+    "resource_a": 250.0,
+    "resource_b": 150.0,
+    "resource_c": 0.0,
+    "resource_d": 0.0
+  },
+  "build_time": 0.5,
+  "cargo_size": "Four",
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "attackData",
+      "button": "AttackLocationButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "MortardonStrike",
+      "button": "MortardonStrike_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    10
+  ],
+  "effects": {
+    "birth": "emptyRef",
+    "creation": "emptyRef",
+    "death": "MortardonDeath_Persistent",
+    "revenge": "emptyRef"
+  },
+  "expiration_time": 60.0,
+  "id": "Mortardon",
+  "inner_radius": 0.8,
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.25,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 2,
+    "speed": 3.5,
+    "stationary_turn_period": 0.25,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "name": "UnitData_name_Mortardon",
+  "outer_radius": 1.2,
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_biological",
+    "attribute_heavy",
+    "attribute_ranged"
+  ],
+  "subgroup_priority": 119,
+  "supply_cost": 8.0,
+  "traits": [
+    "Mortardon_Weapon_Trait",
+    "MortardonStabledLaunch_Trait",
+    "MortardonDeath_Trait"
+  ],
+  "unit_button": "Mortardon_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Demon/UI_Portrait_Demon_Default_Mortardon.UI_Portrait_Demon_Default_Mortardon'",
+  "unreal_actor": "BP_UD_Mortardon_00",
+  "unreal_corpse_actor": "Proxy_BP_PersistentCorpse_Default",
+  "veterancy_given_on_death": 600,
+  "vision_radius": 13.0,
+  "vital_health": {
+    "maximum": 480.0,
+    "regen": 0.0,
+    "starting": 480.0
+  },
+  "vital_shield": {
+    "maximum": 120.0,
+    "regen": 0.0,
+    "starting": 60.0
+  },
+  "weaponList": [
+    "Mortardon_Weapon"
+  ]
+}

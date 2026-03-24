@@ -1,0 +1,33 @@
+{
+  "based_on": "BaseStagedAbility",
+  "cast_game_effect": "HammerTime_BuffApplier",
+  "commands": [
+    {
+      "cooldown": {
+        "duration": 35.0,
+        "name": "HammerTimeCooldown",
+        "scope": "Ability"
+      },
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 30.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "emptyRef"
+    }
+  ],
+  "id": "HammerTime",
+  "range_maximum": 0.0,
+  "range_to_visualize": "None",
+  "target_actor": "BP_InstantTargetActor",
+  "unreal_component": "None"
+}

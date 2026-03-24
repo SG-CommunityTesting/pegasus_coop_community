@@ -1,0 +1,111 @@
+﻿{
+  "available_to_coop": true,
+  "background_playlist": "MediaPlaylist'/Game/Pegasus/UI/Assets/Video/Backgrounds/Kastiel/PL_Backgrounds_Coop_Kastiel.PL_Backgrounds_Coop_Kastiel'",
+  "based_on": "Celestial",
+  "character_image": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Characters/UI_Coop_Character_Kastiel.UI_Coop_Character_Kastiel'",
+  "commander_levels": [
+    "CommanderKastiel_PerkLevel01",
+    "CommanderKastiel_PerkLevel02",
+    "CommanderKastiel_PerkLevel03",
+    "CommanderKastiel_PerkLevel04",
+    "CommanderKastiel_PerkLevel05",
+    "CommanderKastiel_PerkLevel06",
+    "CommanderKastiel_PerkLevel07",
+    "CommanderKastiel_PerkLevel08",
+    "CommanderKastiel_PerkLevel09",
+    "CommanderKastiel_PerkLevel10",
+    "CommanderKastiel_PerkLevel11",
+    "CommanderKastiel_PerkLevel12",
+    "CommanderKastiel_PerkLevel13",
+    "CommanderKastiel_PerkLevel14",
+    "CommanderKastiel_PerkLevel15",
+    "CommanderKastiel_PerkLevel16",
+    "CommanderKastiel_PerkLevel17",
+    "CommanderKastiel_PerkLevel18",
+    "CommanderKastiel_PerkLevel19",
+    "CommanderKastiel_PerkLevel20"
+  ],
+  "default_scout": "DarkKri",
+  "description": "pegasus_commanders|Faction_description_Kastiel_Faction",
+  "description_title": "pegasus_commanders|Commander_Kastiel_Subtitle",
+  "faction_group": "FG_Celestial",
+  "granted_by": "HeroKastielUnlockable",
+  "hero": {
+    "spawn_offset": {
+      "x": 5.0,
+      "y": 5.0
+    },
+    "unit": "Hero_Kastiel"
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Tiles/UI_Coop_Tiles_Kastiel.UI_Coop_Tiles_Kastiel'",
+  "icon_observer": "MaterialInterface'/Game/Pegasus/UI/Assets/Observer/MI_ObserverFactionLogo_Kastiel.MI_ObserverFactionLogo_Kastiel'",
+  "id": "Kastiel_Faction",
+  "loadout": "Kastiel3vELoadout",
+  "lobby_index": 3002,
+  "name": "pegasus_commanders|Faction_name_Kastiel_Faction",
+  "resource_pools": [
+    "AnimusKastiel_GlobalResourcePool"
+  ],
+  "rewards": [
+    {
+      "level": 6,
+      "reward": [
+        "KastielLvl11CoopReward"
+      ]
+    },
+    {
+      "level": 7,
+      "reward": [
+        "KastielLvl12CoopReward"
+      ]
+    },
+    {
+      "level": 11,
+      "reward": [
+        "KastielLvl13CoopReward"
+      ]
+    },
+    {
+      "level": 12,
+      "reward": [
+        "KastielLvl14CoopReward"
+      ]
+    },
+    {
+      "level": 14,
+      "reward": [
+        "KastielLvl15CoopReward"
+      ]
+    },
+    {
+      "level": 15,
+      "reward": [
+        "KastielLvl18CoopReward"
+      ]
+    },
+    {
+      "level": 20,
+      "reward": [
+        "KastielLvl16CoopReward"
+      ]
+    }
+  ],
+  "starting_units": [
+    {
+      "offset": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "unit": "ArcshipTier1Flying"
+    },
+    {
+      "offset": {
+        "x": 0,
+        "y": 4.0
+      },
+      "unit": "DarkKri"
+    }
+  ],
+  "store_item": "HeroKastielStoreItem",
+  "topbar_unit": "KastielTopBarCaster"
+}

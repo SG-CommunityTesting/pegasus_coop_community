@@ -1,0 +1,171 @@
+{
+  "based_on": "Requirement",
+  "can_show": {
+    "root": {
+      "left": {
+        "left": {
+          "name": "ExpressionApi::count_completed_upgrade_of_type",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "name": "ExpressionApi::Player::self",
+                "node": "FunctionCall",
+                "parameters": [],
+                "type": "Player"
+              },
+              "name": "player",
+              "type": "Player"
+            },
+            {
+              "argument": {
+                "node": "Literal",
+                "type": "UpgradeData",
+                "value": "Barclay_HeroicLeap_Upgrade1B_Upgrade"
+              },
+              "name": "upgrade",
+              "type": "UpgradeData"
+            }
+          ],
+          "type": "Count"
+        },
+        "node": "Logical",
+        "operator": ">",
+        "right": {
+          "node": "Literal",
+          "type": "Count",
+          "value": 0
+        },
+        "type": "Bool"
+      },
+      "node": "Logical",
+      "operator": "&&",
+      "right": {
+        "left": {
+          "left": {
+            "name": "ExpressionApi::count_in_queue_or_better_upgrade_of_type",
+            "node": "FunctionCall",
+            "parameters": [
+              {
+                "argument": {
+                  "name": "ExpressionApi::Player::self",
+                  "node": "FunctionCall",
+                  "parameters": [],
+                  "type": "Player"
+                },
+                "name": "player",
+                "type": "Player"
+              },
+              {
+                "argument": {
+                  "node": "Literal",
+                  "type": "UpgradeData",
+                  "value": "Barclay_HeroicLeap_Upgrade2A_Upgrade"
+                },
+                "name": "upgrade",
+                "type": "UpgradeData"
+              }
+            ],
+            "type": "Count"
+          },
+          "node": "Logical",
+          "operator": "==",
+          "right": {
+            "node": "Literal",
+            "type": "Count",
+            "value": 0
+          },
+          "type": "Bool"
+        },
+        "node": "Logical",
+        "operator": "&&",
+        "right": {
+          "left": {
+            "name": "ExpressionApi::count_in_queue_or_better_upgrade_of_type",
+            "node": "FunctionCall",
+            "parameters": [
+              {
+                "argument": {
+                  "name": "ExpressionApi::count_items_in_production_queue",
+                  "node": "FunctionCall",
+                  "parameters": [
+                    {
+                      "argument": {
+                        "name": "ExpressionApi::self",
+                        "node": "FunctionCall",
+                        "parameters": [],
+                        "type": "Entity"
+                      },
+                      "name": "entity",
+                      "type": "Entity"
+                    }
+                  ],
+                  "type": "Count"
+                },
+                "name": "player",
+                "type": "Count"
+              },
+              {
+                "argument": {
+                  "node": "Literal",
+                  "type": "UpgradeData",
+                  "value": "Barclay_HeroicLeap_Upgrade2B_Upgrade"
+                },
+                "name": "upgrade",
+                "type": "UpgradeData"
+              }
+            ],
+            "type": "Count"
+          },
+          "node": "Logical",
+          "operator": "==",
+          "right": {
+            "node": "Literal",
+            "type": "Count",
+            "value": 0
+          },
+          "type": "Bool"
+        },
+        "type": "Bool"
+      },
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "can_use": [
+    {
+      "check": {
+        "root": {
+          "name": "ExpressionApi::entity_is_at_least_veterancy_tier",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "name": "ExpressionApi::self",
+                "node": "FunctionCall",
+                "parameters": [],
+                "type": "Entity"
+              },
+              "name": "entity",
+              "type": "Entity"
+            },
+            {
+              "argument": {
+                "node": "Literal",
+                "type": "Int",
+                "value": 6
+              },
+              "name": "veterancy_tier",
+              "type": "Int"
+            }
+          ],
+          "type": "Bool"
+        },
+        "type": "Bool"
+      },
+      "reason": "pegasus_heroes|Requirement_VeterancyLevel6",
+      "reason_announcement": "None"
+    }
+  ],
+  "id": "Barclay_HeroicLeap_Upgrade2B_RequirementLearn"
+}

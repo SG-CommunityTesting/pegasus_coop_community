@@ -1,0 +1,10 @@
+{
+  "based_on": "MutatorSet",
+  "id": "MutatorSet_MoveItOrLoseIt",
+  "mutators": [
+    "MutatorUI_ReadyToBlow",
+    "MutatorUI_SpeedKills",
+    "MutatorUI_GottaGoFast"
+  ],
+  "title": "pegasus_coop|MutatorSet_title_MutatorSet_MoveItOrLoseIt"
+}

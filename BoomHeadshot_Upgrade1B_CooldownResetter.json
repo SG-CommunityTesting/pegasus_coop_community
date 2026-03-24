@@ -1,0 +1,14 @@
+{
+  "ability_archetype": "BoomHeadshot",
+  "based_on": "GameEffectCooldown",
+  "cooldown_name": "BoomHeadshotCooldown",
+  "duration": 0.0,
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Source"
+  },
+  "flags": {
+    "set_cooldown": true
+  },
+  "id": "BoomHeadshot_Upgrade1B_CooldownResetter"
+}

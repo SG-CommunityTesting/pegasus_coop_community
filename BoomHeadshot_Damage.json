@@ -1,0 +1,9 @@
+{
+  "amount": 1000.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_ranged"
+  ],
+  "id": "BoomHeadshot_Damage",
+  "impact_fx": "BP_FX_BoomHeadshot_Impact"
+}

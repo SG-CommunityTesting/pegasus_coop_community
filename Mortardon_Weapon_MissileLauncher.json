@@ -1,0 +1,25 @@
+{
+  "based_on": "GameEffectLaunchProjectile",
+  "id": "Mortardon_Weapon_MissileLauncher",
+  "impact_effect": "Mortardon_Weapon_Impact_Persistent",
+  "impact_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "launch_fx": "BP_FXS_Mortardon_Launch",
+  "launch_location": {
+    "effect_parent": "none",
+    "entity_or_point": "EntityOrPoint",
+    "target": "Source"
+  },
+  "movement": {
+    "acceleration_time": 0.01,
+    "lob": true,
+    "lob_gravity": 8.0,
+    "max_speed": 6.6
+  },
+  "projectile": "Mortardon_Weapon_Missile",
+  "projectile_movement_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/ProjectileMovementComponents/PMC_MortardonProjectile.PMC_MortardonProjectile_C'",
+  "warning_fx": "BP_EBFX_Mortardon_MissileWarningLocation"
+}

@@ -1,0 +1,20 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "buff_visuals": "BP_BVA_TuckAndRoll_MoveAndAttackSpeedBuff",
+  "duration": 5.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_TuckAndRoll.UI_Icons_Abilities_TuckAndRoll'",
+  "id": "TuckAndRoll_Buff",
+  "modifiers": [
+    {
+      "amount": 50.0,
+      "stat_mod": "SpeedPercentageBonus"
+    },
+    {
+      "amount": 50.0,
+      "stat_mod": "AttackSpeedPercentageAdditiveMultiplier"
+    }
+  ],
+  "name": "pegasus_heroes|StagedAbilityData_name_TuckAndRoll",
+  "tooltip": "pegasus_heroes|StagedAbilityData_tooltip_TuckAndRoll"
+}

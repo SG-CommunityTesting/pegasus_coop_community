@@ -1,0 +1,25 @@
+{
+  "based_on": "GameEffectPersistent",
+  "effect_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Entity",
+    "target": "Target"
+  },
+  "flags": {
+    "channeling": true
+  },
+  "id": "WolfRepair_Persistent",
+  "periodic": {
+    "count": -1,
+    "durations": [
+      0.125
+    ],
+    "durations_method": "RepeatLast",
+    "effects": [
+      "WolfRepair_Heal"
+    ],
+    "effects_method": "RepeatLast",
+    "validator": "Valid_TargetNotAtFullHealth"
+  },
+  "validator": "Valid_WolfRepairTarget"
+}

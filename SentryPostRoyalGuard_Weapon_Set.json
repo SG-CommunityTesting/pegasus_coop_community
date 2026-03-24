@@ -1,0 +1,7 @@
+{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "SentryPostRoyalGuard_DamageRadius"
+  ],
+  "id": "SentryPostRoyalGuard_Weapon_Set"
+}

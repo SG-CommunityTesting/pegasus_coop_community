@@ -1,0 +1,5 @@
+{
+  "effect_final": "JetInvigoration_BuffApplier_Set",
+  "effect_initial": "JetInvigoration_BuffRemover_Set",
+  "id": "JetInvigoration_BuffCooldown"
+}

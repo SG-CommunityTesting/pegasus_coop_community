@@ -1,0 +1,25 @@
+{
+  "based_on": "MorphAbilityData",
+  "commands": [
+    {
+      "cooldown": {
+        "duration": 0.0,
+        "name": "",
+        "scope": "Ability"
+      },
+      "requirement": "DigInUpgrade_RequirementHave",
+      "unit": "GuardsmanDeployed"
+    }
+  ],
+  "flags": {
+    "best_unit": false,
+    "builds": false,
+    "cancelable": false,
+    "disable_abilities": false,
+    "placement": false,
+    "unload_cargo": false
+  },
+  "id": "MorphToGuardsmanDeployed",
+  "morph_duration": 0.166667,
+  "progress_description": "pegasus_core|MorphAbilityData_progress_description_Progress"
+}

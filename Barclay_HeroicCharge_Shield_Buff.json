@@ -1,0 +1,18 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "buff_tags": [
+    "dispel_technological"
+  ],
+  "buff_visuals": "BP_BVA_HeroicCharge_Shield",
+  "duration": 20.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_HeroicCharge.UI_Icons_Abilities_HeroicCharge'",
+  "id": "Barclay_HeroicCharge_Shield_Buff",
+  "name": "pegasus_heroes|Buff_name_Barclay_HeroicCharge_Shield_Buff",
+  "responses": [
+    "HeroicCharge_ResponseHeal",
+    "Barclay_HeroicCharge_Shield_ResponseDamage"
+  ],
+  "tooltip": "pegasus_heroes|Buff_tooltip_Barclay_HeroicCharge_Shield_Buff",
+  "visual_fx": "BP_FX_Barclay_ShieldBuff"
+}

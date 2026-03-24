@@ -1,0 +1,13 @@
+{
+  "based_on": "BaseUpgradeData",
+  "button": "Ryker_ActiveCamouflage_Upgrade1B_Upgrade_Button",
+  "id": "Ryker_ActiveCamouflage_Upgrade1B_Upgrade",
+  "set_values": [
+    {
+      "target_archetype": "ActiveCamouflage",
+      "target_command_index": 0,
+      "target_property": "commands.cost_vitals.energy",
+      "target_value": -5.0
+    }
+  ]
+}

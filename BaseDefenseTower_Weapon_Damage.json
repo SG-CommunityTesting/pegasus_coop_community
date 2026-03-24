@@ -1,0 +1,10 @@
+{
+  "amount": 100.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_ranged"
+  ],
+  "id": "BaseDefenseTower_Weapon_Damage",
+  "impact_fx": "BP_FXI_BaseDefender_Impact",
+  "target_armor_multiplier": 0.0
+}

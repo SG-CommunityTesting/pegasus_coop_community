@@ -1,0 +1,17 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "buff_visuals": "BP_BVA_Soulblade",
+  "duration": 8.0,
+  "effect_initial": "SoulBlade_ModifyCharges",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_Soulblade.UI_Icons_Abilities_Soulblade'",
+  "id": "Soulblade_Buff",
+  "modifiers": [
+    {
+      "amount": 60.0,
+      "stat_mod": "AttackSpeedPercentageAdditiveMultiplier"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_Soulblade_Buff",
+  "tooltip": "pegasus_heroes|Buff_tooltip_Soulblade_Buff"
+}

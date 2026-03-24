@@ -1,0 +1,14 @@
+﻿{
+  "based_on": "GameEffectSwitch",
+  "cases": [
+    {
+      "action": "HammerTime_DamageRadius",
+      "case_condition": "Valid_CommanderLevel10"
+    },
+    {
+      "action": "HammerTime_DamageRadiusDowngraded",
+      "case_condition": "emptyRef"
+    }
+  ],
+  "id": "HammerTime_Switch"
+}

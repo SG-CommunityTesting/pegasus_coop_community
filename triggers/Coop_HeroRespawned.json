@@ -1,0 +1,126 @@
+﻿{
+  "data": {
+    "actions": [
+      {
+        "function_id": "Sound_PlaySoundForPlayers",
+        "parameters": [
+          {
+            "expressions": [
+              {
+                "type": "Value",
+                "value": {
+                  "type": {
+                    "directive": "TypeRef",
+                    "implements": "",
+                    "inner_type": "",
+                    "param_id": "",
+                    "sub_directive": "None",
+                    "type": "SoundData"
+                  },
+                  "value": "SoundData_Announcer_HeroRespawn"
+                }
+              }
+            ],
+            "id": "sound"
+          },
+          {
+            "expressions": [
+              {
+                "function": {
+                  "function_id": "PlayerGroup_GetPlayerAsPlayerGroup",
+                  "parameters": [
+                    {
+                      "expressions": [
+                        {
+                          "function": {
+                            "function_id": "Unit_GetOwningPlayer",
+                            "parameters": [
+                              {
+                                "expressions": [
+                                  {
+                                    "function": {
+                                      "function_id": "Unit_GetTriggeringUnit"
+                                    },
+                                    "type": "Function"
+                                  }
+                                ],
+                                "id": "unit"
+                              }
+                            ]
+                          },
+                          "type": "Function"
+                        }
+                      ],
+                      "id": "player"
+                    }
+                  ]
+                },
+                "type": "Function"
+              }
+            ],
+            "id": "players"
+          }
+        ]
+      }
+    ],
+    "based_on": "Trigger",
+    "conditions": [
+      {
+        "function_id": "Entity_HasAllTags",
+        "parameters": [
+          {
+            "expressions": [
+              {
+                "function": {
+                  "function_id": "Unit_GetTriggeringUnit"
+                },
+                "type": "Function"
+              }
+            ],
+            "id": "who"
+          },
+          {
+            "expressions": [
+              {
+                "type": "Value",
+                "value": {
+                  "type": {
+                    "directive": "TypeRef",
+                    "implements": "",
+                    "inner_type": "",
+                    "param_id": "",
+                    "sub_directive": "None",
+                    "type": "SnowTag"
+                  },
+                  "value": "attribute_hero"
+                }
+              }
+            ],
+            "id": "tags"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "function_id": "Unit_OnRevived",
+        "parameters": [
+          {
+            "expressions": [
+              {
+                "preset": {
+                  "preset_id": "Unit_AnyUnit",
+                  "value_id": "any"
+                },
+                "type": "Preset"
+              }
+            ],
+            "id": "unit"
+          }
+        ]
+      }
+    ],
+    "id": "Coop_HeroRespawned"
+  },
+  "meta": {}
+}

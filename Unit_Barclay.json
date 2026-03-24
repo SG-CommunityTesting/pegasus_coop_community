@@ -1,0 +1,217 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "Revitalize",
+    "Barclay_HeroicCharge",
+    "HammerTime",
+    "JusticeJump",
+    "BarclayRepair"
+  ],
+  "armor": 20.0,
+  "armor_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Armor/UI_Icons_Armor_Vanguard_Infantry_Heavy.UI_Icons_Armor_Vanguard_Infantry_Heavy'",
+  "armor_name": "pegasus_core|ArmorName_VanguardHeroicArmor",
+  "attack_target_priority": 20,
+  "based_on": "BaseUnit_VanguardHero",
+  "buffs": [
+    "RelentlessHealer_BuffResponder",
+    "TempHeroProgressionHealBuff10",
+    "TempHeroProgressionHealBuff20"
+  ],
+  "build_cost": {
+    "resource_a": 0.0,
+    "resource_b": 0.0,
+    "resource_c": 0.0,
+    "resource_d": 0.0
+  },
+  "cargo_size": "Four",
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "Revitalize",
+      "button": "Revitalize_ButtonUpgraded",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "Barclay_HeroicCharge",
+      "button": "Barclay_HeroicCharge_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "HammerTime",
+      "button": "HammerTime_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "JusticeJump",
+      "button": "JusticeJump_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "BarclayRepair",
+      "button": "BarclayRepair_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 0,
+      "slot": 0,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    0,
+    10
+  ],
+  "faction": "VanguardBarclay",
+  "id": "Unit_Barclay",
+  "inner_radius": 0.5,
+  "minimap_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Minimap/UI_Icons_Minimap_Hero_Default.UI_Icons_Minimap_Hero_Default'",
+  "minimap_icon_size": 40.0,
+  "minimap_icon_use_heading": true,
+  "minimap_icon_use_team_color": true,
+  "minimap_material_instance": "MaterialInterface'/Game/Pegasus/UI/Assets/Materials/MI_UI_MinimapCharacterPortraitMask_Barclay.MI_UI_MinimapCharacterPortraitMask_Barclay'",
+  "minimap_widget": "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Pegasus/UI/Minimap/WBP_Minimap_Icon_Hero.WBP_Minimap_Icon_Hero_C'",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.13,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 3,
+    "speed": 4.5,
+    "stationary_turn_period": 0.18,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "name": "UnitData_name_Unit_Barclay",
+  "outer_radius": 0.994444,
+  "sb_id": "barclay",
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_heavy",
+    "attribute_biological",
+    "attribute_hero",
+    "attribute_melee"
+  ],
+  "subgroup_priority": 200,
+  "supply_cost": 0.0,
+  "traits": [
+    "SuperBuilder_Trait",
+    "RevitalizationRadiance_Trait",
+    "RelentlessHealer_Trait"
+  ],
+  "ui_flags": {
+    "callout_attacks_air": false,
+    "callout_attacks_ground": true
+  },
+  "unit_button": "Barclay_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Humans/UI_Portrait_Human_Default_Barclay.UI_Portrait_Human_Default_Barclay'",
+  "unreal_actor": "BP_UH_Hero_Barclay",
+  "vision_radius": 12.0,
+  "vital_energy": {
+    "maximum": 100.0,
+    "regen": 2.0,
+    "starting": 100.0
+  },
+  "vital_health": {
+    "maximum": 1200.0,
+    "regen": 5.0,
+    "starting": 1200.0
+  },
+  "weaponList": [
+    "Barclay_WeaponGround"
+  ]
+}

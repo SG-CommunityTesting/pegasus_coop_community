@@ -1,0 +1,43 @@
+{
+  "amount": 80.0,
+  "areas": [
+    {
+      "damage_fraction": 1.0,
+      "radius": 1.0
+    },
+    {
+      "damage_fraction": 0.75,
+      "radius": 2.0
+    },
+    {
+      "damage_fraction": 0.5,
+      "radius": 2.5
+    }
+  ],
+  "based_on": "GameEffectDamageRadius",
+  "damage_tags": [
+    "damage_ranged",
+    "damage_splash"
+  ],
+  "death_type": "Burning_DeathType",
+  "friendly_fire_percentage": 0.0,
+  "id": "Mortardon_Weapon_DamageRadius",
+  "location_impact_fx": "BP_FXI_Mortardon_Impact",
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": true,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable"
+      ],
+      "required": [
+        "heightplane_ground"
+      ]
+    }
+  }
+}

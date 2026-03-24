@@ -1,0 +1,5 @@
+{
+  "effect_finish": "CinderStorm_SelfProtectBuffRemover",
+  "effect_initial": "CinderStorm_SelfProtectBuffApplier",
+  "id": "CinderStorm_CasterPersistent"
+}

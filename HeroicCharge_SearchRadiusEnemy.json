@@ -1,0 +1,29 @@
+{
+  "based_on": "GameEffectSearchRadius",
+  "game_effect": "Barclay_HeroicCharge_StunEnemy_BuffApplier",
+  "id": "HeroicCharge_SearchRadiusEnemy",
+  "radius": 3.0,
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": false,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "entity_unit_structure",
+        "status_invulnerable"
+      ],
+      "required": [
+        "heightplane_ground"
+      ]
+    }
+  },
+  "search_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  }
+}

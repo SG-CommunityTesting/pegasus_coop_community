@@ -1,0 +1,33 @@
+{
+  "anim_montage": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AnimMontageComponents/AMC_LaunchWithExit_TuckAndRoll.AMC_LaunchWithExit_TuckAndRoll_C'",
+  "anim_montage_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AnimMontageComponents/AMC_LaunchWithExit_TuckAndRoll.AMC_LaunchWithExit_TuckAndRoll_C'",
+  "based_on": "BaseGameEffectLaunchProjectile",
+  "flags": {
+    "channeling": false,
+    "ignore_destructible_tree": true,
+    "landing_spot_find": true,
+    "landing_spot_reserve": false,
+    "mark_exclusive_target": false,
+    "stop_at_unpathable": true
+  },
+  "id": "TuckAndRoll_MissileLauncher",
+  "impact_effect": "TuckAndRoll_BuffApplier",
+  "impact_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "movement": {
+    "acceleration_time": 0,
+    "lob": false,
+    "lob_gravity": 30.0,
+    "lock_facing": true,
+    "max_speed": 12.0
+  },
+  "periodic": {
+    "duration": 0.1,
+    "effect": "TuckAndRoll_Invulnerable_BuffApplier"
+  },
+  "projectile_movement_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/ProjectileMovementComponents/PMC_LaunchWithExit_TuckAndRoll.PMC_LaunchWithExit_TuckAndRoll_C'",
+  "range_max": 6.0
+}

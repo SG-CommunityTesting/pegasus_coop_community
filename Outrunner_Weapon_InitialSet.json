@@ -1,0 +1,10 @@
+{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "Outrunner_Weapon_MainDamage",
+    "Outrunner_Weapon_Persistent",
+    "Outrunner_Weapon_StorePeriodicCount"
+  ],
+  "id": "Outrunner_Weapon_InitialSet",
+  "impact_fx": "BP_FXI_Outrunner_Weapon_MuzzleFlash"
+}

@@ -1,0 +1,7 @@
+{
+  "based_on": "BaseButton",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_SummonWarhounds.UI_Icons_Abilities_SummonWarhounds'",
+  "id": "Ryker_SummonWarhounds_Upgrade1B_Upgrade_Button",
+  "name": "pegasus_heroes|Button_name_Ryker_SummonWarhounds_Upgrade1B_Upgrade_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_Ryker_SummonWarhounds_Upgrade1B_Upgrade_Button"
+}

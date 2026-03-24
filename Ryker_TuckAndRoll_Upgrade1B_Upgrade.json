@@ -1,0 +1,19 @@
+{
+  "based_on": "BaseUpgradeData",
+  "button": "Ryker_TuckAndRoll_Upgrade1B_Upgrade_Button",
+  "id": "Ryker_TuckAndRoll_Upgrade1B_Upgrade",
+  "set_values": [
+    {
+      "target_archetype": "TuckAndRoll_Buff",
+      "target_command_index": 0,
+      "target_property": "duration",
+      "target_value": 2.5
+    },
+    {
+      "target_archetype": "Ryker_TuckAndRoll_Upgrade2B_Buff",
+      "target_command_index": 0,
+      "target_property": "duration",
+      "target_value": 2.5
+    }
+  ]
+}

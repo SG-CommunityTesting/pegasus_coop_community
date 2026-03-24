@@ -1,0 +1,10 @@
+{
+  "based_on": "GameEffectHeal",
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Source"
+  },
+  "id": "LickYourWounds_DummyHeal",
+  "impact_fx": "BP_FXI_LickYourWounds",
+  "validator": "Valid_SourceNotFullHealth"
+}

@@ -1,0 +1,27 @@
+{
+  "attribute_id": "mutator_set",
+  "based_on": "PlayerAttributeDefinition",
+  "display_settings": {
+    "reset_on_leave": false,
+    "show_in_custom_lobby": true,
+    "show_in_internal_lobby": true,
+    "show_on_ais": false,
+    "show_on_occupied_humans": true
+  },
+  "id": "mutatorSetAttributeDefinition",
+  "permission_settings": {
+    "user_edit_scope": {
+      "anyone": false,
+      "lobby_owner": true,
+      "slot_occupant": true
+    },
+    "user_editing_allowed": "Noncompetitive"
+  },
+  "value_kind": 2,
+  "values_as_typeref_enum": [
+    "MutatorSet_MoveItOrLoseIt",
+    "MutatorSet_GoneIn60Seconds",
+    "MutatorSet_ForTheHordes",
+    "MutatorSet_EZPZ"
+  ]
+}

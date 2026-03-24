@@ -1,0 +1,8 @@
+{
+  "activation_trigger": "Mutator_SeeAndSee_Activate",
+  "based_on": "MutatorUI",
+  "description": "pegasus_coop|MutatorUI_description_MutatorUI_SeeAndSee",
+  "id": "MutatorUI_SeeAndSee",
+  "image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Mutators/UI_Icons_Mutators_SeeAndSee.UI_Icons_Mutators_SeeAndSee'",
+  "title": "pegasus_coop|MutatorUI_title_MutatorUI_SeeAndSee"
+}

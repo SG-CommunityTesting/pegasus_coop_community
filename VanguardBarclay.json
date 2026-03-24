@@ -1,0 +1,106 @@
+﻿{
+  "available_to_coop": true,
+  "background_playlist": "MediaPlaylist'/Game/Pegasus/UI/Assets/Video/Backgrounds/Blockade/PL_Backgrounds_Coop_Blockade.PL_Backgrounds_Coop_Blockade'",
+  "based_on": "Vanguard",
+  "character_image": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Characters/UI_Coop_Character_Blockade.UI_Coop_Character_Blockade'",
+  "commander_levels": [
+    "CommanderBarclay_PerkLevel01",
+    "CommanderBarclay_PerkLevel02",
+    "CommanderBarclay_PerkLevel03",
+    "CommanderBarclay_PerkLevel04",
+    "CommanderBarclay_PerkLevel05",
+    "CommanderBarclay_PerkLevel06",
+    "CommanderBarclay_PerkLevel07",
+    "CommanderBarclay_PerkLevel08",
+    "CommanderBarclay_PerkLevel09",
+    "CommanderBarclay_PerkLevel10",
+    "CommanderBarclay_PerkLevel11",
+    "CommanderBarclay_PerkLevel12",
+    "CommanderBarclay_PerkLevel13",
+    "CommanderBarclay_PerkLevel14",
+    "CommanderBarclay_PerkLevel15",
+    "CommanderBarclay_PerkLevel16",
+    "CommanderBarclay_PerkLevel17",
+    "CommanderBarclay_PerkLevel18",
+    "CommanderBarclay_PerkLevel19",
+    "CommanderBarclay_PerkLevel20"
+  ],
+  "default_scout": "Guardsman",
+  "description": "pegasus_commanders|Faction_description_VanguardBarclay",
+  "description_title": "pegasus_commanders|Commander_Blockade_Subtitle",
+  "hero": {
+    "spawn_offset": {
+      "x": 5.0,
+      "y": 5.0
+    },
+    "unit": "Hero_Barclay"
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Tiles/UI_Coop_Tiles_Blockade.UI_Coop_Tiles_Blockade'",
+  "icon_observer": "MaterialInterface'/Game/Pegasus/UI/Assets/Observer/MI_ObserverFactionLogo_Blockade.MI_ObserverFactionLogo_Blockade'",
+  "id": "VanguardBarclay",
+  "loadout": "Blockade3vELoadout",
+  "lobby_index": 1001,
+  "name": "Faction_Name_VanguardBarclay",
+  "rewards": [
+    {
+      "level": 6,
+      "reward": [
+        "BlockadeLvl11CoopReward"
+      ]
+    },
+    {
+      "level": 7,
+      "reward": [
+        "BlockadeLvl12CoopReward"
+      ]
+    },
+    {
+      "level": 11,
+      "reward": [
+        "BlockadeLvl13CoopReward"
+      ]
+    },
+    {
+      "level": 12,
+      "reward": [
+        "BlockadeLvl14CoopReward"
+      ]
+    },
+    {
+      "level": 14,
+      "reward": [
+        "BlockadeLvl15CoopReward"
+      ]
+    },
+    {
+      "level": 15,
+      "reward": [
+        "BlockadeLvl18CoopReward"
+      ]
+    },
+    {
+      "level": 20,
+      "reward": [
+        "BlockadeLvl16CoopReward"
+      ]
+    }
+  ],
+  "starting_units": [
+    {
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "unit": "HQTier1"
+    },
+    {
+      "offset": {
+        "x": 0,
+        "y": 5.0
+      },
+      "unit": "Guardsman"
+    }
+  ],
+  "store_item": "HeroBlockadeStoreItem",
+  "topbar_unit": "VanguardBarclayTopBarCaster"
+}

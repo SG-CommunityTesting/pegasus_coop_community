@@ -1,0 +1,7 @@
+{
+  "based_on": "BaseButton",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_ActiveCamouflage.UI_Icons_Abilities_ActiveCamouflage'",
+  "id": "Ryker_ActiveCamouflage_BaseAbility_Upgrade_Button",
+  "name": "pegasus_heroes|Button_name_Ryker_ActiveCamouflage_BaseAbility_Upgrade_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_Ryker_ActiveCamouflage_BaseAbility_Upgrade_Button"
+}

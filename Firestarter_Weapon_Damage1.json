@@ -1,0 +1,14 @@
+{
+  "amount": 5.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_ranged",
+    "damage_splash"
+  ],
+  "death_type": "Burning_DeathType",
+  "id": "Firestarter_Weapon_Damage1",
+  "impact_fx": "None",
+  "tag_bonuses": [
+    "Firestarter_Weapon_Damage1_TagBonusLight"
+  ]
+}

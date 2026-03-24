@@ -1,0 +1,34 @@
+{
+  "amount": 50.0,
+  "areas": [
+    {
+      "damage_fraction": 1.0,
+      "radius": 2.0
+    },
+    {
+      "damage_fraction": 0.5,
+      "radius": 4.0
+    }
+  ],
+  "based_on": "GameEffectDamageRadius",
+  "id": "WreckHavoc_MegaWeapon_DamageRadius",
+  "location_impact_fx": "BP_FX_SuperWeapon_Impact",
+  "search_filter": {
+    "alliance": {
+      "ally": true,
+      "enemy": true,
+      "neutral": true,
+      "player": true,
+      "self": true
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable"
+      ],
+      "required": []
+    }
+  },
+  "tag_bonuses": [
+    "Generic_Weapon_BonusStructure"
+  ]
+}

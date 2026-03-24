@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Units/Human/UI_Icons_Units_Human_Hoplite.UI_Icons_Units_Human_Hoplite'",
+  "id": "Hoplite_Button",
+  "name": "Button_Name_Hoplite_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_Hoplite_Button"
+}

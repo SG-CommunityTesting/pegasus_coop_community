@@ -1,0 +1,7 @@
+{
+  "amount": 15.0,
+  "based_on": "Scout_Weapon_Damage",
+  "id": "Ryker_Ghost_Weapon_Damage",
+  "impact_fx": "BP_FXI_GhostScout_Impact",
+  "tag_bonuses": []
+}

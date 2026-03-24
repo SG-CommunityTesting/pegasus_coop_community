@@ -1,0 +1,28 @@
+{
+  "based_on": "Tree",
+  "build_time": 10.0,
+  "footprint": {
+    "angled": false,
+    "clumpable": true,
+    "snap": false,
+    "vision_block_height": 2,
+    "x": 2,
+    "y": 2
+  },
+  "id": "DestructibleForest",
+  "name": "Destructible_name_Tree",
+  "radius": 1.42,
+  "sb_id": "tree_2x2",
+  "selectable": false,
+  "smart_command_targetable": false,
+  "starting_snowtags": [
+    "entity_destructible_tree",
+    "heightplane_ground"
+  ],
+  "unreal_actor": "BP_Randomized_Destructible_Tree",
+  "vital_health": {
+    "maximum": 10.0,
+    "regen": 0.0,
+    "starting": 10.0
+  }
+}

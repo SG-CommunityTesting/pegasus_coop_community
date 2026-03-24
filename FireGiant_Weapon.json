@@ -1,0 +1,56 @@
+{
+  "backswing": 1.5,
+  "based_on": "BaseWeapon",
+  "display_effect_damage": "FireGiant_Weapon_Damage",
+  "flags": {
+    "can_attack_location": false,
+    "channeled": false,
+    "fires_passively": false,
+    "melee": false,
+    "scan_for_new_targets": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_FireWave.UI_Icons_Abilities_FireWave'",
+  "id": "FireGiant_Weapon",
+  "name": "WeaponData_name_FireGiant_Weapon",
+  "period": 2.2,
+  "preswing_initial": 0.15,
+  "range_acquire": 7.0,
+  "range_maximum": 4.0,
+  "range_minimum": 0.0,
+  "range_slop": 5.0,
+  "swing": 0.5,
+  "weapon_acquire_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": false,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_sleeping"
+      ],
+      "required": []
+    }
+  },
+  "weapon_fire": "FireGiant_Weapon_Switch",
+  "weapon_target_filter": {
+    "alliance": {
+      "ally": true,
+      "enemy": true,
+      "neutral": true,
+      "player": true,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable",
+        "entity_destructible_tree"
+      ],
+      "required": [
+        "heightplane_ground"
+      ]
+    }
+  }
+}

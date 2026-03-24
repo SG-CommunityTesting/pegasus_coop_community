@@ -1,0 +1,59 @@
+{
+  "backswing": 0.8,
+  "backswing_locked": 0.2,
+  "based_on": "WeaponData",
+  "display_effect_damage": "Amara_Weapon_Damage_2",
+  "flags": {
+    "always_visualize_range": false,
+    "can_attack_location": false,
+    "channeled": true,
+    "fires_passively": false,
+    "hide_weapon": false,
+    "melee": false,
+    "scan_for_new_targets": true
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Weapons/UI_Icons_Weapons_DualUzis.UI_Icons_Weapons_DualUzis'",
+  "id": "Amara_Weapon_2",
+  "name": "pegasus_heroes|WeaponData_name_Amara_Weapon",
+  "period": 0.9,
+  "preswing_initial": 0.1,
+  "random_delay_maximum": 0.0,
+  "random_delay_minimum": 0.0,
+  "range_acquire": 7.0,
+  "range_maximum": 5.0,
+  "range_slop": 1.0,
+  "swing": 0.0,
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/WeaponComponents/AC_Weapon_Generic.AC_Weapon_Generic_C'",
+  "weapon_acquire_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": false,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_sleeping"
+      ],
+      "required": []
+    }
+  },
+  "weapon_fire": "Amara_WeaponRico_Set1",
+  "weapon_target_filter": {
+    "alliance": {
+      "ally": true,
+      "enemy": true,
+      "neutral": true,
+      "player": true,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable",
+        "entity_destructible_tree"
+      ],
+      "required": []
+    }
+  }
+}

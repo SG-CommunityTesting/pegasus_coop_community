@@ -1,0 +1,34 @@
+{
+  "based_on": "GameEffectStoreValue",
+  "id": "PowerShield_StoreValue",
+  "store_name": "power_shield_store",
+  "store_value": {
+    "root": {
+      "left": {
+        "left": {
+          "name": "ExpressionApi::Damage::get_amount",
+          "node": "FunctionCall",
+          "parameters": [],
+          "type": "Value"
+        },
+        "node": "Math",
+        "operator": "*",
+        "right": {
+          "node": "Literal",
+          "type": "Value",
+          "value": 25.0
+        },
+        "type": "Value"
+      },
+      "node": "Math",
+      "operator": "/",
+      "right": {
+        "node": "Literal",
+        "type": "Value",
+        "value": 100.0
+      },
+      "type": "Value"
+    },
+    "type": "Value"
+  }
+}

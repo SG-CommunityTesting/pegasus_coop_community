@@ -1,0 +1,78 @@
+{
+  "based_on": "ResearchAbilityData",
+  "commands": [
+    {
+      "requirement": "Barclay_Revitalize_BaseAbility_RequirementLearn",
+      "upgrade": "Barclay_Revitalize_BaseAbility_Upgrade"
+    },
+    {
+      "requirement": "Barclay_Revitalize_Upgrade1_RequirementLearn",
+      "upgrade": "Barclay_Revitalize_Upgrade1A_Upgrade"
+    },
+    {
+      "requirement": "Barclay_Revitalize_Upgrade1_RequirementLearn",
+      "upgrade": "Barclay_Revitalize_Upgrade1B_Upgrade"
+    },
+    {
+      "requirement": "Barclay_Revitalize_Upgrade2A_RequirementLearn",
+      "upgrade": "Barclay_Revitalize_Upgrade2A_Upgrade"
+    },
+    {
+      "requirement": "Barclay_Revitalize_Upgrade2B_RequirementLearn",
+      "upgrade": "Barclay_Revitalize_Upgrade2B_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HeroicLeap_BaseAbility_RequirementLearn",
+      "upgrade": "Barclay_HeroicLeap_BaseAbility_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HeroicLeap_Upgrade1_RequirementLearn",
+      "upgrade": "Barclay_HeroicLeap_Upgrade1A_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HeroicLeap_Upgrade1_RequirementLearn",
+      "upgrade": "Barclay_HeroicLeap_Upgrade1B_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HeroicLeap_Upgrade2A_RequirementLearn",
+      "upgrade": "Barclay_HeroicLeap_Upgrade2A_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HeroicLeap_Upgrade2B_RequirementLearn",
+      "upgrade": "Barclay_HeroicLeap_Upgrade2B_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HammerTime_BaseAbility_RequirementLearn",
+      "upgrade": "Barclay_HammerTime_BaseAbility_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HammerTime_Upgrade1_RequirementLearn",
+      "upgrade": "Barclay_HammerTime_Upgrade1A_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HammerTime_Upgrade1_RequirementLearn",
+      "upgrade": "Barclay_HammerTime_Upgrade1B_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HammerTime_Upgrade2A_RequirementLearn",
+      "upgrade": "Barclay_HammerTime_Upgrade2A_Upgrade"
+    },
+    {
+      "requirement": "Barclay_HammerTime_Upgrade2B_RequirementLearn",
+      "upgrade": "Barclay_HammerTime_Upgrade2B_Upgrade"
+    },
+    {
+      "requirement": "Barclay_RedemptionRift_BaseAbility_RequirementLearn",
+      "upgrade": "Barclay_RedemptionRift_BaseAbility_Upgrade"
+    },
+    {
+      "requirement": "Barclay_RedemptionRift_Upgrade1_RequirementLearn",
+      "upgrade": "Barclay_RedemptionRift_Upgrade1A_Upgrade"
+    },
+    {
+      "requirement": "Barclay_RedemptionRift_Upgrade1_RequirementLearn",
+      "upgrade": "Barclay_RedemptionRift_Upgrade1B_Upgrade"
+    }
+  ],
+  "id": "Barclay_Upgrades_Research"
+}

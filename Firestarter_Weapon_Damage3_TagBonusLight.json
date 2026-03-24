@@ -1,0 +1,6 @@
+{
+  "based_on": "TagBonus",
+  "bonus": 9.0,
+  "id": "Firestarter_Weapon_Damage3_TagBonusLight",
+  "tag": "attribute_light"
+}

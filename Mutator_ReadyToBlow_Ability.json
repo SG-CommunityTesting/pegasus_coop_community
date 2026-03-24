@@ -1,0 +1,21 @@
+{
+  "based_on": "StagedAbilityData",
+  "cast_duration": 1.5,
+  "cast_game_effect": "Mutator_ReadyToBlow_Set",
+  "id": "Mutator_ReadyToBlow_Ability",
+  "target_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": false,
+      "neutral": false,
+      "player": false,
+      "self": true
+    },
+    "tags": {
+      "excluded": [],
+      "required": []
+    }
+  },
+  "targeting_type": "Unit",
+  "unreal_component": "None"
+}

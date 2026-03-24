@@ -1,0 +1,5 @@
+{
+  "based_on": "TraitData",
+  "button": "FireGiantWeapon_ButtonTraitDowngraded",
+  "id": "FireGiantWeapon_Trait"
+}

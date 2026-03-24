@@ -1,0 +1,11 @@
+{
+  "based_on": "BaseBuff",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Gear/UI_Icons_Gear_AttackDamageIncrease.UI_Icons_Gear_AttackDamageIncrease'",
+  "id": "TempHeroProgressionAttackDamageBuff10",
+  "name": "pegasus_commanders|Buff_name_TempHeroProgressionAttackDamageBuff10",
+  "responses": [
+    "TempHeroProgressionAttackDamageResponseDamage10"
+  ],
+  "tooltip": "pegasus_commanders|Buff_tooltip_TempHeroProgressionAttackDamageBuff10",
+  "validator_remove": "Valid_CommanderLevel16To17"
+}

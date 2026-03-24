@@ -1,0 +1,71 @@
+{
+  "abilityList": [
+    "attackData",
+    "stopData",
+    "holdPositionData",
+    "MorphToGuardsman"
+  ],
+  "armor": 50.0,
+  "armor_name": "pegasus_commanders|UnitData_armor_name_GuardsmanDeployed",
+  "based_on": "Guardsman",
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "MorphToGuardsman",
+      "button": "MorphToGuardsman_Button",
+      "commandIndex": 0,
+      "row": 1,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "id": "GuardsmanDeployed",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "item": false
+    },
+    "deceleration_time": 0.0,
+    "moving_turn_period": 0.13,
+    "pathing_mode": "Ground",
+    "speed": 0.0,
+    "stationary_turn_period": 0.13
+  },
+  "name": "UnitData_name_GuardsmanDeployed",
+  "outer_radius": 0.5,
+  "unit_button": "GuardsmanDeployed_Button",
+  "unreal_actor": "BP_UH_GuardsmanDeployed_00",
+  "weaponList": [
+    "GuardsmanDeployed_Weapon"
+  ]
+}

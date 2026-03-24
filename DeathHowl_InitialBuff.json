@@ -1,0 +1,21 @@
+{
+  "alignment": "Harmful",
+  "applied_tags": [
+    "status_pacified",
+    "status_silenced"
+  ],
+  "based_on": "Buff",
+  "buff_tags": [
+    "dispel_technological"
+  ],
+  "buff_visuals": "BP_BVA_DeathHowl_Silenced",
+  "duration": 1.0,
+  "effect_expire": "DeathHowl_IncreasedDmgBuffApplier",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_DeathHowl.UI_Icons_Abilities_DeathHowl'",
+  "id": "DeathHowl_InitialBuff",
+  "name": "pegasus_heroes|Buff_name_DeathHowl_InitialBuff",
+  "responses": [
+    "DeathHowl_DamageResponse"
+  ],
+  "tooltip": "pegasus_heroes|Buff_tooltip_DeathHowl_InitialBuff"
+}

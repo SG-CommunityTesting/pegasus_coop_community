@@ -1,0 +1,46 @@
+{
+  "based_on": "Enum",
+  "id": "Difficulty",
+  "values": [
+    {
+      "display_name": "pegasus_coop|Difficulty_Beginner",
+      "name": "Beginner",
+      "value": 1
+    },
+    {
+      "display_name": "pegasus_coop|Difficulty_Normal",
+      "name": "Normal",
+      "value": 2
+    },
+    {
+      "display_name": "pegasus_coop|Difficulty_Hard",
+      "name": "Hard",
+      "value": 3
+    },
+    {
+      "display_name": "pegasus_coop|Difficulty_Brutal",
+      "name": "Brutal",
+      "value": 4
+    },
+    {
+      "display_name": "pegasus_coop|Difficulty_Annihilation1",
+      "name": "Annihilation(1)",
+      "value": 5
+    },
+    {
+      "display_name": "pegasus_coop|Difficulty_Annihilation2",
+      "name": "Annihilation(2)",
+      "value": 6
+    },
+    {
+      "display_name": "pegasus_coop|Difficulty_Annihilation3",
+      "name": "Annihilation(3)",
+      "value": 7
+    },
+    {
+      "display_name": "pegasus_coop|Difficulty_Annihilation4",
+      "name": "Annihilation(4)",
+      "value": 8
+    }
+  ]
+}

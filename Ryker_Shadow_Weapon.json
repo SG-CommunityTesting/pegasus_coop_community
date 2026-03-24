@@ -1,0 +1,8 @@
+{
+  "backswing": 0.5,
+  "based_on": "Ryker_Ghost_Weapon",
+  "display_effect_damage": "Ryker_Shadow_Weapon_Damage",
+  "id": "Ryker_Shadow_Weapon",
+  "period": 0.8,
+  "weapon_fire": "Ryker_Shadow_Weapon_Damage"
+}

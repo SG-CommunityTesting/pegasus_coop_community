@@ -1,0 +1,233 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "ReapTheHarvest",
+    "CallWeaponBack",
+    "InfestNetherblade",
+    "Darkspeed",
+    "InfernalAvatar",
+    "DarkspeedUpgraded"
+  ],
+  "armor": 10.0,
+  "armor_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Armor/UI_Icons_Armor_Infernals_Army_Heavy.UI_Icons_Armor_Infernals_Army_Heavy'",
+  "armor_name": "pegasus_core|ArmorName_InfernalHeroicArmor",
+  "based_on": "BaseUnit_InfernalHero",
+  "buffs": [
+    "EnergyRipper_Buff",
+    "ShroudedProtection_Buff",
+    "EverlastingPlague_Buff",
+    "EtherealNetherblade_Buff",
+    "RiftSquad_BuffPauseNearbyTimedLife",
+    "EtherealNetherbladeUpgraded_Buff",
+    "WarzNotMoving_Buff"
+  ],
+  "cargo_size": "Four",
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "ReapTheHarvest",
+      "button": "ReapTheHarvest_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "CallWeaponBack",
+      "button": "CallWeaponBack_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "InfestNetherblade",
+      "button": "InfestNetherblade_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "Darkspeed",
+      "button": "Darkspeed_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "InfernalAvatar",
+      "button": "InfernalAvatar_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "DarkspeedUpgraded",
+      "button": "Darkspeed_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    0,
+    10
+  ],
+  "effects": {
+    "birth": "emptyRef",
+    "constructed": "emptyRef",
+    "creation": "emptyRef",
+    "death": "WarzReapTheHarvest_RemoveUpgrade",
+    "revenge": "emptyRef"
+  },
+  "id": "Unit_Warz",
+  "inner_radius": 0.5,
+  "minimap_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Minimap/UI_Icons_Minimap_Hero_Default.UI_Icons_Minimap_Hero_Default'",
+  "minimap_icon_size": 40.0,
+  "minimap_icon_use_heading": true,
+  "minimap_icon_use_team_color": true,
+  "minimap_material_instance": "MaterialInterface'/Game/Pegasus/UI/Assets/Materials/MI_UI_MinimapCharacterPortraitMask_Warz.MI_UI_MinimapCharacterPortraitMask_Warz'",
+  "minimap_widget": "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Pegasus/UI/Minimap/WBP_Minimap_Icon_Hero.WBP_Minimap_Icon_Hero_C'",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.35,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 3,
+    "speed": 5.5,
+    "stationary_turn_period": 0.35,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "name": "pegasus_heroes|UnitData_name_Unit_Warz",
+  "outer_radius": 1.0,
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_hero",
+    "attribute_biological",
+    "attribute_melee"
+  ],
+  "subgroup_priority": 200,
+  "traits": [
+    "Reaper_Trait",
+    "EnergyRipper_Trait",
+    "ShroudedProtection_Trait"
+  ],
+  "unit_button": "Warz_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Demon/UI_Portrait_Demon_Default_Warz.UI_Portrait_Demon_Default_Warz'",
+  "unreal_actor": "BP_UD_Hero_Warz",
+  "vision_radius": 12.0,
+  "vital_energy": {
+    "maximum": 100.0,
+    "regen": 2.0,
+    "starting": 50.0
+  },
+  "vital_health": {
+    "maximum": 800.0,
+    "regen": 4.0,
+    "starting": 800.0
+  },
+  "vital_shield": {
+    "maximum": 200.0,
+    "regen": 0.0,
+    "starting": 100.0
+  },
+  "weaponList": [
+    "Warz_WeaponBase",
+    "Warz_WeaponInfest",
+    "Warz_WeaponAvatar",
+    "Warz_WeaponAvatarInfest"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "activation_trigger": "Mutator_ReadyToBlow_Activate",
+  "based_on": "MutatorUI",
+  "description": "pegasus_coop|MutatorUI_description_MutatorUI_ReadyToBlow",
+  "id": "MutatorUI_ReadyToBlow",
+  "image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Mutators/UI_Icons_Mutators_ReadyToBlow.UI_Icons_Mutators_ReadyToBlow'",
+  "title": "pegasus_coop|Enum_values_2_display_name_Mutators"
+}

@@ -1,0 +1,10 @@
+{
+  "based_on": "MutatorSet",
+  "id": "MutatorSet_EZPZ",
+  "mutators": [
+    "MutatorUI_SwiftAssembly",
+    "MutatorUI_EnergyInfusion",
+    "MutatorUI_SeeAndSee"
+  ],
+  "title": "pegasus_coop|MutatorSet_title_MutatorSet_EZPZ"
+}

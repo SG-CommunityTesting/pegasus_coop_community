@@ -1,0 +1,8 @@
+{
+  "activation_trigger": "Mutator_HiringSpree_Activate",
+  "based_on": "MutatorUI",
+  "description": "pegasus_coop|MutatorUI_description_MutatorUI_HiringSpree",
+  "id": "MutatorUI_HiringSpree",
+  "image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Mutators/UI_Icons_Mutators_HiringSpree.UI_Icons_Mutators_HiringSpree'",
+  "title": "pegasus_coop|MutatorUI_title_MutatorUI_HiringSpree"
+}

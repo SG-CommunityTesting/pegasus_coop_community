@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_WeightLimit.UI_Icons_Abilities_WeightLimit'",
+  "id": "OutrunnerMovementSpeedLossCargo_ButtonTrait",
+  "name": "pegasus_heroes|Button_name_OutrunnerMovementSpeedLossCargo_ButtonTrait",
+  "tooltip": "pegasus_heroes|Button_tooltip_OutrunnerMovementSpeedLossCargo_ButtonTrait"
+}

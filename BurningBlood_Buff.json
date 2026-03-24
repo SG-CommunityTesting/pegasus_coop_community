@@ -1,0 +1,20 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "buff_visuals": "BP_BVA_BurningBlood",
+  "duration": 20.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_BurningBlood.UI_Icons_Abilities_BurningBlood'",
+  "id": "BurningBlood_Buff",
+  "modifiers": [
+    {
+      "amount": 25.0,
+      "stat_mod": "AttackSpeedPercentageAdditiveMultiplier"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_BurningBlood_Buff",
+  "periodic_duration": 0.25,
+  "responses": [
+    "BurningBlood_Buff_ExtraFireDamage_ResponseDamage"
+  ],
+  "tooltip": "pegasus_heroes|Buff_tooltip_BurningBlood_Buff"
+}

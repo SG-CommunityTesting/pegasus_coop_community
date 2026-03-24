@@ -1,0 +1,30 @@
+{
+  "applied_tags": [
+    "status_slowed"
+  ],
+  "based_on": "BaseDebuff",
+  "duration": 1.0,
+  "flags": {
+    "change_owner_on_polymorph": false,
+    "disable_on_attacking": false,
+    "disable_on_damage_taken": false,
+    "hidden": false,
+    "hide_timer": true,
+    "override_source": false,
+    "pause_while_disabled": false,
+    "persist_on_dead": false,
+    "remove_on_attacking": false,
+    "remove_on_damage_taken": false,
+    "show_progress": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_TimeShift.UI_Icons_Abilities_TimeShift'",
+  "id": "TimeShift_Debuff",
+  "modifiers": [
+    {
+      "amount": -50.0,
+      "stat_mod": "SpeedPercentageBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_TimeShift_Debuff",
+  "tooltip": "pegasus_heroes|Buff_tooltip_TimeShift_Debuff"
+}

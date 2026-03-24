@@ -1,0 +1,34 @@
+{
+  "based_on": "BaseStagedAbility",
+  "cast_game_effect": "ServeTheFlame_Set",
+  "commands": [
+    {
+      "cooldown": {
+        "duration": 20.0,
+        "name": "Serve the Flame",
+        "scope": "Ability"
+      },
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 30.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "emptyRef"
+    }
+  ],
+  "display_effect_area": "ServeTheFlame_SearchRadiusCorpse",
+  "finish_duration": 0.5,
+  "id": "ServeTheFlame",
+  "range_maximum": 10.0,
+  "targeting_type": "Location",
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AbilityComponents/AC_Ability_Cast_SpellA.AC_Ability_Cast_SpellA_C'"
+}

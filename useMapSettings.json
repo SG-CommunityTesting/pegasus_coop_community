@@ -1,0 +1,51 @@
+{
+  "based_on": "DefaultMapSettings",
+  "id": "InstanceMapSettings",
+  "loading_widget": "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Pegasus/UI/LoadingScreen/WBP_LoadingCoop.WBP_LoadingCoop_C'",
+  "player_attributes": [
+    "teamAttributeDefinition",
+    "slotTypeAttributeDefinition",
+    "factionAttributeDefinition",
+    "aiStyleAttributeDefinition",
+    "difficultyAttributeDefinition",
+    "mutationAttributeDefinition"
+  ],
+  "player_slots": [
+    {
+      "attribute_overrides": [
+        "slotTypeAttributeData_humanLocked",
+        "teamAttributeData_team0Locked"
+      ]
+    },
+    {
+      "attribute_overrides": [
+        "slotTypeAttributeData_humanLocked",
+        "teamAttributeData_team0Locked"
+      ]
+    },
+    {
+      "attribute_overrides": [
+        "slotTypeAttributeData_humanLocked",
+        "teamAttributeData_team0Locked"
+      ]
+    },
+    {
+      "attribute_overrides": [
+        "slotTypeAttributeData_closedLocked",
+        "teamAttributeData_team1Locked"
+      ]
+    },
+    {
+      "attribute_overrides": [
+        "slotTypeAttributeData_closedLocked",
+        "teamAttributeData_team1Locked"
+      ]
+    },
+    {
+      "attribute_overrides": [
+        "teamAttributeData_team0Locked",
+        "slotTypeAttributeData_closedLocked"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+﻿{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_Darkspeed.UI_Icons_Abilities_Darkspeed'",
+  "id": "Darkspeed_Button",
+  "name": "pegasus_heroes|Button_name_Darkspeed_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_Darkspeed_Button"
+}

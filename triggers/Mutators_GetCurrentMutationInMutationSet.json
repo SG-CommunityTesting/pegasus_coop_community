@@ -1,0 +1,17 @@
+﻿{
+  "based_on": "Function",
+  "grammar_text": "Current Mutator",
+  "hint_text": "Mutators - Current Mutator (For Each)",
+  "id": "Mutators_GetCurrentMutationInMutationSet",
+  "name": "Mutators - Current Mutator (For Each)",
+  "options": {
+    "is_implemented": true
+  },
+  "path": "Mutators",
+  "return_type": {
+    "directive": "TypeRef",
+    "type": "MutatorUI"
+  },
+  "script": "({{ var(\"mutation_set_mutator_itr\") }})",
+  "type": "Function"
+}

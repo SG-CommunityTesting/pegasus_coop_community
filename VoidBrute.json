@@ -1,0 +1,30 @@
+{
+  "id": "VoidBrute",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.26,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 1,
+    "speed": 4.0,
+    "stationary_turn_period": 0.26,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "traits": [
+    "FiendishRebirth_Trait",
+    "VoidGoo_Trait"
+  ]
+}

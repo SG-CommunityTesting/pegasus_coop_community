@@ -1,0 +1,6 @@
+{
+  "based_on": "SoundData",
+  "id": "SoundData_Transmission_Tutorial_Workers04",
+  "sound_system_data": "SSD_Transmissions_Tutorial",
+  "trigger": "VO_TutWorkers04"
+}

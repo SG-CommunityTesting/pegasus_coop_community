@@ -1,0 +1,344 @@
+{
+  "actions": [
+    {
+      "function_id": "Mutators_ForEachMutationInMutationSet",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Player_GetAttributeValueAsArchetypeRef",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "type": "Value",
+                        "value": {
+                          "type": {
+                            "directive": "FunctionType",
+                            "implements": "",
+                            "inner_type": "",
+                            "param_id": "",
+                            "sub_directive": "None",
+                            "type": "Player"
+                          },
+                          "value": "1"
+                        }
+                      }
+                    ],
+                    "id": "player"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "type": "Value",
+                        "value": {
+                          "type": {
+                            "directive": "TypeRef",
+                            "implements": "",
+                            "inner_type": "",
+                            "param_id": "",
+                            "sub_directive": "None",
+                            "type": "PlayerAttributeDefinition"
+                          },
+                          "value": "mutatorSetAttributeDefinition"
+                        }
+                      }
+                    ],
+                    "id": "attribute"
+                  }
+                ]
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "mutator_set"
+        }
+      ],
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "Trigger_Run",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Mutators_GetMutationTriggerFromMutator",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Mutators_GetCurrentMutationInMutationSet"
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "mutator"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "trigger"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Trigger_CheckIgnoreConditions",
+                        "value_id": "check"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "conditions"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Trigger_WaitDontWait",
+                        "value_id": "nowait"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "wait"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Time_Forever",
+                        "value_id": "forever"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "timeout"
+                }
+              ]
+            }
+          ],
+          "id": "actions"
+        }
+      ]
+    },
+    {
+      "function_id": "PlayerGroup_ForEachPlayerInGroup",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "PlayerGroup_GetAllPlayers"
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "players"
+        }
+      ],
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "General_IfThenElse",
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Logic_Comparison",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "function": {
+                                "function_id": "Player_GetAttributeValueAsArchetypeRef",
+                                "parameters": [
+                                  {
+                                    "expressions": [
+                                      {
+                                        "function": {
+                                          "function_id": "PlayerGroup_GetCurrentPlayer"
+                                        },
+                                        "type": "Function"
+                                      }
+                                    ],
+                                    "id": "player"
+                                  },
+                                  {
+                                    "expressions": [
+                                      {
+                                        "type": "Value",
+                                        "value": {
+                                          "type": {
+                                            "directive": "TypeRef",
+                                            "implements": "",
+                                            "inner_type": "",
+                                            "param_id": "",
+                                            "sub_directive": "None",
+                                            "type": "PlayerAttributeDefinition"
+                                          },
+                                          "value": "mutationAttributeDefinition"
+                                        }
+                                      }
+                                    ],
+                                    "id": "attribute"
+                                  }
+                                ]
+                              },
+                              "type": "Function"
+                            }
+                          ],
+                          "id": "value1"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Logic_ComparisonOperator",
+                                "value_id": "ne"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "op"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "TypeRef_NoTypeRef",
+                                "value_id": "none"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "value2"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "if"
+                },
+                {
+                  "functions": [
+                    {
+                      "function_id": "Trigger_Run",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "function": {
+                                "function_id": "Mutators_GetMutationTriggerFromMutator",
+                                "parameters": [
+                                  {
+                                    "expressions": [
+                                      {
+                                        "function": {
+                                          "function_id": "Player_GetAttributeValueAsArchetypeRef",
+                                          "parameters": [
+                                            {
+                                              "expressions": [
+                                                {
+                                                  "function": {
+                                                    "function_id": "PlayerGroup_GetCurrentPlayer"
+                                                  },
+                                                  "type": "Function"
+                                                }
+                                              ],
+                                              "id": "player"
+                                            },
+                                            {
+                                              "expressions": [
+                                                {
+                                                  "type": "Value",
+                                                  "value": {
+                                                    "type": {
+                                                      "directive": "TypeRef",
+                                                      "implements": "",
+                                                      "inner_type": "",
+                                                      "param_id": "",
+                                                      "sub_directive": "None",
+                                                      "type": "PlayerAttributeDefinition"
+                                                    },
+                                                    "value": "mutationAttributeDefinition"
+                                                  }
+                                                }
+                                              ],
+                                              "id": "attribute"
+                                            }
+                                          ]
+                                        },
+                                        "type": "Function"
+                                      }
+                                    ],
+                                    "id": "mutator"
+                                  }
+                                ]
+                              },
+                              "type": "Function"
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Trigger_CheckIgnoreConditions",
+                                "value_id": "check"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "conditions"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Trigger_WaitDontWait",
+                                "value_id": "nowait"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "wait"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Time_Forever",
+                                "value_id": "forever"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "timeout"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "then"
+                },
+                {
+                  "id": "else"
+                }
+              ]
+            }
+          ],
+          "id": "actions"
+        }
+      ]
+    }
+  ],
+  "based_on": "Trigger",
+  "id": "Init_Mutators"
+}

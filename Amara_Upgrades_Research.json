@@ -1,0 +1,78 @@
+{
+  "based_on": "ResearchAbilityData",
+  "commands": [
+    {
+      "requirement": "Amara_MoltenShot_Upgrade1_RequirementLearn",
+      "upgrade": "Amara_MoltenShot_DoT_Upgrade"
+    },
+    {
+      "requirement": "Amara_MoltenShot_Upgrade1_RequirementLearn",
+      "upgrade": "Amara_MoltenShot_Duration_Upgrade"
+    },
+    {
+      "requirement": "Amara_MoltenShot_Upgrade2_RequirementLearn",
+      "upgrade": "Amara_MoltenShot_BonusDamage_Upgrade"
+    },
+    {
+      "requirement": "Amara_MoltenShot_Upgrade2_RequirementLearn",
+      "upgrade": "Amara_MoltenShot_ExtraBounce_Upgrade"
+    },
+    {
+      "requirement": "Amara_ShadowStep_Upgrade1_RequirementLearn",
+      "upgrade": "Amara_ShadowStep_Armor_Upgrade"
+    },
+    {
+      "requirement": "Amara_ShadowStep_Upgrade1_RequirementLearn",
+      "upgrade": "Amara_ShadowStep_Cooldown_Upgrade"
+    },
+    {
+      "requirement": "Amara_ShadowStep_Upgrade2_RequirementLearn",
+      "upgrade": "Amara_ShadowStep_Flashbang_Upgrade"
+    },
+    {
+      "requirement": "Amara_ShadowStep_Upgrade2_RequirementLearn",
+      "upgrade": "Amara_ShadowStep_ImpactAoE_Upgrade"
+    },
+    {
+      "requirement": "Amara_DeathSpiral_Upgrade1_RequirementLearn",
+      "upgrade": "Amara_DeathSpiral_ArmorShred_Upgrade"
+    },
+    {
+      "requirement": "Amara_DeathSpiral_Upgrade1_RequirementLearn",
+      "upgrade": "Amara_DeathSpiral_BetterSlow_Upgrade"
+    },
+    {
+      "requirement": "Amara_DeathSpiral_Upgrade2_RequirementLearn",
+      "upgrade": "Amara_DeathSpiral_CooldownReset_Upgrade"
+    },
+    {
+      "requirement": "Amara_DeathSpiral_Upgrade2_RequirementLearn",
+      "upgrade": "Amara_DeathSpiral_PersistentDoT_Upgrade"
+    },
+    {
+      "requirement": "Amara_TemporalReflection_Upgrade1_RequirementLearn",
+      "upgrade": "Amara_TemporalReflection_Duration_Upgrade"
+    },
+    {
+      "requirement": "Amara_TemporalReflection_Upgrade1_RequirementLearn",
+      "upgrade": "Amara_TemporalReflection_ExplodeOnDeath_Upgrade"
+    },
+    {
+      "requirement": "Amara_DeathSpiral_BaseAbility_RequirementLearn",
+      "upgrade": "Amara_DeathSpiral_BaseAbility_Upgrade"
+    },
+    {
+      "requirement": "Amara_MoltenShot_BaseAbility_RequirementLearn",
+      "upgrade": "Amara_MoltenShot_BaseAbility_Upgrade"
+    },
+    {
+      "requirement": "Amara_ShadowStep_BaseAbility_RequirementLearn",
+      "upgrade": "Amara_ShadowStep_BaseAbility_Upgrade"
+    },
+    {
+      "requirement": "Amara_TemporalReflection_BaseAbility_RequirementLearn",
+      "upgrade": "Amara_TemporalReflection_BaseAbility_Upgrade"
+    }
+  ],
+  "id": "Amara_Upgrades_Research"
+}

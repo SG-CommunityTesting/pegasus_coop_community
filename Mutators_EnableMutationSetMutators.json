@@ -1,0 +1,45 @@
+{
+  "based_on": "Function",
+  "grammar_text": "",
+  "hint_text": "TODO",
+  "id": "Mutators_EnableMutationSetMutators",
+  "name": "Mutators - Enable Mutation Set",
+  "options": {
+    "is_implemented": true
+  },
+  "parameters": [
+    {
+      "id": "mutation_set",
+      "name": "Mutation Set",
+      "type": {
+        "directive": "TypeRef",
+        "type": "MutatorSet"
+      }
+    },
+    {
+      "default_values": [
+        {
+          "preset": {
+            "preset_id": "General_EnableDisable",
+            "value_id": "enable"
+          },
+          "type": "Preset"
+        }
+      ],
+      "hint_text": "Whether the trigger should be enabled or disabled.",
+      "id": "state",
+      "name": "State",
+      "type": {
+        "directive": "Preset",
+        "type": "General_EnableDisable"
+      }
+    }
+  ],
+  "path": "Mutators",
+  "return_type": {
+    "directive": "None"
+  },
+  "script": "for (TArchetypeRef<SnowFacts::MutatorUI> mutator : ({{ param(\"mutation_set\") }})->mutators)\n{\n Triggers::Trigger::set_trigger_enabled(mutator->trigger, {{ param(\"state\") }}); }\n}",
+  "sub_functions": [],
+  "type": "Action"
+}

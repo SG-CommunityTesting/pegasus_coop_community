@@ -1,0 +1,9 @@
+{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "HeroicCharge_SearchRadiusFriendly",
+    "HeroicCharge_SearchRadiusEnemy",
+    "HeroicCharge_DamageRadius"
+  ],
+  "id": "Barclay_HeroicCharge_ImpactSet"
+}

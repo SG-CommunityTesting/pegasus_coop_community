@@ -1,0 +1,8 @@
+{
+  "activation_trigger": "Mutator_GottaGoFast_Activate",
+  "based_on": "MutatorUI",
+  "description": "pegasus_coop|MutatorUI_description_MutatorUI_GottaGoFast",
+  "id": "MutatorUI_GottaGoFast",
+  "image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Mutators/UI_Icons_Mutators_GottaGoFast.UI_Icons_Mutators_GottaGoFast'",
+  "title": "pegasus_coop|Enum_values_6_display_name_Mutators"
+}

@@ -1,0 +1,19 @@
+{
+  "alignment": "Helpful",
+  "based_on": "PlayerBuff",
+  "flags": {
+    "apply_to_team": false,
+    "disable_duplicates": false,
+    "hidden": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/BasicCommands/UI_Icons_BasicCommands_Build.UI_Icons_BasicCommands_Build'",
+  "id": "Mutator_SwiftAssembly_PlayerBuff",
+  "modifiers": [
+    {
+      "amount": 100.0,
+      "stat_mod": "ConstructionSpeedPercentageAdditiveMultiplier"
+    }
+  ],
+  "name": "pegasus_coop|PlayerBuff_name_Mutator_SwiftAssembly_PlayerBuff",
+  "tooltip": "pegasus_coop|PlayerBuff_tooltip_Mutator_SwiftAssembly_PlayerBuff"
+}

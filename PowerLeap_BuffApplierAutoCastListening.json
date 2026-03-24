@@ -1,0 +1,6 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "PowerLeap_BuffAutoCastListening",
+  "id": "PowerLeap_BuffApplierAutoCastListening",
+  "validator": "Valid_CanApplyPowerLeapAutoCastListening"
+}

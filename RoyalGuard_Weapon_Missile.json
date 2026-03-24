@@ -1,0 +1,6 @@
+{
+  "based_on": "ProjectileData",
+  "id": "RoyalGuard_Weapon_Missile",
+  "radius": 0.3,
+  "unreal_actor": "BP_RoyalGuard_Missile"
+}

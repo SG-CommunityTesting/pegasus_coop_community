@@ -1,0 +1,9 @@
+{
+  "arc": 180.0,
+  "based_on": "TurretData",
+  "behavior_idle": "Hold",
+  "id": "DefenseTower_Turret",
+  "idle_delay": 0.0,
+  "turn_period_idle": 1.0,
+  "turn_period_tracking": 0.3
+}

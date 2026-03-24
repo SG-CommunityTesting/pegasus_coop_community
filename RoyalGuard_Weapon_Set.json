@@ -1,0 +1,8 @@
+{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "RoyalGuard_Weapon_DmgAOE",
+    "QuickdrawHustle_BuffApplier"
+  ],
+  "id": "RoyalGuard_Weapon_Set"
+}

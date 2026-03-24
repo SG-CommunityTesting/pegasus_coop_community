@@ -1,0 +1,20 @@
+{
+  "based_on": "BaseGameEffectLaunchProjectile",
+  "id": "SentryPostRoyalGuard_Weapon_MissileLauncher",
+  "impact_effect": "SentryPostRoyalGuard_Weapon_Set",
+  "impact_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "launch_fx": "BP_FXS_SentryGunRoyalGuard_LaunchFX",
+  "movement": {
+    "acceleration_time": 0.01,
+    "lob": true,
+    "lob_gravity": 26.0,
+    "max_speed": 20.0
+  },
+  "projectile": "SentryPostRoyalGuard_Weapon_Missile",
+  "projectile_movement_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/ProjectileMovementComponents/PMC_SentryGunRoyalGuardProjectile.PMC_SentryGunRoyalGuardProjectile_C'",
+  "warning_fx": "BP_EBFX_SentryGunRoyalGuard_WarningLocation"
+}

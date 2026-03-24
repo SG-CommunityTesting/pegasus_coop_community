@@ -1,0 +1,6 @@
+{
+  "based_on": "Ryker_Ghost_Weapon_Damage",
+  "id": "Ryker_Shadow_Weapon_Damage",
+  "impact_fx": "BP_FXI_ShadowScout_Impact",
+  "tag_bonuses": []
+}

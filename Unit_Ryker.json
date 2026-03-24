@@ -1,0 +1,205 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "SummonGhostAndShadow",
+    "TuckAndRoll",
+    "ActiveCamouflage",
+    "BoomHeadshot"
+  ],
+  "armor_name": "pegasus_core|ArmorName_VanguardHeroicArmor",
+  "based_on": "BaseUnit_VanguardHero",
+  "buffs": [
+    "BoomHeadshot_ResetCooldownBuff",
+    "LickYourWounds_Buff",
+    "Houndmaster_GhostBuff",
+    "Houndmaster_ShadowBuff",
+    "AmbushShot_Buff",
+    "TempHeroProgressionAttackDamageBuff10",
+    "TempHeroProgressionAttackDamageBuff20",
+    "PackMentality_GhostBuff",
+    "PackMentality_RykerBuff",
+    "PackMentality_ShadowBuff"
+  ],
+  "build_time": 0.0,
+  "cargo_size": "Four",
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "SummonGhostAndShadow",
+      "button": "SummonGhostAndShadow_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "TuckAndRoll",
+      "button": "TuckAndRoll_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "BoomHeadshot",
+      "button": "BoomHeadshot_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "ActiveCamouflage",
+      "button": "ActiveCamouflage_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    0,
+    10
+  ],
+  "effects": {
+    "birth": "emptyRef",
+    "constructed": "emptyRef",
+    "creation": "emptyRef",
+    "death": "SummonGhostAndShadow_Unsummon_SearchRadius",
+    "revenge": "emptyRef"
+  },
+  "faction": "Ryker_Faction",
+  "id": "Unit_Ryker",
+  "inner_radius": 0.5,
+  "minimap_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Minimap/UI_Icons_Minimap_Hero_Default.UI_Icons_Minimap_Hero_Default'",
+  "minimap_icon_size": 40.0,
+  "minimap_icon_use_heading": true,
+  "minimap_icon_use_team_color": true,
+  "minimap_material_instance": "MaterialInterface'/Game/Pegasus/UI/Assets/Materials/MI_UI_MinimapCharacterPortraitMask_Ryker.MI_UI_MinimapCharacterPortraitMask_Ryker'",
+  "minimap_widget": "/Script/UMG.WidgetBlueprintGeneratedClass'/Game/Pegasus/UI/Minimap/WBP_Minimap_Icon_Hero.WBP_Minimap_Icon_Hero_C'",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.13,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 0,
+    "speed": 5.5,
+    "stationary_turn_period": 0.13,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false
+  },
+  "name": "pegasus_heroes|UnitData_name_Unit_Ryker",
+  "outer_radius": 0.8,
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_light",
+    "attribute_biological",
+    "attribute_hero",
+    "attribute_ranged"
+  ],
+  "subgroup_priority": 200,
+  "supply_cost": 0.0,
+  "traits": [
+    "AmbushShot_Trait",
+    "Houndmaster_Trait",
+    "PackMentality_Trait"
+  ],
+  "unit_button": "Ryker_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Humans/UI_Portrait_Human_Default_Ryker.UI_Portrait_Human_Default_Ryker'",
+  "unreal_actor": "BP_UH_Hero_Ryker",
+  "vision_radius": 12.0,
+  "vital_energy": {
+    "maximum": 100.0,
+    "regen": 2.0,
+    "starting": 100.0
+  },
+  "vital_health": {
+    "maximum": 600.0,
+    "regen": 3.0,
+    "starting": 600.0
+  },
+  "weaponList": [
+    "Ryker_Weapon"
+  ]
+}

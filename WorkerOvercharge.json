@@ -1,0 +1,18 @@
+{
+  "id": "WorkerOvercharge",
+  "target_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": false,
+      "neutral": false,
+      "player": true,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "state_underconstruction"
+      ],
+      "required": []
+    }
+  }
+}

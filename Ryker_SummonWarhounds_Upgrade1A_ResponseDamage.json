@@ -1,0 +1,39 @@
+{
+  "based_on": "ResponseDamage",
+  "damage_shield_settings": {
+    "display_as_shields": true,
+    "remove_holding_buff_when_exhausted": true,
+    "shields_max": 100.0,
+    "shields_max_expression": {}
+  },
+  "id": "Ryker_SummonWarhounds_Upgrade1A_ResponseDamage",
+  "modify_fraction": 0.0,
+  "shared": {
+    "chance": 1.0,
+    "charges": -1,
+    "cooldown": {
+      "duration": 0.0,
+      "name": "Barclay_HeroicCharge_Shield",
+      "scope": "Ability"
+    },
+    "location": "defender",
+    "priority": 100,
+    "required_effect": "emptyRef",
+    "response_effect": "emptyRef",
+    "response_fx": "None",
+    "target_filter": {
+      "alliance": {
+        "ally": true,
+        "enemy": true,
+        "neutral": true,
+        "player": true,
+        "self": true
+      },
+      "tags": {
+        "excluded": [],
+        "required": []
+      }
+    },
+    "validator": "emptyRef"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "armor_name": "pegasus_heroes|UnitData_armor_name_BaseUnit_CelestialHero",
+  "based_on": "BaseUnit_CelestialU",
+  "cargo_size": "Four",
+  "default_control_groups": [
+    0,
+    1,
+    2
+  ],
+  "expiration_time": -1.0,
+  "id": "BaseUnit_CelestialHero",
+  "inner_radius": 0.7,
+  "minimap_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Minimap/UI_Icons_Minimap_Hero_Default.UI_Icons_Minimap_Hero_Default'",
+  "minimap_icon_size": 40.0,
+  "minimap_icon_upper_layer": true,
+  "minimap_icon_use_heading": true,
+  "minimap_icon_use_team_color": true,
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "item": false
+    },
+    "deceleration_time": 0.0,
+    "moving_turn_period": 0.13,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "speed": 4.5,
+    "stationary_turn_period": 0.13,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false
+  },
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_hero"
+  ],
+  "subgroup_priority": 200,
+  "veterancy_tiers": [
+    {
+      "stat_modifiers": [
+        {
+          "amount": 25.0,
+          "stat": "HealthMaxPercentageAdditiveMultiplier"
+        },
+        {
+          "amount": 20.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 25.0,
+          "stat": "HealthRegenPercentageAdditiveMultiplier"
+        }
+      ],
+      "threshold": 1500,
+      "visual_fx": "BP_FX_HeroLevelUp"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 25.0,
+          "stat": "HealthMaxPercentageAdditiveMultiplier"
+        },
+        {
+          "amount": 20.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 25.0,
+          "stat": "HealthRegenPercentageAdditiveMultiplier"
+        }
+      ],
+      "threshold": 4000,
+      "visual_fx": "BP_FX_HeroLevelUp"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 25.0,
+          "stat": "HealthMaxPercentageAdditiveMultiplier"
+        },
+        {
+          "amount": 20.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 25.0,
+          "stat": "HealthRegenPercentageAdditiveMultiplier"
+        }
+      ],
+      "threshold": 10000,
+      "visual_fx": "BP_FX_HeroLevelUp"
+    }
+  ],
+  "vital_energy": {
+    "maximum": 100.0,
+    "regen": 2.0,
+    "starting": 100.0
+  },
+  "vital_health": {
+    "maximum": 1000.0,
+    "regen": 5.0,
+    "starting": 1000.0
+  }
+}

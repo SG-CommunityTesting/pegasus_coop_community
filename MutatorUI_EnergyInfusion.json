@@ -1,0 +1,8 @@
+{
+  "activation_trigger": "Mutator_EnergyInfusion_Activate",
+  "based_on": "MutatorUI",
+  "description": "pegasus_coop|MutatorUI_description_MutatorUI_EnergyInfusion",
+  "id": "MutatorUI_EnergyInfusion",
+  "image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Mutators/UI_Icons_Mutators_EnergyInfusion.UI_Icons_Mutators_EnergyInfusion'",
+  "title": "pegasus_coop|MutatorUI_title_MutatorUI_EnergyInfusion"
+}

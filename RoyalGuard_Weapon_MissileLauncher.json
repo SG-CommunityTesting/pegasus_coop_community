@@ -1,0 +1,16 @@
+{
+  "based_on": "GameEffectLaunchProjectile",
+  "id": "RoyalGuard_Weapon_MissileLauncher",
+  "impact_effect": "RoyalGuard_Weapon_Set",
+  "launch_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Entity",
+    "target": "Caster"
+  },
+  "movement": {
+    "acceleration_time": 0,
+    "max_speed": 15.0
+  },
+  "projectile": "RoyalGuard_Weapon_Missile",
+  "range_max": 10.0
+}

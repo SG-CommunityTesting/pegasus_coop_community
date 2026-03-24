@@ -1,0 +1,65 @@
+{
+  "based_on": "Validator",
+  "check": {
+    "root": {
+      "left": {
+        "name": "ExpressionApi::Value::convert_i32_to_value",
+        "node": "FunctionCall",
+        "parameters": [
+          {
+            "argument": {
+              "name": "ExpressionApi::Int::number_of_units_in_transport",
+              "node": "FunctionCall",
+              "parameters": [
+                {
+                  "argument": {
+                    "name": "ExpressionApi::effect_caster",
+                    "node": "FunctionCall",
+                    "parameters": [],
+                    "type": "Entity"
+                  },
+                  "name": "entity",
+                  "type": "Entity"
+                }
+              ],
+              "type": "Int"
+            },
+            "name": "A",
+            "type": "Int"
+          }
+        ],
+        "type": "Value"
+      },
+      "node": "Logical",
+      "operator": ">",
+      "right": {
+        "name": "ExpressionApi::get_effect_stored_value",
+        "node": "FunctionCall",
+        "parameters": [
+          {
+            "argument": {
+              "node": "Literal",
+              "type": "Name",
+              "value": "origin"
+            },
+            "name": "effect_parent",
+            "type": "Name"
+          },
+          {
+            "argument": {
+              "node": "Literal",
+              "type": "Name",
+              "value": "PeriodicCount"
+            },
+            "name": "key",
+            "type": "Name"
+          }
+        ],
+        "type": "Value"
+      },
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "id": "Valid_OutrunnerWeaponCount"
+}

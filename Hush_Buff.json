@@ -1,0 +1,17 @@
+{
+  "alignment": "Harmful",
+  "applied_tags": [
+    "status_silenced",
+    "status_pacified"
+  ],
+  "based_on": "Buff",
+  "buff_tags": [
+    "dispel_technological"
+  ],
+  "buff_visuals": "BP_BVA_Hush",
+  "duration": 10.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_Hush.UI_Icons_Abilities_Hush'",
+  "id": "Hush_Buff",
+  "name": "pegasus_heroes|Buff_name_SilenceMind_Buff",
+  "tooltip": "pegasus_heroes|Buff_tooltip_SilenceMind_Buff"
+}

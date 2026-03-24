@@ -1,0 +1,31 @@
+{
+  "abilityList": [
+    "Mutator_ReadyToBlow_Ability"
+  ],
+  "armor_name": "Unnamed Armor",
+  "based_on": "UnitData",
+  "commandList": [
+    {
+      "ability": "Mutator_ReadyToBlow_Ability",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "id": "Mutator_ReadyToBlow_Unit",
+  "name": "UnitData_name_Mutator_ReadyToBlow_Unit",
+  "unreal_actor": "BP_Unit_Human_Mine_00",
+  "vital_energy": {
+    "maximum": 0.0,
+    "regen": 0.0,
+    "starting": 0.0
+  },
+  "vital_shield": {
+    "maximum": 0.0,
+    "regen": 0.0,
+    "starting": 0.0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "attribute_id": "difficulty",
+  "based_on": "PlayerAttributeDefinition",
+  "default_instance_map_settings": {
+    "default_value": 2,
+    "locked": false
+  },
+  "display_name": "Difficulty",
+  "display_settings": {
+    "reset_on_leave": true,
+    "show_in_custom_lobby": true,
+    "show_in_internal_lobby": false,
+    "show_on_ais": true,
+    "show_on_occupied_humans": true
+  },
+  "id": "difficultyAttributeDefinition",
+  "permission_settings": {
+    "user_edit_scope": {
+      "anyone": false,
+      "lobby_owner": true,
+      "slot_occupant": true
+    },
+    "user_editing_allowed": "Noncompetitive"
+  },
+  "values": "DifficultyWithTutorial"
+}

@@ -1,0 +1,107 @@
+﻿{
+  "available_to_coop": true,
+  "background_playlist": "MediaPlaylist'/Game/Pegasus/UI/Assets/Video/Backgrounds/Amara/PL_Backgrounds_Coop_Amara.PL_Backgrounds_Coop_Amara'",
+  "based_on": "Vanguard",
+  "character_image": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Characters/UI_Coop_Character_Amara.UI_Coop_Character_Amara'",
+  "commander_levels": [
+    "CommanderAmara_PerkLevel01",
+    "CommanderAmara_PerkLevel02",
+    "CommanderAmara_PerkLevel03",
+    "CommanderAmara_PerkLevel04",
+    "CommanderAmara_PerkLevel05",
+    "CommanderAmara_PerkLevel06",
+    "CommanderAmara_PerkLevel07",
+    "CommanderAmara_PerkLevel08",
+    "CommanderAmara_PerkLevel09",
+    "CommanderAmara_PerkLevel10",
+    "CommanderAmara_PerkLevel11",
+    "CommanderAmara_PerkLevel12",
+    "CommanderAmara_PerkLevel13",
+    "CommanderAmara_PerkLevel14",
+    "CommanderAmara_PerkLevel15",
+    "CommanderAmara_PerkLevel16",
+    "CommanderAmara_PerkLevel17",
+    "CommanderAmara_PerkLevel18",
+    "CommanderAmara_PerkLevel19",
+    "CommanderAmara_PerkLevel20"
+  ],
+  "default_scout": "Firestarter",
+  "description": "pegasus_commanders|Faction_description_VanguardAmara",
+  "description_title": "pegasus_commanders|Commander_Amara_Subtitle",
+  "granted_by": "HeroAmaraUnlockable",
+  "hero": {
+    "spawn_offset": {
+      "x": 5.0,
+      "y": 5.0
+    },
+    "unit": "Hero_Amara"
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Tiles/UI_Coop_Tiles_Amara.UI_Coop_Tiles_Amara'",
+  "icon_observer": "MaterialInterface'/Game/Pegasus/UI/Assets/Observer/MI_ObserverFactionLogo_Amara.MI_ObserverFactionLogo_Amara'",
+  "id": "VanguardAmara",
+  "loadout": "Amara3vELoadout",
+  "lobby_index": 1002,
+  "name": "Faction_Name_VanguardAmara",
+  "rewards": [
+    {
+      "level": 6,
+      "reward": [
+        "AmaraLvl11CoopReward"
+      ]
+    },
+    {
+      "level": 7,
+      "reward": [
+        "AmaraLvl12CoopReward"
+      ]
+    },
+    {
+      "level": 11,
+      "reward": [
+        "AmaraLvl13CoopReward"
+      ]
+    },
+    {
+      "level": 12,
+      "reward": [
+        "AmaraLvl14CoopReward"
+      ]
+    },
+    {
+      "level": 14,
+      "reward": [
+        "AmaraLvl15CoopReward"
+      ]
+    },
+    {
+      "level": 15,
+      "reward": [
+        "AmaraLvl18CoopReward"
+      ]
+    },
+    {
+      "level": 20,
+      "reward": [
+        "AmaraLvl16CoopReward"
+      ]
+    }
+  ],
+  "starting_units": [
+    {
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "unit": "HQTier1"
+    },
+    {
+      "offset": {
+        "x": 0,
+        "y": 5.0
+      },
+      "unit": "Firestarter"
+    }
+  ],
+  "store_item": "HeroAmaraStoreItem",
+  "topbar_unit": "VanguardAmaraTopBarCaster"
+}

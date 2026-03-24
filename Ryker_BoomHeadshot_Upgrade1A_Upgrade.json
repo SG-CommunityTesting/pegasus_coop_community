@@ -1,0 +1,13 @@
+{
+  "based_on": "BaseUpgradeData",
+  "button": "Ryker_BoomHeadshot_Upgrade1A_Upgrade_Button",
+  "id": "Ryker_BoomHeadshot_Upgrade1A_Upgrade",
+  "set_values": [
+    {
+      "target_archetype": "BoomHeadshot",
+      "target_command_index": 0,
+      "target_property": "cast_duration",
+      "target_value": -2.0
+    }
+  ]
+}

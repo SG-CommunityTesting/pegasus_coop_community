@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_FireWave.UI_Icons_Abilities_FireWave'",
+  "id": "FireGiantWeapon_ButtonTrait",
+  "name": "pegasus_commanders|Button_Name_FireGiantWeapon_ButtonTrait",
+  "tooltip": "pegasus_commanders|Button_Tooltip_FireGiantWeapon_ButtonTrait"
+}

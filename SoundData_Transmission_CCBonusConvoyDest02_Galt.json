@@ -1,0 +1,7 @@
+{
+  "based_on": "SoundData",
+  "id": "SoundData_Transmission_CCBonusConvoyDest02_Galt",
+  "name": "Transmission - Base",
+  "sound_system_data": "SSD_Transmission_Galt_CC_Intro",
+  "trigger": "VCCBonusConvoyDest02_Galt"
+}

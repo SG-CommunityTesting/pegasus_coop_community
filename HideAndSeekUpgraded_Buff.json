@@ -1,0 +1,15 @@
+﻿{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "duration": 3.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Stats/UI_Icons_Stats_MovementSpeed.UI_Icons_Stats_MovementSpeed'",
+  "id": "HideAndSeekUpgraded_Buff",
+  "modifiers": [
+    {
+      "amount": 40.0,
+      "stat_mod": "SpeedPercentageBonus"
+    }
+  ],
+  "name": "pegasus_core|Buff_name_HideAndSeekUpgraded_Buff",
+  "tooltip": "pegasus_core|Buff_tooltip_HideAndSeekUpgraded_Buff"
+}

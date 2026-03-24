@@ -1,0 +1,26 @@
+{
+  "based_on": "Validator",
+  "check": {
+    "root": {
+      "name": "ExpressionApi::combine_validators_and",
+      "node": "FunctionCall",
+      "parameters": [
+        {
+          "argument": {
+            "node": "Literal",
+            "type": "Array<Validator>",
+            "value": [
+              "Valid_TargetIsHeroOrStructure",
+              "Valid_CasterNoHammerTimeBuff"
+            ]
+          },
+          "name": "validators",
+          "type": "Array<Validator>"
+        }
+      ],
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "id": "Valid_CanCastJusticeJump"
+}

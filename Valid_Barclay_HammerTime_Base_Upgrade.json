@@ -1,0 +1,26 @@
+{
+  "based_on": "BaseValidator",
+  "check": {
+    "root": {
+      "name": "ExpressionApi::combine_validators_and",
+      "node": "FunctionCall",
+      "parameters": [
+        {
+          "argument": {
+            "node": "Literal",
+            "type": "Array<Validator>",
+            "value": [
+              "Valid_NOT_Barclay_HammerTime_Upgrade2B_Upgrade",
+              "Valid_NOT_Barclay_HammerTime_Upgrade1A_Upgrade"
+            ]
+          },
+          "name": "validators",
+          "type": "Array<Validator>"
+        }
+      ],
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "id": "Valid_Barclay_HammerTime_Base_Upgrade"
+}

@@ -1,0 +1,5 @@
+{
+  "based_on": "TraitData",
+  "button": "PowerShield_ButtonTrait",
+  "id": "PowerShield_Trait"
+}

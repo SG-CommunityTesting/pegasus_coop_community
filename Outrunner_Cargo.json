@@ -1,0 +1,64 @@
+{
+  "based_on": "CargoAbilityData",
+  "cargo_capacity": 4,
+  "cargo_max_size": "Two",
+  "flags": {
+    "cargo_death": false,
+    "global": false,
+    "global_filter": ""
+  },
+  "id": "Outrunner_Cargo",
+  "load_effect": "OutrunnerMovementSpeedLossCargo_BuffApplier",
+  "load_range": 2.0,
+  "load_target_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": false,
+      "neutral": false,
+      "player": true,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "entity_unit_structure",
+        "attribute_object",
+        "status_grounded",
+        "attribute_summoned"
+      ],
+      "required": [
+        "heightplane_ground"
+      ]
+    }
+  },
+  "smart": {
+    "priority": 60,
+    "smart_filter": {
+      "alliance": {
+        "ally": false,
+        "enemy": false,
+        "neutral": false,
+        "player": true,
+        "self": false
+      },
+      "tags": {
+        "excluded": [
+          "entity_unit_structure",
+          "attribute_object"
+        ],
+        "required": [
+          "heightplane_ground"
+        ]
+      }
+    }
+  },
+  "target_actor": [
+    "BP_BaseTargetActor",
+    "BP_BaseTargetActor",
+    "BP_BaseTargetActor"
+  ],
+  "unload_effect": "OutrunnerCargo_Set",
+  "unload_period": 0.25,
+  "unload_radius": 5.0,
+  "unload_range": 3.0,
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AbilityComponents/AC_Ability_Cargo.AC_Ability_Cargo_C'"
+}

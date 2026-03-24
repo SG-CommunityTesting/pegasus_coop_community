@@ -1,0 +1,137 @@
+﻿{
+  "available_to_coop": true,
+  "background_playlist": "MediaPlaylist'/Game/Pegasus/UI/Assets/Video/Backgrounds/Warz/PL_Backgrounds_Coop_Warz.PL_Backgrounds_Coop_Warz'",
+  "based_on": "Infernal",
+  "character_image": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Characters/UI_Coop_Character_Warz.UI_Coop_Character_Warz'",
+  "commander_levels": [
+    "CommanderWarz_PerkLevel01",
+    "CommanderWarz_PerkLevel02",
+    "CommanderWarz_PerkLevel03",
+    "CommanderWarz_PerkLevel04",
+    "CommanderWarz_PerkLevel05",
+    "CommanderWarz_PerkLevel06",
+    "CommanderWarz_PerkLevel07",
+    "CommanderWarz_PerkLevel08",
+    "CommanderWarz_PerkLevel09",
+    "CommanderWarz_PerkLevel10",
+    "CommanderWarz_PerkLevel11",
+    "CommanderWarz_PerkLevel12",
+    "CommanderWarz_PerkLevel13",
+    "CommanderWarz_PerkLevel14",
+    "CommanderWarz_PerkLevel15",
+    "CommanderWarz_PerkLevel16",
+    "CommanderWarz_PerkLevel17",
+    "CommanderWarz_PerkLevel18",
+    "CommanderWarz_PerkLevel19",
+    "CommanderWarz_PerkLevel20"
+  ],
+  "description": "Faction_description_InfernalWarz",
+  "description_title": "pegasus_commanders|Commander_Warz_Subtitle",
+  "granted_by": "HeroWarzUnlockable",
+  "hero": {
+    "spawn_offset": {
+      "x": 5.0,
+      "y": 5.0
+    },
+    "unit": "Hero_Warz"
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Tiles/UI_Coop_Tiles_Warz.UI_Coop_Tiles_Warz'",
+  "icon_observer": "MaterialInterface'/Game/Pegasus/UI/Assets/Observer/MI_ObserverFactionLogo_Warz.MI_ObserverFactionLogo_Warz'",
+  "id": "InfernalWarz",
+  "loadout": "Warz3vELoadout",
+  "lobby_index": 2002,
+  "name": "pegasus_commanders|Faction_Name_InfernalWarz",
+  "quick_macro_train_advanced": [
+    {
+      "ability": "TwilightSpire_Spawn",
+      "button": "Shadowflyer_Button",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "TwilightSpire_Spawn",
+      "button": "Harbinger_Button",
+      "commandIndex": 1,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "TwilightSpire_Spawn",
+      "button": "Spriggan_Button",
+      "commandIndex": 2,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "SummonFlayedDragonWarz",
+      "button": "SummonFlayedDragon_Button",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "SummonFlayedDragonWarzUpgraded",
+      "button": "SummonFlayedDragon_Button",
+      "commandIndex": 0,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "rewards": [
+    {
+      "level": 6,
+      "reward": [
+        "WarzLvl11CoopReward"
+      ]
+    },
+    {
+      "level": 7,
+      "reward": [
+        "WarzLvl12CoopReward"
+      ]
+    },
+    {
+      "level": 11,
+      "reward": [
+        "WarzLvl13CoopReward"
+      ]
+    },
+    {
+      "level": 12,
+      "reward": [
+        "WarzLvl14CoopReward"
+      ]
+    },
+    {
+      "level": 14,
+      "reward": [
+        "WarzLvl15CoopReward"
+      ]
+    },
+    {
+      "level": 15,
+      "reward": [
+        "WarzLvl18CoopReward"
+      ]
+    },
+    {
+      "level": 20,
+      "reward": [
+        "WarzLvl16CoopReward"
+      ]
+    }
+  ],
+  "store_item": "HeroWarzStoreItem",
+  "topbar_unit": "InfernalWarzTopBarCaster"
+}

@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_HeroicCharge.UI_Icons_Abilities_HeroicCharge'",
+  "id": "Barclay_HeroicCharge_Button",
+  "name": "pegasus_commanders|Button_Name_Barclay_HeroicCharge_Button",
+  "tooltip": "pegasus_commanders|Button_Tooltip_Barclay_HeroicCharge_Button"
+}

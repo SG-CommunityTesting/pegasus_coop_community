@@ -1,0 +1,8 @@
+{
+  "amount": 40.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_splash"
+  ],
+  "id": "FireGiant_Weapon_Damage"
+}

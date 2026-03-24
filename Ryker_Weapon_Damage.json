@@ -1,0 +1,9 @@
+{
+  "amount": 100.0,
+  "based_on": "BaseGameEffectDamage",
+  "damage_tags": [
+    "damage_ranged"
+  ],
+  "id": "Ryker_Weapon_Damage",
+  "impact_fx": "BP_FXI_RykerWeapon_Impact"
+}

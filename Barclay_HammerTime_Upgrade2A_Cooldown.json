@@ -1,0 +1,12 @@
+{
+  "ability_archetype": "HammerTime",
+  "based_on": "BaseGameEffectCooldown",
+  "cooldown_name": "HammerTimeCooldown",
+  "duration": 20.0,
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "id": "Barclay_HammerTime_Upgrade2A_Cooldown",
+  "validator": "Valid_Barclay_HammerTime_Upgrade2A_Upgrade"
+}

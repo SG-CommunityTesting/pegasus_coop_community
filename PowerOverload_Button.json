@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_PowerOverload.UI_Icons_Abilities_PowerOverload'",
+  "id": "PowerOverload_Button",
+  "name": "pegasus_heroes|Button_name_PowerOverload_Button",
+  "tooltip": "pegasus_heroes|Button_Tooltip_PowerSurge_Button"
+}

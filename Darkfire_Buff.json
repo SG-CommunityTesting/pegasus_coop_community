@@ -1,0 +1,16 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "buff_visuals": "BP_BVA_Darkfire",
+  "duration": 5.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_Darkfire.UI_Icons_Abilities_Darkfire'",
+  "id": "Darkfire_Buff",
+  "modifiers": [
+    {
+      "amount": 100.0,
+      "stat_mod": "ArmorScaledAdditiveBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_Darkfire_Buff",
+  "tooltip": "pegasus_heroes|Buff_tooltip_Darkfire_Buff"
+}

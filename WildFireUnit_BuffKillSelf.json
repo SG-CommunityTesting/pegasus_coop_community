@@ -1,0 +1,12 @@
+{
+  "based_on": "Buff",
+  "flags": {
+    "hidden": false,
+    "hide_timer": false,
+    "override_source": false,
+    "show_progress": false
+  },
+  "id": "WildFireUnit_BuffKillSelf",
+  "name": "20",
+  "validator_remove": "Valid_NotCommanderLevel10"
+}

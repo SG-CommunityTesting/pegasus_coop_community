@@ -1,0 +1,33 @@
+{
+  "based_on": "Function",
+  "grammar_text": "Value of attribute {attribute} for player {player}",
+  "hint_text": "Gets the value of a player attribute",
+  "id": "Player_GetMutationSetAttributeValue",
+  "name": "Player - Player Attribute Value",
+  "options": {
+    "is_implemented": true,
+    "is_native": true
+  },
+  "parameters": [
+    {
+      "id": "player",
+      "name": "Player",
+      "type": {
+        "directive": "FunctionType",
+        "type": "Player"
+      }
+    }
+  ],
+  "path": "Player",
+  "return_type": {
+    "directive": "TypeRef",
+    "implements": "",
+    "inner_type": "",
+    "param_id": "",
+    "sub_directive": "None",
+    "tags": [],
+    "type": "MutatorSet"
+  },
+  "script_id": "Shim::Player::get_player_attribute_value",
+  "type": "Function"
+}

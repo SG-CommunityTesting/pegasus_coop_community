@@ -1,0 +1,8 @@
+{
+  "based_on": "Transmission",
+  "character": "Character_CaptainNero",
+  "id": "Transmission_InfestedCrater_Intro_04b",
+  "is_intro": false,
+  "sound": "SoundData_Transmission_VO_ICIntroVan02_Nero",
+  "text_field": "pegasus_coop|Transmission_text_field_Transmission_InfestedCrater_Intro_04b"
+}

@@ -1,0 +1,6 @@
+{
+  "based_on": "BaseGameEffectApplyBuff",
+  "buff": "Barclay_Revitalize_Upgrade1B_Buff",
+  "id": "Barclay_Revitalize_Upgrade1B_BuffApplier",
+  "validator": "Valid_Barclay_Revitalize_Upgrade1B_Upgrade"
+}

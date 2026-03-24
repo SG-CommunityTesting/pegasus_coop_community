@@ -1,0 +1,158 @@
+{
+  "abilityList": [
+    "UnderConstruction_Celestial",
+    "structureProductionQueueAbilityData",
+    "attackData",
+    "stopData"
+  ],
+  "alias_tech": [
+    "_ArcshipTier1",
+    "_MythiaArcshipTier1"
+  ],
+  "based_on": "BaseUnit_CelestialS",
+  "build_cost": {
+    "resource_a": 250.0,
+    "resource_b": 0.0,
+    "resource_c": 0.0,
+    "resource_d": 0.0
+  },
+  "build_time": 60.0,
+  "cascade_field_radius": 8,
+  "commandList": [
+    {
+      "ability": "structureProductionQueueAbilityData",
+      "button": "CancelProduction_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 6,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "ArcshipTier1Liftoff",
+      "button": "ArcshipLiftoff_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "attackData",
+      "button": "ImmobileAttack_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_acquire_level": "Offensive",
+  "effects": {
+    "birth": "emptyRef",
+    "constructed": "MorphToMythiaArcshipTier1",
+    "creation": "emptyRef",
+    "death": "emptyRef",
+    "revenge": "emptyRef"
+  },
+  "enabled_unit_tech": [
+    {
+      "unit": "MorphCore"
+    },
+    {
+      "unit": "PowerBank"
+    },
+    {
+      "unit": "CollectionArray"
+    },
+    {
+      "unit": "CreationChamber"
+    }
+  ],
+  "flags": {
+    "detector": false,
+    "display_ui_description": false,
+    "has_prime_structure": false,
+    "overlap_resource_a": false,
+    "requires_cascade_field": true,
+    "requires_cascade_field_to_morph": false,
+    "seek_and_destroy": false,
+    "stealth": false,
+    "uncommandable": false
+  },
+  "footprint": {
+    "angled": false,
+    "snap": true,
+    "vision_block_height": 0,
+    "x": 6.0,
+    "y": 6.0
+  },
+  "id": "MythiaArcshipGrounded",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "lock_facing": true,
+    "moving_turn_period": 0.0,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "speed": 0.0,
+    "stationary_turn_period": 0.0,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false
+  },
+  "name": "pegasus_heroes|UnitData_name_MythiaArcshipTier1",
+  "outer_radius": 3.4,
+  "power_produced": 30.0,
+  "starting_snowtags": [
+    "entity_unit_structure",
+    "preventdefeat_elimination",
+    "heightplane_ground",
+    "attribute_mechanical",
+    "attribute_heavy",
+    "state_resourcedropoff_b",
+    "townhall"
+  ],
+  "subgroup_priority": 60,
+  "supply_cost": 0.0,
+  "traits": [],
+  "unit_button": "MythiaArcshipTier1_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Angel/UI_Portrait_Angel_Default_ArcshipT1.UI_Portrait_Angel_Default_ArcshipT1'",
+  "unreal_actor": "BP_SA_ArcshipGround_A_00",
+  "veterancy_given_on_death": 500,
+  "vision_radius": 15.0,
+  "vital_energy": {
+    "maximum": 100.0,
+    "regen": 0.25,
+    "starting": 25.0
+  },
+  "vital_health": {
+    "maximum": 800.0,
+    "regen": 1.0,
+    "starting": 800.0
+  }
+}

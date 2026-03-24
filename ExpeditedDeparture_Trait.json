@@ -1,0 +1,5 @@
+{
+  "based_on": "TraitData",
+  "button": "ExpeditedDeparture_Button",
+  "id": "ExpeditedDeparture_Trait"
+}

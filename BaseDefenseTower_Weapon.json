@@ -1,0 +1,41 @@
+{
+  "arc": 180.0,
+  "arc_slop": 11.25,
+  "backswing": 0.0,
+  "based_on": "BaseWeapon",
+  "display_effect_damage": "BaseDefenseTower_Weapon_Damage",
+  "flags": {
+    "can_attack_location": false,
+    "channeled": false,
+    "fires_passively": false,
+    "hide_weapon": false,
+    "melee": false,
+    "scan_for_new_targets": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Weapons/UI_Icons_Weapons_InfernoSoulflare.UI_Icons_Weapons_InfernoSoulflare'",
+  "id": "BaseDefenseTower_Weapon",
+  "name": "pegasus_core|WeaponData_name_Obelisk_Weapon",
+  "period": 1.0,
+  "range_acquire": 22.0,
+  "range_maximum": 22.0,
+  "swing": 0.0,
+  "turret": "DefenseTower_Turret",
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/WeaponComponents/AC_Weapon_GenericNoAttackAnimation.AC_Weapon_GenericNoAttackAnimation_C'",
+  "weapon_fire": "BaseDefenseTower_Weapon_MissileLauncher",
+  "weapon_target_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": false,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable",
+        "entity_destructible_tree"
+      ],
+      "required": []
+    }
+  }
+}

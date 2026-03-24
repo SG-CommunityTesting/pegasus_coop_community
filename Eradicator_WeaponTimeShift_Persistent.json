@@ -1,0 +1,21 @@
+{
+  "based_on": "GameEffectPersistent",
+  "effect_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "id": "Eradicator_WeaponTimeShift_Persistent",
+  "periodic": {
+    "count": 10,
+    "durations": [
+      0.25
+    ],
+    "effects": [
+      "Eradicator_WeaponTimeShift_SearchRadius"
+    ],
+    "validator": "NoValidator"
+  },
+  "unreal_actor": "BP_EBFX_TimeShiftAoE",
+  "validator": "Valid_CanUseTimeShift"
+}

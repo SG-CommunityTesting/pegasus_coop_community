@@ -1,0 +1,21 @@
+{
+  "based_on": "Buff",
+  "duration": -1.0,
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_WeightLimit.UI_Icons_Abilities_WeightLimit'",
+  "id": "OutrunnerMovementSpeedLossCargo_Buff",
+  "modifiers": [
+    {
+      "amount": -0.25,
+      "stat_mod": "SpeedUnscaledBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_OutrunnerMovementSpeedLossCargo_Buff",
+  "stacks": {
+    "aggregation": "Target",
+    "buff_scope_effect_parent": "none",
+    "decay": 0,
+    "initial": 1,
+    "maximum": 6
+  },
+  "tooltip": "pegasus_heroes|Buff_tooltip_OutrunnerMovementSpeedLossCargo_Buff"
+}

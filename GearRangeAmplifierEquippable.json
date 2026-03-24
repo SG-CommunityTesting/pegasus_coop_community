@@ -1,0 +1,6 @@
+{
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Gear/UI_Icons_Gear_RangeAmplifier.UI_Icons_Gear_RangeAmplifier'",
+  "id": "GearRangeAmplifierEquippable",
+  "main_image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Gear/UI_Icons_Gear_RangeAmplifier.UI_Icons_Gear_RangeAmplifier'",
+  "perk": "RangeAmplifierPerk"
+}

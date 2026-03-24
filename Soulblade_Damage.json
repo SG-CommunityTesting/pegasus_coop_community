@@ -1,0 +1,8 @@
+{
+  "amount": 80.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_melee"
+  ],
+  "id": "Soulblade_Damage"
+}

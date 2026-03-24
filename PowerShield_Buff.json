@@ -1,0 +1,15 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "duration": -1.0,
+  "flags": {
+    "hidden": true,
+    "hide_timer": false,
+    "override_source": false,
+    "show_progress": false
+  },
+  "id": "PowerShield_Buff",
+  "responses": [
+    "PowerShield_ResponseDamage"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "actions": [
+    {
+      "function_id": "Trigger_SetEnabled",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Trigger"
+                },
+                "value": "Mutator_InfantryAssault"
+              }
+            }
+          ],
+          "id": "trigger"
+        },
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "General_EnableDisable",
+                "value_id": "enable"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "state"
+        }
+      ]
+    },
+    {
+      "function_id": "Trigger_SetEnabled",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Trigger"
+                },
+                "value": "Mutator_InfantryAssault_SpawnerDestroyed"
+              }
+            }
+          ],
+          "id": "trigger"
+        },
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "General_EnableDisable",
+                "value_id": "enable"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "state"
+        }
+      ]
+    },
+    {
+      "function_id": "Debug_DebugMessage",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Debug_DebugMessageTag",
+                "value_id": "notag"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "tag"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "String"
+                },
+                "value": "INFANTRY ASSAULT MUTATOR ACTIVE"
+              }
+            }
+          ],
+          "id": "message"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Time"
+                },
+                "value": "10.0"
+              }
+            }
+          ],
+          "id": "duration"
+        }
+      ]
+    }
+  ],
+  "based_on": "Trigger",
+  "id": "Mutator_InfantryAssault_Activate"
+}

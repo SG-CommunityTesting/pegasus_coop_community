@@ -1,0 +1,76 @@
+{
+  "based_on": "GameEffectModifyVitals",
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "energy_mod_expression": {
+    "root": {
+      "left": {
+        "name": "ExpressionApi::get_effect_stored_value",
+        "node": "FunctionCall",
+        "parameters": [
+          {
+            "argument": {
+              "node": "Literal",
+              "type": "Name",
+              "value": "origin"
+            },
+            "name": "effect_parent",
+            "type": "Name"
+          },
+          {
+            "argument": {
+              "node": "Literal",
+              "type": "Name",
+              "value": "CullTheUnworthy_SupplyCost"
+            },
+            "name": "key",
+            "type": "Name"
+          }
+        ],
+        "type": "Value"
+      },
+      "node": "Math",
+      "operator": "*",
+      "right": {
+        "node": "Literal",
+        "type": "Value",
+        "value": 10.0
+      },
+      "type": "Value"
+    },
+    "type": "Value"
+  },
+  "health_mod_expression": {
+    "root": {
+      "left": {
+        "name": "ExpressionApi::get_max_health",
+        "node": "FunctionCall",
+        "parameters": [
+          {
+            "argument": {
+              "name": "ExpressionApi::effect_caster",
+              "node": "FunctionCall",
+              "parameters": [],
+              "type": "Entity"
+            },
+            "name": "entity",
+            "type": "Entity"
+          }
+        ],
+        "type": "Value"
+      },
+      "node": "Math",
+      "operator": "*",
+      "right": {
+        "node": "Literal",
+        "type": "Value",
+        "value": 0.33000001311302185
+      },
+      "type": "Value"
+    },
+    "type": "Value"
+  },
+  "id": "CullTheUnworthy_ModifyVitals"
+}

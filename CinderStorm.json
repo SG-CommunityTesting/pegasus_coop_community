@@ -1,0 +1,28 @@
+{
+  "based_on": "StagedAbilityData",
+  "commands": [
+    {
+      "cooldown": {
+        "duration": 180.0,
+        "name": "Cinder Storm",
+        "scope": "Ability"
+      },
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 55.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "CinderStorm_Requirement"
+    }
+  ],
+  "id": "CinderStorm"
+}

@@ -1,0 +1,146 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "DismissBurnedOne"
+  ],
+  "alias_tech": [
+    "_BurnedOne"
+  ],
+  "armor": 20.0,
+  "armor_icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Armor/UI_Icons_Armor_Infernals_Army_Heavy.UI_Icons_Armor_Infernals_Army_Heavy'",
+  "armor_name": "pegasus_core|ArmorName_InfernalArmor",
+  "based_on": "BaseUnit_InfernalU",
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "DismissBurnedOne",
+      "button": "DismissBurnedOne_Button",
+      "commandIndex": 0,
+      "repeatable": false,
+      "row": 1,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    10
+  ],
+  "effects": {
+    "birth": "emptyRef",
+    "creation": "emptyRef",
+    "death": "BurnedOne_S_Death_Persistent",
+    "revenge": "emptyRef"
+  },
+  "id": "BurnedOne_Small",
+  "inner_radius": 0.5,
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.5,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 0,
+    "speed": 4.0,
+    "stationary_turn_period": 0.5,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "name": "pegasus_heroes|UnitData_name_BurnedOne_Small",
+  "num_corpses": 0,
+  "outer_radius": 0.8,
+  "sb_id": "Burned One",
+  "selection_alias": "Burned One",
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_biological",
+    "attribute_heavy",
+    "attribute_melee",
+    "attribute_summoned"
+  ],
+  "subgroup_priority": 118,
+  "traits": [
+    "BurnedOneDeathEffect_Trait",
+    "BurnedOneWeaponBuff_Trait"
+  ],
+  "unit_button": "BurnedOne_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Demon/UI_Portrait_Demon_Default_BurnedOne.UI_Portrait_Demon_Default_BurnedOne'",
+  "unreal_actor": "BP_UD_IMOFleshling_Small_00",
+  "vital_health": {
+    "maximum": 140.0,
+    "regen": 0.0,
+    "starting": 140.0
+  },
+  "vital_shield": {
+    "maximum": 35.0,
+    "regen": 0.0,
+    "starting": 17.5
+  },
+  "weaponList": [
+    "BurnedOne_Small_Weapon"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Units/Human/UI_Icons_Units_Human_Outrunner.UI_Icons_Units_Human_Outrunner'",
+  "id": "Outrunner_Button",
+  "name": "pegasus_heroes|Button_name_Outrunner_Button",
+  "tooltip": "pegasus_heroes|Button_tooltip_Outrunner_Button"
+}

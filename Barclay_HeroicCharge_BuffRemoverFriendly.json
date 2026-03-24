@@ -1,0 +1,12 @@
+{
+  "based_on": "GameEffectRemoveBuff",
+  "id": "Barclay_HeroicCharge_BuffRemoverFriendly",
+  "tag_filter": {
+    "alignment": "Harmful",
+    "ignored": [],
+    "required": [
+      "dispel_technological"
+    ]
+  },
+  "validator": "Valid_TargetIsFriendly"
+}

@@ -1,0 +1,26 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "buff_visuals": "BP_BVA_HammerTime",
+  "duration": 8.0,
+  "effect_periodic": "HammerTime_Switch",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_HammerTime.UI_Icons_Abilities_HammerTime'",
+  "id": "HammerTime_Buff",
+  "modifiers": [
+    {
+      "amount": 30.0,
+      "stat_mod": "SpeedPercentageBonus"
+    }
+  ],
+  "name": "pegasus_heroes|Buff_name_HammerTime_Buff",
+  "periodic_duration": 0.25,
+  "state_flags": {
+    "collision_suppressed": true,
+    "detector": false,
+    "grounded": false,
+    "stealth": false,
+    "stealth_suppressed": false
+  },
+  "tooltip": "pegasus_heroes|Buff_tooltip_HammerTime_Buff",
+  "validator_remove": "Valid_CasterNotStunned"
+}

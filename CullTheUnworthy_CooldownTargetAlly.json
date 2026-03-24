@@ -1,0 +1,12 @@
+{
+  "ability_archetype": "CullTheUnworthy",
+  "based_on": "BaseGameEffectCooldown",
+  "cooldown_name": "CullTheUnworthy",
+  "duration": -5.0,
+  "effect_target": {
+    "effect_parent": "origin",
+    "target": "Caster"
+  },
+  "id": "CullTheUnworthy_CooldownTargetAlly",
+  "validator": "Valid_TargetIsFriendly"
+}

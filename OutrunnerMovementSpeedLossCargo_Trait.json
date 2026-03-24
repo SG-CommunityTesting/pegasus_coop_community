@@ -1,0 +1,5 @@
+{
+  "based_on": "TraitData",
+  "button": "OutrunnerMovementSpeedLossCargo_ButtonTrait",
+  "id": "OutrunnerMovementSpeedLossCargo_Trait"
+}

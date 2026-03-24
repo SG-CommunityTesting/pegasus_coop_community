@@ -1,0 +1,5 @@
+{
+  "based_on": "BaseGameEffectApplyBuff",
+  "buff": "HeadTrauma_Active_Stun_Debuff",
+  "id": "HeadTrauma_Active_Stun_BuffApplier"
+}

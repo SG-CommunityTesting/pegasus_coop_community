@@ -1,0 +1,5 @@
+﻿{
+  "based_on": "HideAndSeek_Teleport",
+  "id": "HideAndSeek_TeleportUpgraded",
+  "teleport_effect": "HideAndSeekUpgraded_BuffApplier"
+}

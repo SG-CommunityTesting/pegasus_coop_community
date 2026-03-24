@@ -1,0 +1,11 @@
+{
+  "based_on": "BaseBuff",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Gear/UI_Icons_Gear_SpellDamageIncrease.UI_Icons_Gear_SpellDamageIncrease'",
+  "id": "TempHeroProgressionSpellDamageBuff20",
+  "name": "pegasus_commanders|Buff_name_TempHeroProgressionSpellDamageBuff20",
+  "responses": [
+    "TempHeroProgressionSpellDamageResponseDamage20"
+  ],
+  "tooltip": "pegasus_commanders|Buff_tooltip_TempHeroProgressionSpellDamageBuff20",
+  "validator_remove": "Valid_CommanderLevel19"
+}

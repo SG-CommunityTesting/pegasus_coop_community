@@ -1,0 +1,10 @@
+{
+  "id": "ThronosWisp_Refund",
+  "impact_fx": "None",
+  "refund_factor": {
+    "resource_a": 0.0,
+    "resource_b": 0.0,
+    "resource_c": 1.0,
+    "resource_d": 0.0
+  }
+}

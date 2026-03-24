@@ -1,0 +1,133 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData"
+  ],
+  "armor": 5.0,
+  "based_on": "BaseUnit_CelestialU",
+  "buffs": [
+    "DroidekaShield_Buff"
+  ],
+  "build_cost": {
+    "resource_a": 50.0,
+    "resource_b": 0.0,
+    "resource_c": 0.0,
+    "resource_d": 0.0
+  },
+  "build_time": 18.0,
+  "cargo_size": "One",
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    10
+  ],
+  "id": "Eradicator",
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "lock_facing": false,
+    "moving_turn_period": 0.13,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "speed": 4.0,
+    "stationary_turn_period": 0.13,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false
+  },
+  "name": "pegasus_heroes|UnitData_name_Eradicator",
+  "outer_radius": 0.6,
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_mechanical",
+    "attribute_biological",
+    "attribute_heavy",
+    "attribute_ranged"
+  ],
+  "subgroup_priority": 120,
+  "supply_cost": 1.0,
+  "traits": [
+    "DroidekaShield_Trait",
+    "Overkill_Trait",
+    "TimeShift_Trait"
+  ],
+  "unit_button": "Eradicator_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Angel/UI_Portrait_Angel_Default_Eradicator.UI_Portrait_Angel_Default_Eradicator'",
+  "unreal_actor": "BP_UA_Eradicator_00",
+  "veterancy_given_on_death": 200,
+  "vision_radius": 10.0,
+  "vital_health": {
+    "maximum": 90.0,
+    "regen": 0.0,
+    "starting": 90.0
+  },
+  "weaponList": [
+    "Eradicator_Weapon",
+    "Eradicator_Cascade_Weapon"
+  ]
+}

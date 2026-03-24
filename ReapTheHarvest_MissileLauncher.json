@@ -1,0 +1,51 @@
+{
+  "based_on": "GameEffectLaunchProjectile",
+  "id": "ReapTheHarvest_MissileLauncher",
+  "impact_effect": "ReapTheHarvest_Persistent",
+  "impact_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Point",
+    "target": "Target"
+  },
+  "launch_location": {
+    "effect_parent": "none",
+    "entity_or_point": "EntityOrPoint",
+    "target": "Caster"
+  },
+  "movement": {
+    "acceleration_time": 0,
+    "max_speed": 10.0
+  },
+  "periodic": {
+    "duration": 0.2,
+    "effect": "ReapTheHarvest_TravelReveal"
+  },
+  "projectile": "ReapTheHarvest_Missile",
+  "skillshots": [
+    {
+      "effects": [
+        "ReapTheHarvest_DamageTravel"
+      ],
+      "end_projectile": false,
+      "forward_offset": 0.0,
+      "max_targets": -1,
+      "target_filter": {
+        "alliance": {
+          "ally": false,
+          "enemy": true,
+          "neutral": true,
+          "player": false,
+          "self": false
+        },
+        "tags": {
+          "excluded": [
+            "status_invulnerable"
+          ],
+          "required": []
+        }
+      },
+      "target_validator": "NoValidator",
+      "width": 2.0
+    }
+  ]
+}

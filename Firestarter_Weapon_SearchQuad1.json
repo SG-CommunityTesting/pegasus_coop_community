@@ -1,0 +1,51 @@
+{
+  "based_on": "GameEffectSearchQuad",
+  "black_white_list": {
+    "exclude": [],
+    "include": [
+      {
+        "effect_parent": "origin",
+        "target": "Target"
+      }
+    ]
+  },
+  "game_effect": "Firestarter_Weapon_Damage1",
+  "id": "Firestarter_Weapon_SearchQuad1",
+  "include": true,
+  "include_target": {
+    "effect_parent": "scope",
+    "target": "Target"
+  },
+  "length": 9.0,
+  "polar_offset": {
+    "angle": 0.0,
+    "radius": 1.5
+  },
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": true,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable"
+      ],
+      "required": [
+        "heightplane_ground"
+      ]
+    }
+  },
+  "search_flags": {
+    "include_target": true
+  },
+  "search_location": {
+    "effect_parent": "none",
+    "entity_or_point": "EntityOrPoint",
+    "target": "Source"
+  },
+  "validator": "Valid_CasterNotHasFirestarterWeaponPhase2Buff_And_CasterNotHasFirestarterWeaponPhase3Buff",
+  "width": 1.0
+}

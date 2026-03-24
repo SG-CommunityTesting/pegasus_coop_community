@@ -1,0 +1,18 @@
+{
+  "id": "WorkerOvercharge_SearchRadius",
+  "search_filter": {
+    "alliance": {
+      "ally": true,
+      "enemy": false,
+      "neutral": false,
+      "player": true,
+      "self": true
+    },
+    "tags": {
+      "excluded": [
+        "entity_unit_structure"
+      ],
+      "required": []
+    }
+  }
+}

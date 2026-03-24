@@ -1,0 +1,1501 @@
+{
+  "actions": [
+    {
+      "function_id": "General_IfThenElse",
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "Logic_Comparison",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "Mutator_InfantryAssault_ActiveSpawnerCount"
+                      }
+                    }
+                  ],
+                  "id": "value1"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Logic_ComparisonOperator",
+                        "value_id": "lt"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "op"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "9"
+                      }
+                    }
+                  ],
+                  "id": "value2"
+                }
+              ]
+            }
+          ],
+          "id": "if"
+        },
+        {
+          "functions": [
+            {
+              "function_id": "Variable_SetVariable",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "AssaultWaveRandomPoint"
+                      }
+                    }
+                  ],
+                  "id": "variable"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Random_Integer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "type": "Value",
+                                "value": {
+                                  "type": {
+                                    "directive": "FunctionType",
+                                    "implements": "",
+                                    "inner_type": "",
+                                    "is_localized_string": false,
+                                    "param_id": "",
+                                    "sub_directive": "None",
+                                    "type": "Integer"
+                                  },
+                                  "value": "1"
+                                }
+                              }
+                            ],
+                            "id": "min"
+                          },
+                          {
+                            "expressions": [
+                              {
+                                "type": "Value",
+                                "value": {
+                                  "type": {
+                                    "directive": "FunctionType",
+                                    "implements": "",
+                                    "inner_type": "",
+                                    "is_localized_string": false,
+                                    "param_id": "",
+                                    "sub_directive": "None",
+                                    "type": "Integer"
+                                  },
+                                  "value": "9"
+                                }
+                              }
+                            ],
+                            "id": "max"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value"
+                }
+              ]
+            },
+            {
+              "function_id": "General_WhileLoop",
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Unit_IsAlive",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "indices": [
+                                  {
+                                    "type": "Variable",
+                                    "variable": {
+                                      "variable_id": "AssaultWaveRandomPoint"
+                                    }
+                                  }
+                                ],
+                                "variable_id": "Mutator_InfantryAssault_ActiveSpawnerUnits"
+                              }
+                            }
+                          ],
+                          "id": "unit"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "conditions"
+                },
+                {
+                  "functions": [
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "AssaultWaveRandomPoint"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "function": {
+                                "function_id": "Random_Integer",
+                                "parameters": [
+                                  {
+                                    "expressions": [
+                                      {
+                                        "type": "Value",
+                                        "value": {
+                                          "type": {
+                                            "directive": "FunctionType",
+                                            "implements": "",
+                                            "inner_type": "",
+                                            "is_localized_string": false,
+                                            "param_id": "",
+                                            "sub_directive": "None",
+                                            "type": "Integer"
+                                          },
+                                          "value": "1"
+                                        }
+                                      }
+                                    ],
+                                    "id": "min"
+                                  },
+                                  {
+                                    "expressions": [
+                                      {
+                                        "type": "Value",
+                                        "value": {
+                                          "type": {
+                                            "directive": "FunctionType",
+                                            "implements": "",
+                                            "inner_type": "",
+                                            "is_localized_string": false,
+                                            "param_id": "",
+                                            "sub_directive": "None",
+                                            "type": "Integer"
+                                          },
+                                          "value": "9"
+                                        }
+                                      }
+                                    ],
+                                    "id": "max"
+                                  }
+                                ]
+                              },
+                              "type": "Function"
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "Unit_CreateUnit",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "1"
+                      }
+                    }
+                  ],
+                  "id": "count"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "TypeRef",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "UnitData"
+                        },
+                        "value": "Mutator_InfantryAssault_Spawner"
+                      }
+                    }
+                  ],
+                  "id": "unit_data"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Player"
+                        },
+                        "value": "4"
+                      }
+                    }
+                  ],
+                  "id": "player"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Actor_GetPosition",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Point_GetPointFromPlacedName",
+                                  "parameters": [
+                                    {
+                                      "expressions": [
+                                        {
+                                          "function": {
+                                            "function_id": "String_FormatString",
+                                            "parameters": [
+                                              {
+                                                "expressions": [
+                                                  {
+                                                    "type": "Value",
+                                                    "value": {
+                                                      "type": {
+                                                        "directive": "FunctionType",
+                                                        "implements": "",
+                                                        "inner_type": "",
+                                                        "is_localized_string": false,
+                                                        "param_id": "",
+                                                        "sub_directive": "None",
+                                                        "type": "String"
+                                                      },
+                                                      "value": "MutatorPoint{}"
+                                                    }
+                                                  }
+                                                ],
+                                                "id": "format"
+                                              },
+                                              {
+                                                "expressions": [
+                                                  {
+                                                    "function": {
+                                                      "function_id": "String_ToString",
+                                                      "parameters": [
+                                                        {
+                                                          "expressions": [
+                                                            {
+                                                              "type": "Variable",
+                                                              "variable": {
+                                                                "variable_id": "AssaultWaveRandomPoint"
+                                                              }
+                                                            }
+                                                          ],
+                                                          "id": "value"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "type": "Function"
+                                                  }
+                                                ],
+                                                "id": "args"
+                                              }
+                                            ]
+                                          },
+                                          "type": "Function"
+                                        }
+                                      ],
+                                      "id": "name"
+                                    }
+                                  ]
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "actor"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "position"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Degrees"
+                        },
+                        "value": "0.0"
+                      }
+                    }
+                  ],
+                  "id": "facing"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Boolean"
+                        },
+                        "value": "true"
+                      }
+                    }
+                  ],
+                  "id": "birth"
+                }
+              ]
+            },
+            {
+              "function_id": "UnitGroup_AddUnit",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "Mutator_InfantryAssault_ActiveSpawnerGroup"
+                      }
+                    }
+                  ],
+                  "id": "group"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetLastCreatedUnit"
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "unit"
+                }
+              ]
+            },
+            {
+              "function_id": "Variable_SetVariable",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "indices": [
+                          {
+                            "type": "Variable",
+                            "variable": {
+                              "variable_id": "AssaultWaveRandomPoint"
+                            }
+                          }
+                        ],
+                        "variable_id": "Mutator_InfantryAssault_ActiveSpawnerUnits"
+                      }
+                    }
+                  ],
+                  "id": "variable"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetLastCreatedUnit"
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value"
+                }
+              ]
+            },
+            {
+              "function_id": "Ping_CreatePingOnActor",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "TypeRef",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Ping"
+                        },
+                        "value": "AttackThisPing"
+                      }
+                    }
+                  ],
+                  "id": "type"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetLastCreatedUnit"
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "actor"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Sound_NoSoundData",
+                        "value_id": "none"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "sound"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "PlayerGroup_GetAllPlayers"
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "players"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Sound_GlobalLocal",
+                        "value_id": "global"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "global_sound"
+                }
+              ]
+            },
+            {
+              "function_id": "Variable_ModifyVariable",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "Mutator_InfantryAssault_ActiveSpawnerCount"
+                      }
+                    }
+                  ],
+                  "id": "variable"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Math_ArithmeticOperator",
+                        "value_id": "plus"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "op"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "1"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ]
+            }
+          ],
+          "id": "then"
+        },
+        {
+          "id": "else"
+        }
+      ]
+    },
+    {
+      "function_id": "Variable_SetVariable",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "indices": [
+                  {
+                    "type": "Value",
+                    "value": {
+                      "type": {
+                        "directive": "FunctionType",
+                        "implements": "",
+                        "inner_type": "",
+                        "is_localized_string": false,
+                        "param_id": "",
+                        "sub_directive": "None",
+                        "type": "Integer"
+                      },
+                      "value": "0"
+                    }
+                  }
+                ],
+                "variable_id": "AssaultWaveTypes"
+              }
+            }
+          ],
+          "id": "variable"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "UnitData"
+                },
+                "value": "Lancer"
+              }
+            }
+          ],
+          "id": "value"
+        }
+      ]
+    },
+    {
+      "function_id": "Variable_SetVariable",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "indices": [
+                  {
+                    "type": "Value",
+                    "value": {
+                      "type": {
+                        "directive": "FunctionType",
+                        "implements": "",
+                        "inner_type": "",
+                        "is_localized_string": false,
+                        "param_id": "",
+                        "sub_directive": "None",
+                        "type": "Integer"
+                      },
+                      "value": "1"
+                    }
+                  }
+                ],
+                "variable_id": "AssaultWaveTypes"
+              }
+            }
+          ],
+          "id": "variable"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "UnitData"
+                },
+                "value": "Gunner"
+              }
+            }
+          ],
+          "id": "value"
+        }
+      ]
+    },
+    {
+      "function_id": "UnitGroup_ForEachUnitInGroup",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "variable_id": "Mutator_InfantryAssault_ActiveSpawnerGroup"
+              }
+            }
+          ],
+          "id": "units"
+        }
+      ],
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "Variable_SetVariable",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "AssaultWaveCurrentValue"
+                      }
+                    }
+                  ],
+                  "id": "variable"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "0"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ]
+            },
+            {
+              "function_id": "Variable_SetVariable",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "AssaultWaveGroup"
+                      }
+                    }
+                  ],
+                  "id": "variable"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "UnitGroup_GetNewUnitGroup"
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value"
+                }
+              ]
+            },
+            {
+              "function_id": "General_DoWhile",
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Logic_Comparison",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "AssaultWaveCurrentValue"
+                              }
+                            }
+                          ],
+                          "id": "value1"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Logic_ComparisonOperator",
+                                "value_id": "lt"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "op"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "AssaultWaveBudget"
+                              }
+                            }
+                          ],
+                          "id": "value2"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "conditions"
+                },
+                {
+                  "functions": [
+                    {
+                      "function_id": "Unit_CreateUnit",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "is_localized_string": false,
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "1"
+                              }
+                            }
+                          ],
+                          "id": "count"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "indices": [
+                                  {
+                                    "function": {
+                                      "function_id": "Random_Integer",
+                                      "parameters": [
+                                        {
+                                          "expressions": [
+                                            {
+                                              "type": "Value",
+                                              "value": {
+                                                "type": {
+                                                  "directive": "FunctionType",
+                                                  "implements": "",
+                                                  "inner_type": "",
+                                                  "is_localized_string": false,
+                                                  "param_id": "",
+                                                  "sub_directive": "None",
+                                                  "type": "Integer"
+                                                },
+                                                "value": "0"
+                                              }
+                                            }
+                                          ],
+                                          "id": "min"
+                                        },
+                                        {
+                                          "expressions": [
+                                            {
+                                              "type": "Value",
+                                              "value": {
+                                                "type": {
+                                                  "directive": "FunctionType",
+                                                  "implements": "",
+                                                  "inner_type": "",
+                                                  "is_localized_string": false,
+                                                  "param_id": "",
+                                                  "sub_directive": "None",
+                                                  "type": "Integer"
+                                                },
+                                                "value": "1"
+                                              }
+                                            }
+                                          ],
+                                          "id": "max"
+                                        }
+                                      ]
+                                    },
+                                    "type": "Function"
+                                  }
+                                ],
+                                "variable_id": "AssaultWaveTypes"
+                              }
+                            }
+                          ],
+                          "id": "unit_data"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "is_localized_string": false,
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "function": {
+                                "function_id": "Actor_GetPosition",
+                                "parameters": [
+                                  {
+                                    "expressions": [
+                                      {
+                                        "function": {
+                                          "function_id": "UnitGroup_GetCurrentUnit"
+                                        },
+                                        "type": "Function"
+                                      }
+                                    ],
+                                    "id": "actor"
+                                  }
+                                ]
+                              },
+                              "type": "Function"
+                            }
+                          ],
+                          "id": "position"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "is_localized_string": false,
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Degrees"
+                                },
+                                "value": "270"
+                              }
+                            }
+                          ],
+                          "id": "facing"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "is_localized_string": false,
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Boolean"
+                                },
+                                "value": "false"
+                              }
+                            }
+                          ],
+                          "id": "birth"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "UnitGroup_AddUnit",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "AssaultWaveGroup"
+                              }
+                            }
+                          ],
+                          "id": "group"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "function": {
+                                "function_id": "Unit_GetLastCreatedUnit"
+                              },
+                              "type": "Function"
+                            }
+                          ],
+                          "id": "unit"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_ModifyVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "AssaultWaveCurrentValue"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Math_ArithmeticOperator",
+                                "value_id": "plus"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "op"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "script": "(int)Shim::Unit::get_data(Shim::Unit::get_last_created_unit())->build_cost.resource_a",
+                              "type": "Script"
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_ModifyVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "AssaultWaveCurrentValue"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Math_ArithmeticOperator",
+                                "value_id": "plus"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "op"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "script": "(int)Shim::Unit::get_data(Shim::Unit::get_last_created_unit())->build_cost.resource_b",
+                              "type": "Script"
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "Wave_CreateWave",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Actor_GetPosition",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "UnitGroup_GetCurrentUnit"
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "actor"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "position"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Degrees"
+                        },
+                        "value": "0"
+                      }
+                    }
+                  ],
+                  "id": "facing"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "AssaultWaveGroup"
+                      }
+                    }
+                  ],
+                  "id": "units"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "TypeRef",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Ping"
+                        },
+                        "value": "AttackWavePing"
+                      }
+                    }
+                  ],
+                  "id": "ping"
+                }
+              ]
+            },
+            {
+              "function_id": "Wave_AddWaypoint",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Wave_GetLastCreatedWave"
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "wave"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Actor_GetPosition",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Point_GetPointFromPlacedName",
+                                  "parameters": [
+                                    {
+                                      "expressions": [
+                                        {
+                                          "function": {
+                                            "function_id": "String_FormatString",
+                                            "parameters": [
+                                              {
+                                                "expressions": [
+                                                  {
+                                                    "type": "Value",
+                                                    "value": {
+                                                      "type": {
+                                                        "directive": "FunctionType",
+                                                        "implements": "",
+                                                        "inner_type": "",
+                                                        "is_localized_string": false,
+                                                        "param_id": "",
+                                                        "sub_directive": "None",
+                                                        "type": "String"
+                                                      },
+                                                      "value": "AttackWaveTarget{}"
+                                                    }
+                                                  }
+                                                ],
+                                                "id": "format"
+                                              },
+                                              {
+                                                "expressions": [
+                                                  {
+                                                    "function": {
+                                                      "function_id": "String_ToString",
+                                                      "parameters": [
+                                                        {
+                                                          "expressions": [
+                                                            {
+                                                              "function": {
+                                                                "function_id": "Random_Integer",
+                                                                "parameters": [
+                                                                  {
+                                                                    "expressions": [
+                                                                      {
+                                                                        "type": "Value",
+                                                                        "value": {
+                                                                          "type": {
+                                                                            "directive": "FunctionType",
+                                                                            "implements": "",
+                                                                            "inner_type": "",
+                                                                            "is_localized_string": false,
+                                                                            "param_id": "",
+                                                                            "sub_directive": "None",
+                                                                            "type": "Integer"
+                                                                          },
+                                                                          "value": "1"
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "id": "min"
+                                                                  },
+                                                                  {
+                                                                    "expressions": [
+                                                                      {
+                                                                        "type": "Value",
+                                                                        "value": {
+                                                                          "type": {
+                                                                            "directive": "FunctionType",
+                                                                            "implements": "",
+                                                                            "inner_type": "",
+                                                                            "is_localized_string": false,
+                                                                            "param_id": "",
+                                                                            "sub_directive": "None",
+                                                                            "type": "Integer"
+                                                                          },
+                                                                          "value": "3"
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "id": "max"
+                                                                  }
+                                                                ]
+                                                              },
+                                                              "type": "Function"
+                                                            }
+                                                          ],
+                                                          "id": "value"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "type": "Function"
+                                                  }
+                                                ],
+                                                "id": "args"
+                                              }
+                                            ]
+                                          },
+                                          "type": "Function"
+                                        }
+                                      ],
+                                      "id": "name"
+                                    }
+                                  ]
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "actor"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "waypoint"
+                }
+              ]
+            },
+            {
+              "function_id": "Wave_Send",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Wave_GetLastCreatedWave"
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "wave"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "is_localized_string": false,
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Time"
+                        },
+                        "value": "3.0"
+                      }
+                    }
+                  ],
+                  "id": "delay"
+                }
+              ]
+            }
+          ],
+          "id": "actions"
+        }
+      ]
+    }
+  ],
+  "based_on": "Trigger",
+  "enabled": false,
+  "events": [
+    {
+      "function_id": "Timer_OnPeriodicEvent",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "is_localized_string": false,
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Time"
+                },
+                "value": "120.0"
+              }
+            }
+          ],
+          "id": "duration"
+        }
+      ]
+    }
+  ],
+  "id": "Mutator_InfantryAssault",
+  "variables": [
+    {
+      "array_size": 3,
+      "id": "AssaultWaveTypes",
+      "is_array": true,
+      "type": {
+        "directive": "TypeRef",
+        "implements": "",
+        "inner_type": "",
+        "is_localized_string": false,
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "UnitData"
+      }
+    },
+    {
+      "id": "AssaultWaveBudget",
+      "initial_values": [
+        {
+          "type": "Value",
+          "value": {
+            "type": {
+              "directive": "FunctionType",
+              "implements": "",
+              "inner_type": "",
+              "is_localized_string": false,
+              "param_id": "",
+              "sub_directive": "None",
+              "type": "Integer"
+            },
+            "value": "500"
+          }
+        }
+      ],
+      "type": {
+        "directive": "FunctionType",
+        "implements": "",
+        "inner_type": "",
+        "is_localized_string": false,
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "Integer"
+      }
+    },
+    {
+      "id": "AssaultWaveCurrentValue",
+      "type": {
+        "directive": "FunctionType",
+        "implements": "",
+        "inner_type": "",
+        "is_localized_string": false,
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "Integer"
+      }
+    },
+    {
+      "id": "AssaultWaveRandomPoint",
+      "type": {
+        "directive": "FunctionType",
+        "implements": "",
+        "inner_type": "",
+        "is_localized_string": false,
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "Integer"
+      }
+    },
+    {
+      "id": "AssaultWaveGroup",
+      "type": {
+        "directive": "FunctionType",
+        "implements": "",
+        "inner_type": "",
+        "is_localized_string": false,
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "UnitGroup"
+      }
+    }
+  ]
+}

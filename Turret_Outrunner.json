@@ -1,0 +1,10 @@
+{
+  "arc": 360.0,
+  "based_on": "TurretData",
+  "behavior_after_tracking": "ContinueTracking",
+  "behavior_idle": "FaceForward",
+  "id": "Turret_Outrunner",
+  "idle_delay": 1.0,
+  "turn_period_idle": 1.0,
+  "turn_period_tracking": 0.5
+}

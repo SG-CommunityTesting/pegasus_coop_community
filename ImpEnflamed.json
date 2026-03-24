@@ -1,0 +1,10 @@
+{
+  "effects": {
+    "birth": "emptyRef",
+    "constructed": "emptyRef",
+    "creation": "emptyRef",
+    "death": "ImpEnflamed_SwitchDeath",
+    "revenge": "emptyRef"
+  },
+  "id": "ImpEnflamed"
+}

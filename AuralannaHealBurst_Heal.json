@@ -1,0 +1,7 @@
+{
+  "amount": 60.0,
+  "based_on": "GameEffectHeal",
+  "id": "AuralannaHealBurst_Heal",
+  "impact_fx": "BP_FXI_Auralanna_HealImpact",
+  "validator": "Valid_TargetNotAtFullHealth"
+}

@@ -1,0 +1,6 @@
+{
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Gear/UI_Icons_Gear_ResilientDefenses.UI_Icons_Gear_ResilientDefenses'",
+  "id": "GearResilientDefensesEquippable",
+  "main_image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Gear/UI_Icons_Gear_ResilientDefenses.UI_Icons_Gear_ResilientDefenses'",
+  "perk": "ResilientDefensesPerk"
+}

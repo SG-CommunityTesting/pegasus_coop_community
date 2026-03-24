@@ -1,0 +1,6 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "BurningBlood_Buff",
+  "id": "BurningBlood_BuffApplier",
+  "impact_fx": "BP_FXS_BurningBlood_Cast"
+}

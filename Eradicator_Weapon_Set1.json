@@ -1,0 +1,8 @@
+{
+  "based_on": "BaseGameEffectSet",
+  "effects": [
+    "Eradicator_WeaponTimeShift_Persistent",
+    "Overkill_BuffApplier"
+  ],
+  "id": "Eradicator_Weapon_Set1"
+}

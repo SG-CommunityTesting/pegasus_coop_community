@@ -1,0 +1,170 @@
+{
+  "based_on": "Requirement",
+  "can_show": {
+    "root": {
+      "left": {
+        "left": {
+          "name": "ExpressionApi::count_completed_upgrade_of_type",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "name": "ExpressionApi::Player::self",
+                "node": "FunctionCall",
+                "parameters": [],
+                "type": "Player"
+              },
+              "name": "player",
+              "type": "Player"
+            },
+            {
+              "argument": {
+                "node": "Literal",
+                "type": "UpgradeData",
+                "value": "Barclay_HammerTime_BaseAbility_Upgrade"
+              },
+              "name": "upgrade",
+              "type": "UpgradeData"
+            }
+          ],
+          "type": "Count"
+        },
+        "node": "Logical",
+        "operator": ">",
+        "right": {
+          "node": "Literal",
+          "type": "Count",
+          "value": 0
+        },
+        "type": "Bool"
+      },
+      "node": "Logical",
+      "operator": "&&",
+      "right": {
+        "left": {
+          "left": {
+            "name": "ExpressionApi::count_completed_upgrade_of_type",
+            "node": "FunctionCall",
+            "parameters": [
+              {
+                "argument": {
+                  "name": "ExpressionApi::Player::self",
+                  "node": "FunctionCall",
+                  "parameters": [],
+                  "type": "Player"
+                },
+                "name": "player",
+                "type": "Player"
+              },
+              {
+                "argument": {
+                  "node": "Literal",
+                  "type": "UpgradeData",
+                  "value": "Barclay_HammerTime_Upgrade1A_Upgrade"
+                },
+                "name": "upgrade",
+                "type": "UpgradeData"
+              }
+            ],
+            "type": "Count"
+          },
+          "node": "Logical",
+          "operator": "==",
+          "right": {
+            "node": "Literal",
+            "type": "Count",
+            "value": 0
+          },
+          "type": "Bool"
+        },
+        "node": "Logical",
+        "operator": "&&",
+        "right": {
+          "left": {
+            "name": "ExpressionApi::count_completed_upgrade_of_type",
+            "node": "FunctionCall",
+            "parameters": [
+              {
+                "argument": {
+                  "name": "ExpressionApi::Player::self",
+                  "node": "FunctionCall",
+                  "parameters": [],
+                  "type": "Player"
+                },
+                "name": "player",
+                "type": "Player"
+              },
+              {
+                "argument": {
+                  "node": "Literal",
+                  "type": "UpgradeData",
+                  "value": "Barclay_HammerTime_Upgrade1B_Upgrade"
+                },
+                "name": "upgrade",
+                "type": "UpgradeData"
+              }
+            ],
+            "type": "Count"
+          },
+          "node": "Logical",
+          "operator": "==",
+          "right": {
+            "node": "Literal",
+            "type": "Count",
+            "value": 0
+          },
+          "type": "Bool"
+        },
+        "type": "Bool"
+      },
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "can_use": [
+    {
+      "check": {
+        "root": {
+          "left": {
+            "name": "ExpressionApi::count_highest_level_achieved_of_unit_type",
+            "node": "FunctionCall",
+            "parameters": [
+              {
+                "argument": {
+                  "name": "ExpressionApi::Player::self",
+                  "node": "FunctionCall",
+                  "parameters": [],
+                  "type": "Player"
+                },
+                "name": "player",
+                "type": "Player"
+              },
+              {
+                "argument": {
+                  "node": "Literal",
+                  "type": "UnitData",
+                  "value": "Unit_Barclay"
+                },
+                "name": "unit_type",
+                "type": "UnitData"
+              }
+            ],
+            "type": "Count"
+          },
+          "node": "Logical",
+          "operator": ">=",
+          "right": {
+            "node": "Literal",
+            "type": "Count",
+            "value": 2
+          },
+          "type": "Bool"
+        },
+        "type": "Bool"
+      },
+      "reason": "pegasus_heroes|Requirement_VeterancyLevel2",
+      "reason_announcement": "None"
+    }
+  ],
+  "id": "Barclay_HammerTime_Upgrade1_RequirementLearn"
+}

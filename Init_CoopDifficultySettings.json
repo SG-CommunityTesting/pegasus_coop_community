@@ -1,0 +1,3987 @@
+{
+  "actions": [
+    {
+      "function_id": "General_PickEachInteger",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Integer"
+                },
+                "value": "3"
+              }
+            }
+          ],
+          "id": "end"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Integer"
+                },
+                "value": "1"
+              }
+            }
+          ],
+          "id": "start"
+        }
+      ],
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "Debug_DebugMessage",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Debug_DebugMessageTag",
+                        "value_id": "notag"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "tag"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "String_FormatString",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "type": "Value",
+                                "value": {
+                                  "type": {
+                                    "directive": "FunctionType",
+                                    "implements": "",
+                                    "inner_type": "",
+                                    "param_id": "",
+                                    "sub_directive": "None",
+                                    "type": "String"
+                                  },
+                                  "value": "Player:{}   Difficulty:{}"
+                                }
+                              }
+                            ],
+                            "id": "format"
+                          },
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "String_ToString",
+                                  "parameters": [
+                                    {
+                                      "expressions": [
+                                        {
+                                          "function": {
+                                            "function_id": "General_GetPickedInteger"
+                                          },
+                                          "type": "Function"
+                                        }
+                                      ],
+                                      "id": "value"
+                                    }
+                                  ]
+                                },
+                                "type": "Function"
+                              },
+                              {
+                                "function": {
+                                  "function_id": "String_ToString",
+                                  "parameters": [
+                                    {
+                                      "expressions": [
+                                        {
+                                          "function": {
+                                            "function_id": "Player_GetAttributeValue",
+                                            "parameters": [
+                                              {
+                                                "expressions": [
+                                                  {
+                                                    "function": {
+                                                      "function_id": "General_GetPickedInteger"
+                                                    },
+                                                    "type": "Function"
+                                                  }
+                                                ],
+                                                "id": "player"
+                                              },
+                                              {
+                                                "expressions": [
+                                                  {
+                                                    "type": "Value",
+                                                    "value": {
+                                                      "type": {
+                                                        "directive": "FunctionType",
+                                                        "implements": "",
+                                                        "inner_type": "",
+                                                        "param_id": "",
+                                                        "sub_directive": "None",
+                                                        "type": "String"
+                                                      },
+                                                      "value": "difficulty"
+                                                    }
+                                                  }
+                                                ],
+                                                "id": "attribute"
+                                              }
+                                            ]
+                                          },
+                                          "type": "Function"
+                                        }
+                                      ],
+                                      "id": "value"
+                                    }
+                                  ]
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "args"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "message"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Time"
+                        },
+                        "value": "10.0"
+                      }
+                    }
+                  ],
+                  "id": "duration"
+                }
+              ]
+            },
+            {
+              "function_id": "General_IfThenElse",
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Player_IsActive",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "function": {
+                                "function_id": "General_GetPickedInteger"
+                              },
+                              "type": "Function"
+                            }
+                          ],
+                          "id": "player"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "if"
+                },
+                {
+                  "functions": [
+                    {
+                      "function_id": "General_IfThenElse",
+                      "sub_functions": [
+                        {
+                          "functions": [
+                            {
+                              "function_id": "Logic_Comparison",
+                              "parameters": [
+                                {
+                                  "expressions": [
+                                    {
+                                      "function": {
+                                        "function_id": "Player_GetAttributeValue",
+                                        "parameters": [
+                                          {
+                                            "expressions": [
+                                              {
+                                                "function": {
+                                                  "function_id": "General_GetPickedInteger"
+                                                },
+                                                "type": "Function"
+                                              }
+                                            ],
+                                            "id": "player"
+                                          },
+                                          {
+                                            "expressions": [
+                                              {
+                                                "type": "Value",
+                                                "value": {
+                                                  "type": {
+                                                    "directive": "FunctionType",
+                                                    "implements": "",
+                                                    "inner_type": "",
+                                                    "param_id": "",
+                                                    "sub_directive": "None",
+                                                    "type": "String"
+                                                  },
+                                                  "value": "difficulty"
+                                                }
+                                              }
+                                            ],
+                                            "id": "attribute"
+                                          }
+                                        ]
+                                      },
+                                      "type": "Function"
+                                    }
+                                  ],
+                                  "id": "value1"
+                                },
+                                {
+                                  "expressions": [
+                                    {
+                                      "preset": {
+                                        "preset_id": "Logic_ComparisonOperator",
+                                        "value_id": "eq"
+                                      },
+                                      "type": "Preset"
+                                    }
+                                  ],
+                                  "id": "op"
+                                },
+                                {
+                                  "expressions": [
+                                    {
+                                      "type": "Value",
+                                      "value": {
+                                        "type": {
+                                          "directive": "FunctionType",
+                                          "implements": "",
+                                          "inner_type": "",
+                                          "param_id": "",
+                                          "sub_directive": "None",
+                                          "type": "Player"
+                                        },
+                                        "value": "0"
+                                      }
+                                    }
+                                  ],
+                                  "id": "value2"
+                                }
+                              ]
+                            }
+                          ],
+                          "id": "if"
+                        },
+                        {
+                          "functions": [
+                            {
+                              "function_id": "Variable_ModifyVariable",
+                              "parameters": [
+                                {
+                                  "expressions": [
+                                    {
+                                      "type": "Variable",
+                                      "variable": {
+                                        "variable_id": "difficultyTotal"
+                                      }
+                                    }
+                                  ],
+                                  "id": "variable"
+                                },
+                                {
+                                  "expressions": [
+                                    {
+                                      "preset": {
+                                        "preset_id": "Math_ArithmeticOperator",
+                                        "value_id": "plus"
+                                      },
+                                      "type": "Preset"
+                                    }
+                                  ],
+                                  "id": "op"
+                                },
+                                {
+                                  "expressions": [
+                                    {
+                                      "type": "Value",
+                                      "value": {
+                                        "type": {
+                                          "directive": "FunctionType",
+                                          "implements": "",
+                                          "inner_type": "",
+                                          "param_id": "",
+                                          "sub_directive": "None",
+                                          "type": "Integer"
+                                        },
+                                        "value": "1"
+                                      }
+                                    }
+                                  ],
+                                  "id": "value"
+                                }
+                              ]
+                            }
+                          ],
+                          "id": "then"
+                        },
+                        {
+                          "functions": [
+                            {
+                              "function_id": "Variable_ModifyVariable",
+                              "parameters": [
+                                {
+                                  "expressions": [
+                                    {
+                                      "type": "Variable",
+                                      "variable": {
+                                        "variable_id": "difficultyTotal"
+                                      }
+                                    }
+                                  ],
+                                  "id": "variable"
+                                },
+                                {
+                                  "expressions": [
+                                    {
+                                      "preset": {
+                                        "preset_id": "Math_ArithmeticOperator",
+                                        "value_id": "plus"
+                                      },
+                                      "type": "Preset"
+                                    }
+                                  ],
+                                  "id": "op"
+                                },
+                                {
+                                  "expressions": [
+                                    {
+                                      "function": {
+                                        "function_id": "Player_GetAttributeValue",
+                                        "parameters": [
+                                          {
+                                            "expressions": [
+                                              {
+                                                "function": {
+                                                  "function_id": "General_GetPickedInteger"
+                                                },
+                                                "type": "Function"
+                                              }
+                                            ],
+                                            "id": "player"
+                                          },
+                                          {
+                                            "expressions": [
+                                              {
+                                                "type": "Value",
+                                                "value": {
+                                                  "type": {
+                                                    "directive": "FunctionType",
+                                                    "implements": "",
+                                                    "inner_type": "",
+                                                    "param_id": "",
+                                                    "sub_directive": "None",
+                                                    "type": "String"
+                                                  },
+                                                  "value": "difficulty"
+                                                }
+                                              }
+                                            ],
+                                            "id": "attribute"
+                                          }
+                                        ]
+                                      },
+                                      "type": "Function"
+                                    }
+                                  ],
+                                  "id": "value"
+                                }
+                              ]
+                            }
+                          ],
+                          "id": "else"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_ModifyVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "activePlayerCount"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Math_ArithmeticOperator",
+                                "value_id": "plus"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "op"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "1"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "then"
+                },
+                {
+                  "id": "else"
+                }
+              ]
+            }
+          ],
+          "id": "actions"
+        }
+      ]
+    },
+    {
+      "function_id": "Variable_SetVariable",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "variable_id": "DifficultyScalar"
+              }
+            }
+          ],
+          "id": "variable"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Math_Arithmetic_Integer",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "type": "Variable",
+                        "variable": {
+                          "variable_id": "difficultyTotal"
+                        }
+                      }
+                    ],
+                    "id": "value1"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "preset": {
+                          "preset_id": "Math_ArithmeticOperator",
+                          "value_id": "div"
+                        },
+                        "type": "Preset"
+                      }
+                    ],
+                    "id": "op"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "type": "Variable",
+                        "variable": {
+                          "variable_id": "activePlayerCount"
+                        }
+                      }
+                    ],
+                    "id": "value2"
+                  }
+                ]
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "value"
+        }
+      ]
+    },
+    {
+      "function_id": "General_Switch",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "variable_id": "DifficultyScalar"
+              }
+            }
+          ],
+          "id": "value"
+        }
+      ],
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "1"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyBeginner"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Beginner"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "2"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyNormal"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Normal"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "3"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyHard"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Hard"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "4"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyBrutal"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Brutal"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "5"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "DifficultyScalar"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "1"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "5"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "1"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyAnnihilation1"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Annihilation1"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "6"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "DifficultyScalar"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "2"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "5"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "2"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyAnnihilation2"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Annihilation2"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "7"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "DifficultyScalar"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "3"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "5"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "3"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyAnnihilation3"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Annihilation3"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "8"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "DifficultyScalar"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "5"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyAnnihilation4"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Annihilation4"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "9"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "DifficultyScalar"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "5"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Annihilation1"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_Run",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Annihilation1"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Trigger_CheckIgnoreConditions",
+                                "value_id": "check"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "conditions"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Trigger_WaitDontWait",
+                                "value_id": "nowait"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "wait"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Time_Forever",
+                                "value_id": "forever"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "timeout"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyAnnihilation5"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Annihilation5"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "10"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "DifficultyScalar"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "5"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Annihilation2"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_Run",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Annihilation2"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Trigger_CheckIgnoreConditions",
+                                "value_id": "check"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "conditions"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Trigger_WaitDontWait",
+                                "value_id": "nowait"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "wait"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Time_Forever",
+                                "value_id": "forever"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "timeout"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyAnnihilation6"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Annihilation6"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "11"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "DifficultyScalar"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Player_ApplyPlayerBuff",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "PlayerBuff"
+                                },
+                                "value": "Annihilation_PlayerBuff"
+                              }
+                            }
+                          ],
+                          "id": "buff"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Player"
+                                },
+                                "value": "5"
+                              }
+                            }
+                          ],
+                          "id": "player"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Integer"
+                                },
+                                "value": "4"
+                              }
+                            }
+                          ],
+                          "id": "stacks"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Annihilation3"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_Run",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Annihilation3"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Trigger_CheckIgnoreConditions",
+                                "value_id": "check"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "conditions"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Trigger_WaitDontWait",
+                                "value_id": "nowait"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "wait"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Time_Forever",
+                                "value_id": "forever"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "timeout"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Callouts_Minor",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|MinorCallout_DifficultyAnnihilation7"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "5.0"
+                              }
+                            }
+                          ],
+                          "id": "lifetime"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "r"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "g"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Value"
+                                },
+                                "value": "255"
+                              }
+                            }
+                          ],
+                          "id": "b"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Variable_SetVariable",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Variable",
+                              "variable": {
+                                "variable_id": "difficultyText"
+                              }
+                            }
+                          ],
+                          "id": "variable"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Text"
+                                },
+                                "value": "pegasus_coop|Difficulty_Annihilation7"
+                              }
+                            }
+                          ],
+                          "id": "value"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            }
+          ],
+          "id": "cases"
+        },
+        {
+          "id": "default"
+        }
+      ]
+    },
+    {
+      "function_id": "Objectives_Panel_AddList",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Objectives_List_Create",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "function": {
+                          "function_id": "Text_FormatText",
+                          "parameters": [
+                            {
+                              "expressions": [
+                                {
+                                  "type": "Value",
+                                  "value": {
+                                    "type": {
+                                      "directive": "FunctionType",
+                                      "implements": "",
+                                      "inner_type": "",
+                                      "param_id": "",
+                                      "sub_directive": "None",
+                                      "type": "Text"
+                                    },
+                                    "value": "pegasus_coop|DifficultyList"
+                                  }
+                                }
+                              ],
+                              "id": "format"
+                            },
+                            {
+                              "expressions": [
+                                {
+                                  "type": "Variable",
+                                  "variable": {
+                                    "variable_id": "difficultyText"
+                                  }
+                                }
+                              ],
+                              "id": "args"
+                            }
+                          ]
+                        },
+                        "type": "Function"
+                      }
+                    ],
+                    "id": "title"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "preset": {
+                          "preset_id": "General_EnableDisable",
+                          "value_id": "enable"
+                        },
+                        "type": "Preset"
+                      }
+                    ],
+                    "id": "enabled"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "preset": {
+                          "preset_id": "General_Visible",
+                          "value_id": "visible"
+                        },
+                        "type": "Preset"
+                      }
+                    ],
+                    "id": "visible"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "function": {
+                          "function_id": "PlayerGroup_GetAllPlayers"
+                        },
+                        "type": "Function"
+                      }
+                    ],
+                    "id": "player_group"
+                  }
+                ]
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "list"
+        }
+      ]
+    }
+  ],
+  "based_on": "Trigger",
+  "id": "Init_CoopDifficultySettings",
+  "variables": [
+    {
+      "id": "difficultyTotal",
+      "initial_values": [
+        {
+          "type": "Value",
+          "value": {
+            "type": {
+              "directive": "FunctionType",
+              "implements": "",
+              "inner_type": "",
+              "param_id": "",
+              "sub_directive": "None",
+              "type": "Integer"
+            },
+            "value": "0"
+          }
+        }
+      ],
+      "name": "difficultyTotal",
+      "type": {
+        "directive": "FunctionType",
+        "implements": "",
+        "inner_type": "",
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "Integer"
+      }
+    },
+    {
+      "id": "activePlayerCount",
+      "initial_values": [
+        {
+          "type": "Value",
+          "value": {
+            "type": {
+              "directive": "FunctionType",
+              "implements": "",
+              "inner_type": "",
+              "param_id": "",
+              "sub_directive": "None",
+              "type": "Integer"
+            },
+            "value": "0"
+          }
+        }
+      ],
+      "name": "activePlayerCount",
+      "type": {
+        "directive": "FunctionType",
+        "implements": "",
+        "inner_type": "",
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "Integer"
+      }
+    },
+    {
+      "id": "difficultyText",
+      "initial_values": [
+        {
+          "function": {
+            "function_id": "Text_EmptyText"
+          },
+          "type": "Function"
+        }
+      ],
+      "name": "difficultyText",
+      "type": {
+        "directive": "FunctionType",
+        "implements": "",
+        "inner_type": "",
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "Text"
+      }
+    }
+  ]
+}

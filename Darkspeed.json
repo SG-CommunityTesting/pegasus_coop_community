@@ -1,0 +1,39 @@
+{
+  "based_on": "StagedAbilityData",
+  "cast_game_effect": "Darkspeed_MissileLauncher",
+  "commands": [
+    {
+      "charges": {
+        "max_count": 0,
+        "name": "default",
+        "recharge_duration": 0,
+        "starting_count": 0
+      },
+      "cooldown": {
+        "duration": 5.0,
+        "name": "Darkspeed",
+        "scope": "Ability"
+      },
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 10.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "Darkspeed_Requirement"
+    }
+  ],
+  "id": "Darkspeed",
+  "range_maximum": 9999.0,
+  "range_to_visualize": "cast_game_effect_range",
+  "targeting_type": "Location",
+  "unreal_component": "None"
+}

@@ -1,0 +1,53 @@
+{
+  "based_on": "BurnedOne_Large",
+  "cargo_size": "Eight",
+  "effects": {
+    "birth": "emptyRef",
+    "creation": "emptyRef",
+    "death": "BurnedOne_G_Death_Persistent",
+    "revenge": "emptyRef"
+  },
+  "id": "BurnedOne_Gargantuan",
+  "inner_radius": 1.1,
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.7,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 1,
+    "speed": 3.5,
+    "stationary_turn_period": 0.7,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "name": "pegasus_heroes|UnitData_name_BurnedOne_Gargantuan",
+  "num_corpses": 0,
+  "outer_radius": 2.1,
+  "unit_button": "BurnedOneVeryLarge_Button",
+  "unreal_actor": "BP_UD_IMOFleshling_Gargantuan_00",
+  "vital_health": {
+    "maximum": 600.0,
+    "regen": 0.0,
+    "starting": 600.0
+  },
+  "vital_shield": {
+    "maximum": 200.0,
+    "regen": 0.0,
+    "starting": 100.0
+  },
+  "weaponList": [
+    "BurnedOne_Gargantuan_Weapon"
+  ]
+}

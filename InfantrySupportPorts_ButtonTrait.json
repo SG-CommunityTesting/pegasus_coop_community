@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_InfantrySupportPorts.UI_Icons_Abilities_InfantrySupportPorts'",
+  "id": "InfantrySupportPorts_ButtonTrait",
+  "name": "pegasus_heroes|Button_name_InfantrySupportPorts_ButtonTrait",
+  "tooltip": "pegasus_heroes|Button_tooltip_InfantrySupportPorts_ButtonTrait"
+}

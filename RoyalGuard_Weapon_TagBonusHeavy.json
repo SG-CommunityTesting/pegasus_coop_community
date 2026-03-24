@@ -1,0 +1,6 @@
+{
+  "based_on": "TagBonus",
+  "bonus": 4.0,
+  "id": "RoyalGuard_Weapon_TagBonusHeavy",
+  "tag": "attribute_heavy"
+}

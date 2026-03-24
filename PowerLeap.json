@@ -1,0 +1,85 @@
+{
+  "autocast": {
+    "autocast_filter": {
+      "alliance": {
+        "ally": false,
+        "enemy": true,
+        "neutral": false,
+        "player": false,
+        "self": false
+      },
+      "tags": {
+        "excluded": [
+          "status_sleeping"
+        ],
+        "required": []
+      }
+    },
+    "autocasts": true,
+    "exclusive_targeting": false,
+    "initially_on": true,
+    "range": 12.0,
+    "required_scan_level": "Offensive",
+    "target_sorts": [
+      "TS_DistanceClosest"
+    ],
+    "validator": "Valid_CanAutoCastPowerLeap"
+  },
+  "based_on": "BaseStagedAbility",
+  "cast_game_effect": "PowerLeap_MissileLauncher",
+  "commands": [
+    {
+      "charges": {
+        "max_count": 3,
+        "name": "Power Leap",
+        "recharge_duration": 15.0,
+        "starting_count": 1
+      },
+      "cooldown": {
+        "duration": 0.0,
+        "name": "",
+        "scope": "Ability"
+      },
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "PowerLeap_RequirementHave"
+    }
+  ],
+  "id": "PowerLeap",
+  "range_maximum": 10.0,
+  "range_minimum": 2.0,
+  "range_slop": 2.0,
+  "target_filter": {
+    "alliance": {
+      "ally": true,
+      "enemy": true,
+      "neutral": true,
+      "player": true,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable",
+        "dead"
+      ],
+      "required": [
+        "entity_unit",
+        "heightplane_ground"
+      ]
+    }
+  },
+  "tooltip": "pegasus_heroes|Button_tooltip_PowerLeap_Button",
+  "unreal_component": "None"
+}

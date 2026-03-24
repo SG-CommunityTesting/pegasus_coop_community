@@ -1,0 +1,10 @@
+{
+  "amount": 64.0,
+  "based_on": "GameEffectDamage",
+  "damage_tags": [
+    "damage_ranged"
+  ],
+  "id": "Amara_Weapon_Damage_2",
+  "impact_fx": "BP_FXS_Amara_Weapon_Impact",
+  "target_armor_multiplier": 0.0
+}

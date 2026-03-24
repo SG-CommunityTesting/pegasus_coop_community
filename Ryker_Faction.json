@@ -1,0 +1,107 @@
+﻿{
+  "available_to_coop": true,
+  "background_playlist": "MediaPlaylist'/Game/Pegasus/UI/Assets/Video/Backgrounds/Ryker/PL_Backgrounds_Coop_Ryker.PL_Backgrounds_Coop_Ryker'",
+  "based_on": "Vanguard",
+  "character_image": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Characters/UI_Coop_Character_Ryker.UI_Coop_Character_Ryker'",
+  "commander_levels": [
+    "CommanderRyker_PerkLevel01",
+    "CommanderRyker_PerkLevel02",
+    "CommanderRyker_PerkLevel03",
+    "CommanderRyker_PerkLevel04",
+    "CommanderRyker_PerkLevel05",
+    "CommanderRyker_PerkLevel06",
+    "CommanderRyker_PerkLevel07",
+    "CommanderRyker_PerkLevel08",
+    "CommanderRyker_PerkLevel09",
+    "CommanderRyker_PerkLevel10",
+    "CommanderRyker_PerkLevel11",
+    "CommanderRyker_PerkLevel12",
+    "CommanderRyker_PerkLevel13",
+    "CommanderRyker_PerkLevel14",
+    "CommanderRyker_PerkLevel15",
+    "CommanderRyker_PerkLevel16",
+    "CommanderRyker_PerkLevel17",
+    "CommanderRyker_PerkLevel18",
+    "CommanderRyker_PerkLevel19",
+    "CommanderRyker_PerkLevel20"
+  ],
+  "default_scout": "Gunner",
+  "description": "pegasus_commanders|Faction_description_Ryker_Faction",
+  "description_title": "PegasusGeneral|HomeScreenTakeover_Ryker_Subtitle",
+  "granted_by": "HeroRykerUnlockable",
+  "hero": {
+    "spawn_offset": {
+      "x": 5.0,
+      "y": 5.0
+    },
+    "unit": "Hero_Ryker"
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/CoOp/Tiles/UI_Coop_Tiles_Ryker.UI_Coop_Tiles_Ryker'",
+  "icon_observer": "MaterialInterface'/Game/Pegasus/UI/Assets/Observer/MI_ObserverFactionLogo_Ryker.MI_ObserverFactionLogo_Ryker'",
+  "id": "Ryker_Faction",
+  "loadout": "Ryker3vELoadout",
+  "lobby_index": 1003,
+  "name": "pegasus_commanders|Faction_name_Ryker_Faction",
+  "rewards": [
+    {
+      "level": 6,
+      "reward": [
+        "RykerLvl11CoopReward"
+      ]
+    },
+    {
+      "level": 7,
+      "reward": [
+        "RykerLvl12CoopReward"
+      ]
+    },
+    {
+      "level": 11,
+      "reward": [
+        "RykerLvl13CoopReward"
+      ]
+    },
+    {
+      "level": 12,
+      "reward": [
+        "RykerLvl14CoopReward"
+      ]
+    },
+    {
+      "level": 14,
+      "reward": [
+        "RykerLvl15CoopReward"
+      ]
+    },
+    {
+      "level": 15,
+      "reward": [
+        "RykerLvl18CoopReward"
+      ]
+    },
+    {
+      "level": 20,
+      "reward": [
+        "RykerLvl16CoopReward"
+      ]
+    }
+  ],
+  "starting_units": [
+    {
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "unit": "HQTier1"
+    },
+    {
+      "offset": {
+        "x": 0,
+        "y": 5.0
+      },
+      "unit": "Gunner"
+    }
+  ],
+  "store_item": "HeroRykerStoreItem",
+  "topbar_unit": "RykerTopBarCaster"
+}

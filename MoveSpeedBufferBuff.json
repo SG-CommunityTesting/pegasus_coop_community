@@ -1,0 +1,10 @@
+{
+  "duration": 20.0,
+  "id": "MoveSpeedBufferBuff",
+  "modifiers": [
+    {
+      "amount": 40.0,
+      "stat_mod": "SpeedPercentageBonus"
+    }
+  ]
+}

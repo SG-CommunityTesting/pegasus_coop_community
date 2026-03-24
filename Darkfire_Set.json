@@ -1,0 +1,8 @@
+{
+  "effects": [
+    "Darkfire_BuffApplier",
+    "Darkfire_Damage",
+    "Darkfire_SearchRadius"
+  ],
+  "id": "Darkfire_Set"
+}

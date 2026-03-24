@@ -1,0 +1,38 @@
+{
+  "alignment": "Harmful",
+  "applied_tags": [
+    "status_slowed"
+  ],
+  "based_on": "BaseBuff",
+  "buff_tags": [
+    "dispel_technological"
+  ],
+  "buff_visuals": "BP_BVA_MeteorShowerDebuff",
+  "duration": 2.0,
+  "flags": {
+    "change_owner_on_polymorph": false,
+    "disable_on_attacking": false,
+    "disable_on_damage_taken": false,
+    "hidden": false,
+    "hide_timer": true,
+    "override_source": false,
+    "pause_while_disabled": false,
+    "remove_on_attacking": false,
+    "remove_on_damage_taken": false,
+    "show_progress": false
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_MeteorShower.UI_Icons_Abilities_MeteorShower'",
+  "id": "MeteorShowerDebuff",
+  "modifiers": [
+    {
+      "amount": -20.0,
+      "stat_mod": "SpeedPercentageBonus"
+    },
+    {
+      "amount": -50.0,
+      "stat_mod": "ArmorPercentageAdditiveMultiplier"
+    }
+  ],
+  "name": "pegasus_heroes|Button_name_MeteorShower_Button",
+  "tooltip": "pegasus_heroes|Buff_tooltip_MeteorShowerDebuff"
+}

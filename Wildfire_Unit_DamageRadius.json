@@ -1,0 +1,34 @@
+{
+  "amount": 15.0,
+  "areas": [
+    {
+      "damage_fraction": 1.0,
+      "radius": 2.5
+    }
+  ],
+  "based_on": "GameEffectDamageRadius",
+  "damage_tags": [
+    "damage_spell"
+  ],
+  "death_type": "Burning_DeathType",
+  "friendly_fire_percentage": 0.0,
+  "id": "Wildfire_Unit_DamageRadius",
+  "search_filter": {
+    "alliance": {
+      "ally": false,
+      "enemy": true,
+      "neutral": true,
+      "player": false,
+      "self": false
+    },
+    "tags": {
+      "excluded": [],
+      "required": []
+    }
+  },
+  "search_location": {
+    "effect_parent": "none",
+    "entity_or_point": "EntityOrPoint",
+    "target": "Source"
+  }
+}

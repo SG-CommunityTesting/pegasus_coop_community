@@ -1,0 +1,22 @@
+{
+  "based_on": "BaseGameEffectLaunchProjectile",
+  "id": "Auralanna_Weapon_MissileLauncher",
+  "impact_effect": "Auralanna_Weapon_Bounce",
+  "impact_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Entity",
+    "target": "Target"
+  },
+  "launch_fx": "BP_FXS_Auralanna_Launch",
+  "launch_location": {
+    "effect_parent": "none",
+    "entity_or_point": "Entity",
+    "target": "Source"
+  },
+  "movement": {
+    "acceleration_time": 0.1,
+    "max_speed": 35.0
+  },
+  "projectile": "Auralanna_Weapon_Missile",
+  "range_max": 10.0
+}

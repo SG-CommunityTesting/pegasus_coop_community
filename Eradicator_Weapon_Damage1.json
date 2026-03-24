@@ -1,0 +1,11 @@
+{
+  "amount": 0.84,
+  "based_on": "BaseGameEffectDamage",
+  "damage_tags": [
+    "damage_ranged"
+  ],
+  "id": "Eradicator_Weapon_Damage1",
+  "tag_bonuses": [
+    "EradicatorWeaponHeavy_TagBonus"
+  ]
+}

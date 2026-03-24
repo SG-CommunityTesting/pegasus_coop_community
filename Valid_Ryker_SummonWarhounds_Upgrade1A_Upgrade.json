@@ -1,0 +1,53 @@
+{
+  "based_on": "BaseValidator",
+  "check": {
+    "root": {
+      "left": {
+        "name": "ExpressionApi::count_completed_upgrade_of_type",
+        "node": "FunctionCall",
+        "parameters": [
+          {
+            "argument": {
+              "name": "ExpressionApi::effect_source_player_slot",
+              "node": "FunctionCall",
+              "parameters": [
+                {
+                  "argument": {
+                    "node": "Literal",
+                    "type": "Name",
+                    "value": ""
+                  },
+                  "name": "effect_parent",
+                  "type": "Name"
+                }
+              ],
+              "type": "Player"
+            },
+            "name": "player",
+            "type": "Player"
+          },
+          {
+            "argument": {
+              "node": "Literal",
+              "type": "UpgradeData",
+              "value": "Ryker_SummonWarhounds_Upgrade1A_Upgrade"
+            },
+            "name": "upgrade",
+            "type": "UpgradeData"
+          }
+        ],
+        "type": "Count"
+      },
+      "node": "Logical",
+      "operator": ">",
+      "right": {
+        "node": "Literal",
+        "type": "Count",
+        "value": 0
+      },
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "id": "Valid_Ryker_SummonWarhounds_Upgrade1A_Upgrade"
+}

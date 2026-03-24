@@ -1,0 +1,7 @@
+{
+  "based_on": "Button",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_ExpeditedDeparture.UI_Icons_Abilities_ExpeditedDeparture'",
+  "id": "ExpeditedDeparture_Button",
+  "name": "pegasus_heroes|Buff_name_ExpeditedDeparture_Buff",
+  "tooltip": "pegasus_heroes|Buff_tooltip_ExpeditedDeparture_Buff"
+}

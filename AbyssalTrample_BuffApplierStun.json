@@ -1,0 +1,5 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "AbyssalTrample_BuffStun",
+  "id": "AbyssalTrample_BuffApplierStun"
+}

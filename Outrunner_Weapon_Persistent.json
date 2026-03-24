@@ -1,0 +1,22 @@
+{
+  "based_on": "GameEffectPersistent",
+  "id": "Outrunner_Weapon_Persistent",
+  "periodic": {
+    "count": 6,
+    "durations": [
+      0.01,
+      0.015
+    ],
+    "durations_method": "Random",
+    "effects": [
+      "Outrunner_Weapon_SecondarySet_1",
+      "Outrunner_Weapon_SecondarySet_2",
+      "Outrunner_Weapon_SecondarySet_3",
+      "Outrunner_Weapon_SecondarySet_4",
+      "Outrunner_Weapon_SecondarySet_5",
+      "Outrunner_Weapon_SecondarySet_6"
+    ],
+    "effects_method": "Loop",
+    "validator": "Valid_OutrunnerWeaponCount"
+  }
+}

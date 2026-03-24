@@ -1,0 +1,7 @@
+{
+  "based_on": "SoundData_TransmissionBase",
+  "id": "SoundData_Transmission_Galt_WHGenAttackWave02",
+  "name": "Transmission - Galt WreckHavoc Attack Wave 02",
+  "sound_system_data": "SSD_Transmission_Galt_WH_Generic",
+  "trigger": "Galt_WHGenAttackWave02"
+}

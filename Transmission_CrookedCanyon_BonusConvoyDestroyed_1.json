@@ -1,0 +1,8 @@
+{
+  "based_on": "Transmission",
+  "character": "Character_MajorChapel",
+  "communication_style": "CommStyle_Alliance_Enemy_Normal",
+  "id": "Transmission_CrookedCanyon_BonusConvoyDestroyed_1",
+  "sound": "SoundData_Transmission_CCBonusConvoyDest01_Galt",
+  "text_field": "pegasus_coop|Transmission_text_field_Transmission_CrookedCanyon_BonusConvoyDestroyed_1"
+}

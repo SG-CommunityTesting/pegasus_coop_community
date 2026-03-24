@@ -1,0 +1,7 @@
+{
+  "based_on": "DataSwapCommandRequirement",
+  "id": "LancerToHoplite_DataSwapCommandRequirement",
+  "swap_from_ability": "BarracksSpawn",
+  "swap_from_command": 0,
+  "swap_to": "Req_CompletedBarracksAndCompletedHQTier2"
+}

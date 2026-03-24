@@ -1,0 +1,89 @@
+{
+  "actions": [
+    {
+      "function_id": "Game_SetFogOfWar",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "PlayerGroup_GetAllPlayers"
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "player_group"
+        },
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "General_EnableDisable",
+                "value_id": "disable"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "enabled"
+        }
+      ]
+    },
+    {
+      "function_id": "Debug_DebugMessage",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Debug_DebugMessageTag",
+                "value_id": "notag"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "tag"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "String"
+                },
+                "value": "SEE AND SEE MUTATOR ACTIVE"
+              }
+            }
+          ],
+          "id": "message"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "type": "Time"
+                },
+                "value": "10.0"
+              }
+            }
+          ],
+          "id": "duration"
+        }
+      ]
+    }
+  ],
+  "based_on": "Trigger",
+  "id": "Mutator_SeeAndSee_Activate"
+}

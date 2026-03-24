@@ -1,0 +1,166 @@
+{
+  "abilityList": [
+    "attackData",
+    "moveData",
+    "stopData",
+    "holdPositionData",
+    "MassAccelerator",
+    "SelfRepair",
+    "CryoBlink"
+  ],
+  "armor": 20.0,
+  "based_on": "BaseUnit_CelestialU",
+  "build_cost": {
+    "resource_a": 250.0,
+    "resource_b": 150.0,
+    "resource_c": 0.0,
+    "resource_d": 0.0
+  },
+  "build_time": 40.0,
+  "commandList": [
+    {
+      "ability": "attackData",
+      "button": "AttackButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "stopData",
+      "button": "StopButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "holdPositionData",
+      "button": "HoldPositionButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "MoveButton",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 4,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "moveData",
+      "button": "PatrolButton",
+      "commandIndex": 1,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 2,
+      "slot": 5,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "MassAccelerator",
+      "button": "MassAcceleratorCryoTank_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 1,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "SelfRepair",
+      "button": "SelfRepairCryoTank_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 2,
+      "submenu": 0,
+      "targetSubmenu": -1
+    },
+    {
+      "ability": "CryoBlink",
+      "button": "CryoBlink_Button",
+      "commandIndex": 0,
+      "panel": "CommandPanel",
+      "repeatable": false,
+      "row": 1,
+      "slot": 3,
+      "submenu": 0,
+      "targetSubmenu": -1
+    }
+  ],
+  "default_control_groups": [
+    10
+  ],
+  "id": "CryoTank",
+  "inner_radius": 0.6,
+  "movement": {
+    "acceleration_time": 0.5,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.5,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.5,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 2,
+    "speed": 3.75,
+    "stationary_turn_period": 0.5,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "name": "pegasus_heroes|UnitData_name_CryoTank",
+  "outer_radius": 1.2,
+  "starting_snowtags": [
+    "entity_unit",
+    "heightplane_ground",
+    "attribute_mechanical",
+    "attribute_heavy",
+    "attribute_ranged"
+  ],
+  "subgroup_priority": 123,
+  "supply_cost": 6.0,
+  "traits": [
+    "CryoTank_Weapon_TraitCryoBlast",
+    "SaberAbilitiesUpgrade_Trait"
+  ],
+  "unit_button": "CryoTank_Button",
+  "unit_info_portrait": "Texture2D'/Game/Pegasus/UI/Assets/Portraits/Angel/UI_Portrait_Angel_Default_Saber.UI_Portrait_Angel_Default_Saber'",
+  "unreal_actor": "BP_UA_CryoTank",
+  "veterancy_given_on_death": 600,
+  "vision_radius": 12.0,
+  "vital_health": {
+    "maximum": 300.0,
+    "regen": 0.0,
+    "starting": 300.0
+  },
+  "weaponList": [
+    "CryoTank_Weapon"
+  ]
+}

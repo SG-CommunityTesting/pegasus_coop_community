@@ -1,0 +1,8 @@
+{
+  "based_on": "Transmission",
+  "character": "Character_MajorChapel",
+  "communication_style": "CommStyle_Alliance_Enemy_Normal",
+  "id": "Transmission_CrookedCanyon_ThirdConvoyMissed_2",
+  "sound": "SoundData_Transmission_Galt_WHConvoyMissThree02",
+  "text_field": "Transmission_text_field_Transmission_WreckHavoc_ThirdConvoyMissed_2"
+}

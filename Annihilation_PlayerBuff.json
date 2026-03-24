@@ -1,0 +1,24 @@
+{
+  "alignment": "Helpful",
+  "based_on": "PlayerBuff",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Stats/UI_Icons_Stats_AttackDamage.UI_Icons_Stats_AttackDamage'",
+  "id": "Annihilation_PlayerBuff",
+  "modifiers": [
+    {
+      "amount": 25.0,
+      "stat_mod": "HealthMaxPercentageAdditiveMultiplier"
+    },
+    {
+      "amount": 25.0,
+      "stat_mod": "DamagePercentageBonus"
+    }
+  ],
+  "name": "pegasus_coop|PlayerBuff_name_Annihilation_PlayerBuff",
+  "stacks": {
+    "aggregation": "TargetPlayer",
+    "decay": 0,
+    "initial": 1,
+    "maximum": 4
+  },
+  "tooltip": "pegasus_coop|PlayerBuff_tooltip_Annihilation_PlayerBuff"
+}

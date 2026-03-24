@@ -1,0 +1,741 @@
+{
+  "actions": [
+    {
+      "function_id": "Unit_CreateUnit",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "type": "Integer"
+                },
+                "value": "1"
+              }
+            }
+          ],
+          "id": "count"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_GetType",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "function": {
+                          "function_id": "Unit_GetTriggeringUnit"
+                        },
+                        "type": "Function"
+                      }
+                    ],
+                    "id": "unit"
+                  }
+                ],
+                "sub_functions": []
+              },
+              "preset": {
+                "preset_id": "Logic_AndOrOperator",
+                "value_id": "and"
+              },
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "tags": [],
+                  "type": "UnitData"
+                },
+                "value": "Mutator_ReadyToBlow_Unit"
+              },
+              "variable": {}
+            }
+          ],
+          "id": "unit_data"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Blackboard_GetValue_Integer",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "function": {
+                          "function_id": "Blackboard_GetBlackboardOfEntity",
+                          "parameters": [
+                            {
+                              "expressions": [
+                                {
+                                  "function": {
+                                    "function_id": "Entity_GetTriggeringEntity"
+                                  },
+                                  "type": "Function"
+                                }
+                              ],
+                              "id": "entity"
+                            }
+                          ]
+                        },
+                        "type": "Function"
+                      }
+                    ],
+                    "id": "blackboard"
+                  },
+                  {
+                    "expressions": [],
+                    "id": "key"
+                  }
+                ],
+                "sub_functions": []
+              },
+              "preset": {},
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "tags": [],
+                  "type": "Player"
+                },
+                "value": "4"
+              },
+              "variable": {}
+            }
+          ],
+          "id": "player"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Actor_GetPosition",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "function": {
+                          "function_id": "Unit_GetTriggeringUnit",
+                          "parameters": [],
+                          "sub_functions": []
+                        },
+                        "type": "Function"
+                      }
+                    ],
+                    "id": "actor"
+                  }
+                ],
+                "sub_functions": []
+              },
+              "preset": {},
+              "type": "Function",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "tags": [],
+                  "type": "Vector"
+                },
+                "value": ""
+              },
+              "variable": {}
+            }
+          ],
+          "id": "position"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "type": "Degrees"
+                },
+                "value": "270"
+              }
+            }
+          ],
+          "id": "facing"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "type": "Boolean"
+                },
+                "value": "false"
+              }
+            }
+          ],
+          "id": "birth"
+        }
+      ],
+      "sub_functions": []
+    },
+    {
+      "function_id": "Unit_IssueOrderTargetingEntity",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_GetLastCreatedUnit",
+                "parameters": [],
+                "sub_functions": []
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "unit"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_GetLastCreatedUnit",
+                "parameters": [],
+                "sub_functions": []
+              },
+              "preset": {},
+              "type": "Function",
+              "value": {},
+              "variable": {}
+            }
+          ],
+          "id": "target_entity"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Trigger_GetCurrentTrigger",
+                "parameters": [],
+                "sub_functions": []
+              },
+              "preset": {
+                "preset_id": "Logic_AndOrOperator",
+                "value_id": "and"
+              },
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "TypeRef",
+                  "implements": "ability_data",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "tags": [],
+                  "type": ""
+                },
+                "value": "Mutator_ReadyToBlow_Ability"
+              },
+              "variable": {}
+            }
+          ],
+          "id": "order"
+        },
+        {
+          "expressions": [
+            {
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "type": "Integer"
+                },
+                "value": "0"
+              }
+            }
+          ],
+          "id": "order_index"
+        },
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Unit_OrderQueueOptions",
+                "value_id": "replace"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "queue_order"
+        }
+      ],
+      "sub_functions": []
+    }
+  ],
+  "based_on": "Trigger",
+  "conditions": [
+    {
+      "function_id": "Logic_Comparison",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Unit_IsType",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "function": {
+                          "function_id": "Unit_GetTriggeringUnit",
+                          "parameters": [],
+                          "sub_functions": []
+                        },
+                        "type": "Function"
+                      }
+                    ],
+                    "id": "unit"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "function": {
+                          "function_id": "Unit_GetType",
+                          "parameters": [
+                            {
+                              "expressions": [
+                                {
+                                  "function": {
+                                    "function_id": "Unit_GetTriggeringUnit"
+                                  },
+                                  "type": "Function"
+                                }
+                              ],
+                              "id": "unit"
+                            }
+                          ],
+                          "sub_functions": []
+                        },
+                        "preset": {
+                          "preset_id": "Logic_AndOrOperator",
+                          "value_id": "and"
+                        },
+                        "type": "Value",
+                        "value": {
+                          "type": {
+                            "directive": "TypeRef",
+                            "implements": "",
+                            "inner_type": "",
+                            "param_id": "",
+                            "sub_directive": "None",
+                            "tags": [],
+                            "type": "UnitData"
+                          },
+                          "value": "Mutator_ReadyToBlow_Unit"
+                        },
+                        "variable": {}
+                      }
+                    ],
+                    "id": "type"
+                  }
+                ],
+                "sub_functions": []
+              },
+              "preset": {
+                "preset_id": "General_AddRemove",
+                "value_id": "add"
+              },
+              "type": "Function",
+              "value": {},
+              "variable": {}
+            }
+          ],
+          "id": "value1"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function": "",
+                "parameters": [],
+                "sub_functions": []
+              },
+              "literal": {
+                "type": "Integer",
+                "value": ""
+              },
+              "preset": {
+                "preset_id": "Logic_ComparisonOperator",
+                "value_id": "eq"
+              },
+              "script": "",
+              "type": "Preset",
+              "variable": {
+                "index": 0,
+                "variable_id": ""
+              }
+            }
+          ],
+          "id": "op"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Blackboard_GetValue_Boolean",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "function": {
+                          "function_id": "Blackboard_GetBlackboardOfEntity",
+                          "parameters": [
+                            {
+                              "expressions": [
+                                {
+                                  "function": {
+                                    "function_id": "Entity_GetTriggeringEntity"
+                                  },
+                                  "type": "Function"
+                                }
+                              ],
+                              "id": "entity"
+                            }
+                          ]
+                        },
+                        "type": "Function"
+                      }
+                    ],
+                    "id": "blackboard"
+                  },
+                  {
+                    "expressions": [],
+                    "id": "key"
+                  }
+                ],
+                "sub_functions": []
+              },
+              "preset": {
+                "preset_id": "General_AddRemove",
+                "value_id": "add"
+              },
+              "type": "Value",
+              "value": {
+                "type": {
+                  "directive": "FunctionType",
+                  "implements": "",
+                  "inner_type": "",
+                  "param_id": "",
+                  "sub_directive": "None",
+                  "tags": [],
+                  "type": "Boolean"
+                },
+                "value": "false"
+              },
+              "variable": {}
+            }
+          ],
+          "id": "value2"
+        }
+      ],
+      "sub_functions": []
+    },
+    {
+      "function_id": "Logic_AndOrConditions",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "function": {},
+              "preset": {
+                "preset_id": "Logic_AndOrOperator",
+                "value_id": "or"
+              },
+              "type": "Preset",
+              "value": {},
+              "variable": {}
+            }
+          ],
+          "id": "op"
+        }
+      ],
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "Logic_Comparison",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetOwningPlayer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Unit_GetTriggeringUnit",
+                                  "parameters": [],
+                                  "sub_functions": []
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "unit"
+                          }
+                        ],
+                        "sub_functions": []
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value1"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function": "",
+                        "parameters": [],
+                        "sub_functions": []
+                      },
+                      "literal": {
+                        "type": "Integer",
+                        "value": ""
+                      },
+                      "preset": {
+                        "preset_id": "Logic_ComparisonOperator",
+                        "value_id": "eq"
+                      },
+                      "script": "",
+                      "type": "Preset",
+                      "variable": {
+                        "index": 0,
+                        "variable_id": ""
+                      }
+                    }
+                  ],
+                  "id": "op"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Blackboard_GetValue_Integer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Blackboard_GetBlackboardOfEntity",
+                                  "parameters": [
+                                    {
+                                      "expressions": [
+                                        {
+                                          "function": {
+                                            "function_id": "Entity_GetTriggeringEntity"
+                                          },
+                                          "type": "Function"
+                                        }
+                                      ],
+                                      "id": "entity"
+                                    }
+                                  ]
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "blackboard"
+                          },
+                          {
+                            "expressions": [],
+                            "id": "key"
+                          }
+                        ],
+                        "sub_functions": []
+                      },
+                      "preset": {
+                        "preset_id": "General_TimeType",
+                        "value_id": "ai_time"
+                      },
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "tags": [],
+                          "type": "Player"
+                        },
+                        "value": "4"
+                      },
+                      "variable": {}
+                    }
+                  ],
+                  "id": "value2"
+                }
+              ],
+              "sub_functions": []
+            },
+            {
+              "function_id": "Logic_Comparison",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Unit_GetOwningPlayer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Unit_GetTriggeringUnit",
+                                  "parameters": [],
+                                  "sub_functions": []
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "unit"
+                          }
+                        ],
+                        "sub_functions": []
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value1"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function": "",
+                        "parameters": [],
+                        "sub_functions": []
+                      },
+                      "literal": {
+                        "type": "Integer",
+                        "value": ""
+                      },
+                      "preset": {
+                        "preset_id": "Logic_ComparisonOperator",
+                        "value_id": "eq"
+                      },
+                      "script": "",
+                      "type": "Preset",
+                      "variable": {
+                        "index": 0,
+                        "variable_id": ""
+                      }
+                    }
+                  ],
+                  "id": "op"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Blackboard_GetValue_Integer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "function": {
+                                  "function_id": "Blackboard_GetBlackboardOfEntity",
+                                  "parameters": [
+                                    {
+                                      "expressions": [
+                                        {
+                                          "function": {
+                                            "function_id": "Entity_GetTriggeringEntity"
+                                          },
+                                          "type": "Function"
+                                        }
+                                      ],
+                                      "id": "entity"
+                                    }
+                                  ]
+                                },
+                                "type": "Function"
+                              }
+                            ],
+                            "id": "blackboard"
+                          },
+                          {
+                            "expressions": [],
+                            "id": "key"
+                          }
+                        ],
+                        "sub_functions": []
+                      },
+                      "preset": {
+                        "preset_id": "General_TimeType",
+                        "value_id": "ai_time"
+                      },
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "tags": [],
+                          "type": "Player"
+                        },
+                        "value": "5"
+                      },
+                      "variable": {}
+                    }
+                  ],
+                  "id": "value2"
+                }
+              ],
+              "sub_functions": []
+            }
+          ],
+          "id": "conditions"
+        }
+      ]
+    }
+  ],
+  "enabled": false,
+  "events": [
+    {
+      "function_id": "Unit_OnKilled",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "preset": {
+                "preset_id": "Unit_AnyUnit",
+                "value_id": "any"
+              },
+              "type": "Preset"
+            }
+          ],
+          "id": "unit"
+        }
+      ],
+      "sub_functions": []
+    }
+  ],
+  "id": "Mutator_ReadyToBlow",
+  "variables": []
+}

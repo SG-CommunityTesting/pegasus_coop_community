@@ -1,0 +1,13 @@
+{
+  "backswing": 1.3,
+  "based_on": "BaseWeapon",
+  "display_effect_damage": "Ryker_Weapon_Damage",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Weapons/UI_Icons_Weapons_Vanguard_RykerWeapon.UI_Icons_Weapons_Vanguard_RykerWeapon'",
+  "id": "Ryker_Weapon",
+  "name": "pegasus_heroes|WeaponData_name_Ryker_Weapon",
+  "period": 1.5,
+  "range_acquire": 15.0,
+  "range_maximum": 8.0,
+  "swing": 0.2,
+  "weapon_fire": "Ryker_Weapon_Damage"
+}

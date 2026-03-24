@@ -1,0 +1,5 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "VoidLashFriendly_BuffStun",
+  "id": "VoidLashFriendly_BuffApplierStun"
+}

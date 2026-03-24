@@ -1,0 +1,9 @@
+{
+  "based_on": "Transmission",
+  "character": "Character_LordOfTheAbyss",
+  "communication_style": "CommStyle_Alliance_Enemy_Normal",
+  "id": "Transmission_AbyssalGates_Victory01b",
+  "pause": 1.0,
+  "sound": "SoundData_Transmission_AbyssLord_VictoryOneB",
+  "text_field": "Transmission_text_field_Transmission_AbyssalGates_Victory01b"
+}

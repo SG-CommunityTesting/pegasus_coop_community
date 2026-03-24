@@ -1,0 +1,114 @@
+{
+  "based_on": "Validator",
+  "check": {
+    "root": {
+      "left": {
+        "left": {
+          "name": "ExpressionApi::Buff::has_buff",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "name": "ExpressionApi::effect_target",
+                "node": "FunctionCall",
+                "parameters": [
+                  {
+                    "argument": {
+                      "node": "Literal",
+                      "type": "Name",
+                      "value": ""
+                    },
+                    "name": "effect_parent",
+                    "type": "Name"
+                  }
+                ],
+                "type": "Entity"
+              },
+              "name": "entity",
+              "type": "Entity"
+            },
+            {
+              "argument": {
+                "node": "Literal",
+                "type": "Buff",
+                "value": "PowerLeap_BuffAutoCast"
+              },
+              "name": "buff",
+              "type": "Buff"
+            },
+            {
+              "argument": {
+                "name": "ExpressionApi::Entity::any",
+                "node": "FunctionCall",
+                "parameters": [],
+                "type": "Entity"
+              },
+              "name": "source",
+              "type": "Entity"
+            }
+          ],
+          "type": "Bool"
+        },
+        "node": "Logical",
+        "operator": "!",
+        "type": "Bool"
+      },
+      "node": "Logical",
+      "operator": "&&",
+      "right": {
+        "left": {
+          "name": "ExpressionApi::Buff::has_buff",
+          "node": "FunctionCall",
+          "parameters": [
+            {
+              "argument": {
+                "name": "ExpressionApi::effect_target",
+                "node": "FunctionCall",
+                "parameters": [
+                  {
+                    "argument": {
+                      "node": "Literal",
+                      "type": "Name",
+                      "value": ""
+                    },
+                    "name": "effect_parent",
+                    "type": "Name"
+                  }
+                ],
+                "type": "Entity"
+              },
+              "name": "entity",
+              "type": "Entity"
+            },
+            {
+              "argument": {
+                "node": "Literal",
+                "type": "Buff",
+                "value": "PowerLeap_BuffAutoCastListening"
+              },
+              "name": "buff",
+              "type": "Buff"
+            },
+            {
+              "argument": {
+                "name": "ExpressionApi::Entity::any",
+                "node": "FunctionCall",
+                "parameters": [],
+                "type": "Entity"
+              },
+              "name": "source",
+              "type": "Entity"
+            }
+          ],
+          "type": "Bool"
+        },
+        "node": "Logical",
+        "operator": "!",
+        "type": "Bool"
+      },
+      "type": "Bool"
+    },
+    "type": "Bool"
+  },
+  "id": "Valid_CanApplyPowerLeapAutoCastListening"
+}

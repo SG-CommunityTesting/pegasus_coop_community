@@ -1,0 +1,43 @@
+{
+  "backswing": 0.833,
+  "backswing_locked": 0.5,
+  "based_on": "BaseWeapon",
+  "can_use": "Valid_CasterHasSoulbladeBuff",
+  "display_effect_damage": "Soulblade_Damage",
+  "flags": {
+    "always_visualize_range": false,
+    "can_attack_location": false,
+    "channeled": false,
+    "fires_passively": false,
+    "hide_weapon": true,
+    "melee": true,
+    "scan_for_new_targets": true
+  },
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_Soulblade.UI_Icons_Abilities_Soulblade'",
+  "id": "Kastiel_Soulblade_Weapon",
+  "name": "pegasus_heroes|WeaponData_name_Kastiel_Soulblade_Weapon",
+  "period": 2.0,
+  "range_acquire": 7.0,
+  "range_maximum": 1.5,
+  "swing": 0.75,
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/WeaponComponents/AC_Weapon_KastielSoulblade.AC_Weapon_KastielSoulblade_C'",
+  "weapon_fire": "Soulblade_SearchRadius",
+  "weapon_target_filter": {
+    "alliance": {
+      "ally": true,
+      "enemy": true,
+      "neutral": true,
+      "player": true,
+      "self": false
+    },
+    "tags": {
+      "excluded": [
+        "status_invulnerable",
+        "entity_destructible_tree"
+      ],
+      "required": [
+        "heightplane_ground"
+      ]
+    }
+  }
+}

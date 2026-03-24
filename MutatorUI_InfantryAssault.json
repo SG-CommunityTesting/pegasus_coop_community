@@ -1,0 +1,8 @@
+{
+  "activation_trigger": "Mutator_InfantryAssault_Activate",
+  "based_on": "MutatorUI",
+  "description": "pegasus_coop|MutatorUI_description_MutatorUI_InfantryAssault",
+  "id": "MutatorUI_InfantryAssault",
+  "image": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Mutators/UI_Icons_Mutators_InfantryAssault.UI_Icons_Mutators_InfantryAssault'",
+  "title": "pegasus_coop|MutatorUI_title_MutatorUI_InfantryAssault"
+}

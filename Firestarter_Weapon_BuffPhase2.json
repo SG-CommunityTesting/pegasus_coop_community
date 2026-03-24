@@ -1,0 +1,11 @@
+{
+  "alignment": "Helpful",
+  "based_on": "Buff",
+  "duration": 2.0,
+  "flags": {
+    "hidden": true,
+    "override_source": false,
+    "show_progress": false
+  },
+  "id": "Firestarter_Weapon_BuffPhase2"
+}

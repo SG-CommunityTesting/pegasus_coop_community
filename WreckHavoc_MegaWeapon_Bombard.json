@@ -1,0 +1,32 @@
+{
+  "arc": 180.0,
+  "based_on": "StagedAbilityData",
+  "cast_game_effect": "WreckHavoc_MegaWeapon_LaunchProjectile",
+  "commands": [
+    {
+      "cooldown": {
+        "duration": 0.0,
+        "name": "MegaWeapon_Bombard"
+      },
+      "cost_resources": {
+        "resource_a": 0.0,
+        "resource_b": 0.0,
+        "resource_c": 0.0,
+        "resource_d": 0.0
+      },
+      "cost_vitals": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "cost_vitals_percentage": {
+        "energy": 0.0,
+        "health": 0.0
+      },
+      "requirement": "NoRequirement"
+    }
+  ],
+  "id": "WreckHavoc_MegaWeapon_Bombard",
+  "range_maximum": 250.0,
+  "targeting_type": "Location",
+  "unreal_component": "/Script/Engine.BlueprintGeneratedClass'/Game/Pegasus/Blueprints/EntityComponents/AbilityComponents/AC_Ability_Spell_Main.AC_Ability_Spell_Main_C'"
+}

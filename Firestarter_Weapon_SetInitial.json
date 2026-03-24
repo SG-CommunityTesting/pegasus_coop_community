@@ -1,0 +1,9 @@
+{
+  "based_on": "GameEffectSet",
+  "effects": [
+    "Firestarter_Weapon_PersistentPhase1",
+    "Firestarter_Weapon_PersistentPhase2",
+    "Firestarter_Weapon_PersistentPhase3"
+  ],
+  "id": "Firestarter_Weapon_SetInitial"
+}

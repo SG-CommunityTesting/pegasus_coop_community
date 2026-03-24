@@ -1,0 +1,1478 @@
+{
+  "actions": [
+    {
+      "function_id": "Variable_SetVariable",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "variable_id": "randomChoice"
+              }
+            }
+          ],
+          "id": "variable"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Random_Integer",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "type": "Value",
+                        "value": {
+                          "type": {
+                            "directive": "FunctionType",
+                            "implements": "",
+                            "inner_type": "",
+                            "param_id": "",
+                            "sub_directive": "None",
+                            "type": "Integer"
+                          },
+                          "value": "1"
+                        }
+                      }
+                    ],
+                    "id": "min"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "type": "Value",
+                        "value": {
+                          "type": {
+                            "directive": "FunctionType",
+                            "implements": "",
+                            "inner_type": "",
+                            "param_id": "",
+                            "sub_directive": "None",
+                            "type": "Integer"
+                          },
+                          "value": "5"
+                        }
+                      }
+                    ],
+                    "id": "max"
+                  }
+                ]
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "value"
+        }
+      ]
+    },
+    {
+      "function_id": "Variable_SetVariable",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "variable_id": "randomChoice2"
+              }
+            }
+          ],
+          "id": "variable"
+        },
+        {
+          "expressions": [
+            {
+              "function": {
+                "function_id": "Random_Integer",
+                "parameters": [
+                  {
+                    "expressions": [
+                      {
+                        "type": "Value",
+                        "value": {
+                          "type": {
+                            "directive": "FunctionType",
+                            "implements": "",
+                            "inner_type": "",
+                            "param_id": "",
+                            "sub_directive": "None",
+                            "type": "Integer"
+                          },
+                          "value": "1"
+                        }
+                      }
+                    ],
+                    "id": "min"
+                  },
+                  {
+                    "expressions": [
+                      {
+                        "type": "Value",
+                        "value": {
+                          "type": {
+                            "directive": "FunctionType",
+                            "implements": "",
+                            "inner_type": "",
+                            "param_id": "",
+                            "sub_directive": "None",
+                            "type": "Integer"
+                          },
+                          "value": "5"
+                        }
+                      }
+                    ],
+                    "id": "max"
+                  }
+                ]
+              },
+              "type": "Function"
+            }
+          ],
+          "id": "value"
+        }
+      ]
+    },
+    {
+      "function_id": "General_WhileLoop",
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "Logic_Comparison",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "randomChoice"
+                      }
+                    }
+                  ],
+                  "id": "value1"
+                },
+                {
+                  "expressions": [
+                    {
+                      "preset": {
+                        "preset_id": "Logic_ComparisonOperator",
+                        "value_id": "eq"
+                      },
+                      "type": "Preset"
+                    }
+                  ],
+                  "id": "op"
+                },
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "randomChoice2"
+                      }
+                    }
+                  ],
+                  "id": "value2"
+                }
+              ]
+            }
+          ],
+          "id": "conditions"
+        },
+        {
+          "functions": [
+            {
+              "function_id": "Variable_SetVariable",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Variable",
+                      "variable": {
+                        "variable_id": "randomChoice2"
+                      }
+                    }
+                  ],
+                  "id": "variable"
+                },
+                {
+                  "expressions": [
+                    {
+                      "function": {
+                        "function_id": "Random_Integer",
+                        "parameters": [
+                          {
+                            "expressions": [
+                              {
+                                "type": "Value",
+                                "value": {
+                                  "type": {
+                                    "directive": "FunctionType",
+                                    "implements": "",
+                                    "inner_type": "",
+                                    "param_id": "",
+                                    "sub_directive": "None",
+                                    "type": "Integer"
+                                  },
+                                  "value": "1"
+                                }
+                              }
+                            ],
+                            "id": "min"
+                          },
+                          {
+                            "expressions": [
+                              {
+                                "type": "Value",
+                                "value": {
+                                  "type": {
+                                    "directive": "FunctionType",
+                                    "implements": "",
+                                    "inner_type": "",
+                                    "param_id": "",
+                                    "sub_directive": "None",
+                                    "type": "Integer"
+                                  },
+                                  "value": "5"
+                                }
+                              }
+                            ],
+                            "id": "max"
+                          }
+                        ]
+                      },
+                      "type": "Function"
+                    }
+                  ],
+                  "id": "value"
+                }
+              ]
+            }
+          ],
+          "id": "actions"
+        }
+      ]
+    },
+    {
+      "function_id": "General_Switch",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "variable_id": "randomChoice"
+              }
+            }
+          ],
+          "id": "value"
+        }
+      ],
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "1"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Debug_DebugMessage",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Debug_DebugMessageTag",
+                                "value_id": "notag"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "tag"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "String"
+                                },
+                                "value": "INFESTED MUTATOR ACTIVE"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "10.0"
+                              }
+                            }
+                          ],
+                          "id": "duration"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Infested"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "2"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Debug_DebugMessage",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Debug_DebugMessageTag",
+                                "value_id": "notag"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "tag"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "String"
+                                },
+                                "value": "READY TO BLOW MUTATOR ACTIVE"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "10.0"
+                              }
+                            }
+                          ],
+                          "id": "duration"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_ReadyToBlow"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "3"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Debug_DebugMessage",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Debug_DebugMessageTag",
+                                "value_id": "notag"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "tag"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "String"
+                                },
+                                "value": "RECONSTRUCTED MUTATOR ACTIVE"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "10.0"
+                              }
+                            }
+                          ],
+                          "id": "duration"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Reconstructed"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "4"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Debug_DebugMessage",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Debug_DebugMessageTag",
+                                "value_id": "notag"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "tag"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "String"
+                                },
+                                "value": "INFANTRY ASSAULT MUTATOR ACTIVE"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "10.0"
+                              }
+                            }
+                          ],
+                          "id": "duration"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_InfantryAssault"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_InfantryAssault_SpawnerDestroyed"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "5"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "id": "actions"
+                }
+              ]
+            }
+          ],
+          "id": "cases"
+        },
+        {
+          "id": "default"
+        }
+      ]
+    },
+    {
+      "function_id": "General_Switch",
+      "parameters": [
+        {
+          "expressions": [
+            {
+              "type": "Variable",
+              "variable": {
+                "variable_id": "randomChoice2"
+              }
+            }
+          ],
+          "id": "value"
+        }
+      ],
+      "sub_functions": [
+        {
+          "functions": [
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "1"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Debug_DebugMessage",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Debug_DebugMessageTag",
+                                "value_id": "notag"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "tag"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "String"
+                                },
+                                "value": "INFESTED MUTATOR ACTIVE"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "10.0"
+                              }
+                            }
+                          ],
+                          "id": "duration"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Infested"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "2"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Debug_DebugMessage",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Debug_DebugMessageTag",
+                                "value_id": "notag"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "tag"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "String"
+                                },
+                                "value": "READY TO BLOW MUTATOR ACTIVE"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "10.0"
+                              }
+                            }
+                          ],
+                          "id": "duration"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_ReadyToBlow"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "3"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Debug_DebugMessage",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Debug_DebugMessageTag",
+                                "value_id": "notag"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "tag"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "String"
+                                },
+                                "value": "RECONSTRUCTED MUTATOR ACTIVE"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "10.0"
+                              }
+                            }
+                          ],
+                          "id": "duration"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_Reconstructed"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "4"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "functions": [
+                    {
+                      "function_id": "Debug_DebugMessage",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "Debug_DebugMessageTag",
+                                "value_id": "notag"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "tag"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "String"
+                                },
+                                "value": "INFANTRY ASSAULT MUTATOR ACTIVE"
+                              }
+                            }
+                          ],
+                          "id": "message"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "FunctionType",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Time"
+                                },
+                                "value": "10.0"
+                              }
+                            }
+                          ],
+                          "id": "duration"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_InfantryAssault"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    },
+                    {
+                      "function_id": "Trigger_SetEnabled",
+                      "parameters": [
+                        {
+                          "expressions": [
+                            {
+                              "type": "Value",
+                              "value": {
+                                "type": {
+                                  "directive": "TypeRef",
+                                  "implements": "",
+                                  "inner_type": "",
+                                  "param_id": "",
+                                  "sub_directive": "None",
+                                  "type": "Trigger"
+                                },
+                                "value": "Mutator_InfantryAssault_SpawnerDestroyed"
+                              }
+                            }
+                          ],
+                          "id": "trigger"
+                        },
+                        {
+                          "expressions": [
+                            {
+                              "preset": {
+                                "preset_id": "General_EnableDisable",
+                                "value_id": "enable"
+                              },
+                              "type": "Preset"
+                            }
+                          ],
+                          "id": "state"
+                        }
+                      ]
+                    }
+                  ],
+                  "id": "actions"
+                }
+              ]
+            },
+            {
+              "function_id": "General_SwitchCase",
+              "parameters": [
+                {
+                  "expressions": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": {
+                          "directive": "FunctionType",
+                          "implements": "",
+                          "inner_type": "",
+                          "param_id": "",
+                          "sub_directive": "None",
+                          "type": "Integer"
+                        },
+                        "value": "5"
+                      }
+                    }
+                  ],
+                  "id": "value"
+                }
+              ],
+              "sub_functions": [
+                {
+                  "id": "actions"
+                }
+              ]
+            }
+          ],
+          "id": "cases"
+        },
+        {
+          "id": "default"
+        }
+      ]
+    }
+  ],
+  "based_on": "Trigger",
+  "enabled": false,
+  "id": "Mutator_Annihilation2",
+  "variables": [
+    {
+      "id": "randomChoice",
+      "initial_values": [
+        {
+          "type": "Value",
+          "value": {
+            "type": {
+              "directive": "FunctionType",
+              "implements": "",
+              "inner_type": "",
+              "param_id": "",
+              "sub_directive": "None",
+              "type": "Integer"
+            },
+            "value": "0"
+          }
+        }
+      ],
+      "name": "randomChoice",
+      "type": {
+        "directive": "FunctionType",
+        "implements": "",
+        "inner_type": "",
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "Integer"
+      }
+    },
+    {
+      "id": "randomChoice2",
+      "initial_values": [
+        {
+          "type": "Value",
+          "value": {
+            "type": {
+              "directive": "FunctionType",
+              "implements": "",
+              "inner_type": "",
+              "param_id": "",
+              "sub_directive": "None",
+              "type": "Integer"
+            },
+            "value": "0"
+          }
+        }
+      ],
+      "name": "randomChoice2",
+      "type": {
+        "directive": "FunctionType",
+        "implements": "",
+        "inner_type": "",
+        "param_id": "",
+        "sub_directive": "None",
+        "type": "Integer"
+      }
+    }
+  ]
+}

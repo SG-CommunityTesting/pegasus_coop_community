@@ -1,0 +1,12 @@
+{
+  "alignment": "Harmful",
+  "based_on": "Buff",
+  "buff_visuals": "Proxy_BP_FX_BurningBlood_Buff",
+  "duration": 5.0,
+  "effect_periodic": "BurnedOne_S_Weapon_Debuff_PeriodicSet",
+  "icon": "Texture2D'/Game/Pegasus/UI/Assets/Icons/Abilities/UI_Icons_Abilities_RevealingFire.UI_Icons_Abilities_RevealingFire'",
+  "id": "BurnedOne_S_Weapon_Debuff",
+  "name": "pegasus_heroes|Revealing Fire",
+  "periodic_duration": 0.25,
+  "tooltip": "pegasus_heroes|Buff_tooltip_BurnedOne_S_Weapon_Debuff"
+}

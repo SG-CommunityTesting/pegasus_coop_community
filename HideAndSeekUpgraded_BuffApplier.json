@@ -1,0 +1,9 @@
+﻿{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "HideAndSeekUpgraded_Buff",
+  "effect_target": {
+    "effect_parent": "none",
+    "target": "Caster"
+  },
+  "id": "HideAndSeekUpgraded_BuffApplier"
+}

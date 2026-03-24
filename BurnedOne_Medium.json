@@ -1,0 +1,52 @@
+{
+  "based_on": "BurnedOne_Small",
+  "cargo_size": "Two",
+  "effects": {
+    "birth": "emptyRef",
+    "creation": "emptyRef",
+    "death": "BurnedOne_M_Death_Persistent",
+    "revenge": "emptyRef"
+  },
+  "id": "BurnedOne_Medium",
+  "inner_radius": 0.7,
+  "movement": {
+    "acceleration_time": 0.0,
+    "collision": {
+      "air": false,
+      "burrowed": false,
+      "ground": true,
+      "ground_tall": false,
+      "item": false,
+      "worker": false
+    },
+    "deceleration_time": 0.0,
+    "idle_pushable": false,
+    "lock_facing": false,
+    "moving_turn_period": 0.5,
+    "pathing_mode": "Ground",
+    "push_priority": 0,
+    "push_priority_same_team": 0,
+    "speed": 4.0,
+    "stationary_turn_period": 0.5,
+    "turn_radius": 0.0,
+    "turn_without_slowing": false,
+    "unpushable": false
+  },
+  "name": "pegasus_heroes|UnitData_name_BurnedOne_Medium",
+  "outer_radius": 1.2,
+  "unit_button": "BurnedOneMedium_Button",
+  "unreal_actor": "BP_UD_IMOFleshling_Medium_00",
+  "vital_health": {
+    "maximum": 200.0,
+    "regen": 0.0,
+    "starting": 200.0
+  },
+  "vital_shield": {
+    "maximum": 50.0,
+    "regen": 0.0,
+    "starting": 25.0
+  },
+  "weaponList": [
+    "BurnedOne_Medium_Weapon"
+  ]
+}

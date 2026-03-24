@@ -1,0 +1,70 @@
+{
+  "based_on": "BaseUnit_InfernalU",
+  "default_control_groups": [
+    0,
+    1,
+    2
+  ],
+  "expiration_time": -1.0,
+  "id": "BaseUnit_InfernalHero",
+  "minimap_icon_size": 40.0,
+  "minimap_icon_upper_layer": true,
+  "minimap_icon_use_heading": true,
+  "minimap_icon_use_team_color": true,
+  "veterancy_tiers": [
+    {
+      "stat_modifiers": [
+        {
+          "amount": 25.0,
+          "stat": "HealthMaxPercentageAdditiveMultiplier"
+        },
+        {
+          "amount": 20.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 25.0,
+          "stat": "HealthRegenPercentageAdditiveMultiplier"
+        }
+      ],
+      "threshold": 1500,
+      "visual_fx": "BP_FX_HeroLevelUp"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 25.0,
+          "stat": "HealthMaxPercentageAdditiveMultiplier"
+        },
+        {
+          "amount": 20.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 25.0,
+          "stat": "HealthRegenPercentageAdditiveMultiplier"
+        }
+      ],
+      "threshold": 4000,
+      "visual_fx": "BP_FX_HeroLevelUp"
+    },
+    {
+      "stat_modifiers": [
+        {
+          "amount": 25.0,
+          "stat": "HealthMaxPercentageAdditiveMultiplier"
+        },
+        {
+          "amount": 20.0,
+          "stat": "DamagePercentageBonus"
+        },
+        {
+          "amount": 25.0,
+          "stat": "HealthRegenPercentageAdditiveMultiplier"
+        }
+      ],
+      "threshold": 10000,
+      "visual_fx": "BP_FX_HeroLevelUp"
+    }
+  ]
+}

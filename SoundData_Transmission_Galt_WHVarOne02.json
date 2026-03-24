@@ -1,0 +1,6 @@
+{
+  "based_on": "SoundData_TransmissionBase",
+  "id": "SoundData_Transmission_Galt_WHVarOne02",
+  "sound_system_data": "SSD_Transmission_Galt_WH_Intro",
+  "trigger": "Galt_WHVarOne02"
+}

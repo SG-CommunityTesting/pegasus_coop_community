@@ -1,0 +1,9 @@
+{
+  "based_on": "GameEffectApplyBuff",
+  "buff": "VoidLash_BuffStunImpact",
+  "effect_target": {
+    "effect_parent": "origin",
+    "target": "Target"
+  },
+  "id": "VoidLash_BuffApplierStunImpact"
+}
